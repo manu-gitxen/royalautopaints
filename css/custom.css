@@ -1,0 +1,25 @@
+/* ==========================================================================
+   Royal Auto Paints - Flat Minimalist Overrides (Zero Drop Shadows)
+   ========================================================================== */
+
+/* Strictly remove all drop shadows across components, images, cards, and navbar */
+.navbar,
+.card,
+.btn,
+img,
+.shadow,
+.shadow-sm,
+.shadow-lg,
+.product-wap {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+/* Ensure clean flat borders for cards and navigation */
+.navbar {
+    border-bottom: 1px solid #e9ecef !important;
+}
+
+.card {
+    border: 1px solid #e9ecef !important;
+}
