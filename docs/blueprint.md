@@ -1,233 +1,144 @@
-# Royal Auto Paints Qatar — Architectural Blueprint & Technical Specification
+# Royal Auto Paints Qatar — Architectural Blueprint & Technical Specification (Redesign v2)
 
 **Project Name:** Royal Auto Paints Qatar Website Redesign  
 **Foundation Framework:** TemplateMo 559 Zay Shop (Bootstrap 5.0.0-beta1 / HTML5 / CSS3 / Vanilla JS)  
-**Project Path:** `D:\manu\projects\royalautopaints`  
+**Project Path:** `E:\xev\royalautopaints`  
+**Reference Stock Path:** `E:\xev\zay_royal_paint_template_stock`  
+**Legacy Website Path:** `E:\xev\royalautopaints-com-old`  
 **Physical Headquarters:** Street 23, Wakalat St, Industrial Area, Doha, Qatar  
 **Direct Contacts:** Tel: `+974 4450 1669` | WhatsApp RFQ: `+974 5039 5741` | Email: `info@royalautopaints.com`  
-**Status:** Architecture Approved & Active in Production  
+**Status:** Redesign Fully Integrated, Authenticated & Production Ready  
 
 ---
 
-## 1. Executive Strategy & Commercial Scope
+## 1. Executive Summary & Client Mandate
 
-### 1.1 Commercial Transformation
-Historically, Royal Auto Paints operated primarily as an automotive refinishing supplier. The objective of this enterprise web architecture is to reposition the brand as Qatar’s leading comprehensive commercial and industrial surface solutions provider across **five dedicated business divisions**:
+Following the client's rejection of previous layout alternatives, the client officially approved the clean, minimalist aesthetic of **TemplateMo 559 Zay Shop** (`zay_royal_paint_template_stock`).
 
-1. **Automotive Refinish Division:** OEM computerized color matching, High-Solids (HS) clear coats, 2K primers, body putties, thinners, abrasives, and collision repair consumables.
-2. **Commercial Paint Booth & Workshop Consumables:** Turnkey automotive & industrial spray booths, downdraft air filtration media, heating generators, high-efficiency extraction units, automotive-grade masking tapes, protective plastic films, and PPE respirators.
-3. **Marine & Yacht Protective Finishes:** Heavy-duty anti-fouling coatings, marine epoxy barrier primers, high-gloss polyurethane yacht topcoats, and anti-corrosion barrier coatings formulated for extreme Arabian Gulf salinity and UV exposure.
-4. **Wood & Architectural Industrial Finishes:** Premium polyurethane wood lacquers, non-yellowing clear coats, interior stains, sealers, and exterior architectural coatings for joinery, luxury interiors, and commercial developments.
-5. **Heavy-Duty Industrial & Protective Coatings:** Industrial anti-corrosion metal primers, high-build epoxy thinners, structural steel coatings, and chemical-resistant industrial finishes engineered for harsh Middle Eastern climate conditions.
-
-### 1.2 B2B Catalogue-Led RFQ Model
-Rather than a consumer e-commerce cart/checkout model with pricing and delivery charges, Royal Auto Paints operates on a high-value B2B **Request for Quotation (RFQ)** model:
-- **Direct WhatsApp RFQ Routing:** Instant, pre-formatted WhatsApp deep links allowing workshop managers, marine contractors, and industrial procurement officers to request quotes and technical data directly.
-- **Direct Phone Dialers:** Accessible one-click tel-links for immediate technical desk inquiries (`+974 4450 1669`).
-- **Interactive Search Modal:** Fast product lookup filtering products, divisions, clear coats, and equipment.
-
----
-
-## 2. Design System & Visual Identity
-
-### 2.1 The Flat Minimalist Mandate (Zero Drop Shadows)
-Per executive design requirements, all artificial depth effects (drop shadows, blurred elevations) have been completely eliminated across the entire site. The design relies on clean borders, intentional whitespace, and razor-sharp typographic hierarchy:
-
-```css
-/* ==========================================================================
-   Royal Auto Paints - Flat Minimalist Overrides (Zero Drop Shadows)
-   ========================================================================== */
-.navbar,
-.card,
-.btn,
-img,
-.shadow,
-.shadow-sm,
-.shadow-lg,
-.product-wap {
-    box-shadow: none !important;
-    -webkit-box-shadow: none !important;
-}
-
-.navbar {
-    border-bottom: 1px solid #e9ecef !important;
-}
-
-.card {
-    border: 1px solid #e9ecef !important;
-}
-```
-
-### 2.2 Color Architecture
-- **Primary Brand Accent (Emerald / Jade Green):** `#59ab6e` (Hover: `#69bb7e`) — Used for primary CTAs, active badges, division highlights, and WhatsApp icons.
-- **Primary Text & Headings (Charcoal / Slate):** `#212934` — Deep, high-contrast, professional typography.
-- **Subtext & Secondary Information (Slate Gray):** `#6c757d` / `#333d4a`.
-- **Hero Banner Canvas Background:** `#efefef` — Matches the soft-gradient fade of the studio product renders.
-- **Top Utility Bar Background:** `#212934` (Dark Charcoal) — Provides strong grounding and high-contrast contact visibility.
-- **Container / Card Surface:** `#ffffff` (Pure White).
-- **Subtle Dividers & Outlines:** `#e9ecef`.
-
-### 2.3 Typography Specifications
-- **Font Family:** `Roboto`, sans-serif (imported via Google Fonts with weights `100`, `200`, `300`, `400`, `500`, `700`, `900`).
-- **Navigation Links:** `Roboto:300` (Light), 18px font size with natural letter-spacing.
-- **Display Headings (`h1`, `h2`):** `Roboto:300` with bold sub-accents (`b`, `fw-bold`), delivering an editorial luxury feel.
-- **Badges & Micro-Copy:** `Roboto:500`, uppercase, 12px–13px with 1.5px letter-spacing.
+### Strict Client Visual Guidelines:
+1. **Preserve Stock Visual Identity:** The Google font (`Roboto`), typography hierarchy, and clean white (`#ffffff`), light gray canvas (`#efefef`), and slate dark (`#212934`) palette from the stock template must be strictly preserved without unauthorized alterations.
+2. **Zero Drop Shadows:** Complete elimination of artificial elevations, blurred shadows, and drop shadows (`box-shadow: none !important`). Crisp 1px borders (`#e9ecef`) provide all component separation.
+3. **Comprehensive Section Integration from Legacy Site (`royalautopaints-com-old`):** The stock template lacked crucial business sections present in the original website. These have been redesigned and integrated in complete visual harmony:
+   - **Services Section:** Computerized Colour Mixing, Aerosol Can Filling, Motolux Refinish Distribution.
+   - **Comprehensive Product Catalog:** Categorized, filterable catalog containing authentic HB Body, Challenger, Axalta, and Imlar products with actual photos and instant WhatsApp RFQs.
+   - **Authorized Dealership & Brand Story:** Official Qatar dealership for Challenger and HB BODY since 2012.
+   - **Brand Partner Showcase:** Interactive grayscale-to-color hover logo ribbon (Axalta, Imlar, Gem Auto Paints, Gemex Coatings, Moto Max).
+   - **Verified Client Testimonials:** Authentic reviews from Qatar customers (James, Nasar, Abaan, Qaazi Ali, Shameem Akthar).
+   - **Location & Inquiries Desk:** Google Maps interactive embed for Street 23 Wakalat St, operating hours, telephone desk, and floating WhatsApp RFQ button.
+4. **Complete Responsive Architecture:** Solved the Zay template's core responsive flaws (`!important` 18px body font on mobile, massive 48px headings on small screens, overlapping carousel arrows, overflowing rows, and broken mobile menu collapses).
 
 ---
 
-## 3. Structural Layout & Navbar Architecture
-
-### 3.1 Top Utility Bar (`#templatemo_nav_top`)
-Fixed above the main header on large screens (`d-none d-lg-block`):
-- **Location Badge:** `Street 23, Wakalat St, Industrial Area, Doha, Qatar` with map icon.
-- **Telephone Link:** `+974 4450 1669` (`href="tel:+97444501669"`).
-- **WhatsApp Link:** `+974 5039 5741` (`href="https://wa.me/97450395741..."`).
-- **Social & Email Triggers:** One-click links for direct customer connectivity.
-
-### 3.2 Master Navigation Header (`.navbar`)
-- **Container Width:** Standard Bootstrap `.container` (`max-width: 1320px` on `xxl` viewports) ensuring edge-to-edge balance across widescreen monitors.
-- **Brand Identity:** Left-aligned official logo (`images/royal_logo.png`) rendered at 44px height (`object-fit: contain`).
-- **Navigation Menu (`#templatemo_main_nav`):**
-  - Centered navigation list with `.navbar-nav.d-flex.justify-content-between.mx-lg-auto`.
-  - Max-width locked to `550px` on desktop viewports (`@media (min-width: 992px) { #templatemo_main_nav .navbar-nav {max-width: 550px;} }`).
-  - Standard 4 navigation items: **Home**, **About**, **Shop**, **Contact**.
-- **Utility Actions (Right Flank):**
-  - Search Modal Trigger (FontAwesome `fa-search`).
-  - WhatsApp Direct Action (FontAwesome `fab fa-whatsapp text-success`).
-  - Direct Phone Action (FontAwesome `fa-phone text-dark`).
-
----
-
-## 4. Hero Carousel Architecture (`#template-mo-zay-hero-carousel`)
-
-### 4.1 Native Proportion & Fluid Sizing
-The carousel strictly adheres to the original template sizing logic:
-- Desktop minimum height: `min-height: 30rem` defined in `css/templatemo.css`.
-- Image Container: `<div class="mx-auto col-md-8 col-lg-6 order-lg-last text-center">`.
-- Image Element: `<img class="img-fluid" src="..." alt="...">` with **zero inline height overrides**.
-- Background Canvas: `#efefef !important` — seamlessly blending with the soft-fade left gradient of the studio product renders.
-
-### 4.2 The 5 Studio Banner Assets
-
-```
-+-----------------------------------------------------------------------------------------------+
-| Slide 1: Automotive Refinish                                                                  |
-| Asset: images/automotive_hero.png                                                             |
-| Content: HB Body 698 HS Clear, Challenger Basecoat, HB Body F202 Zinc Plus, Sandpaper, Tapes    |
-| Title: Qatar’s Premier Refinish Coatings                                                      |
-| Subtitle: Computerized OEM Color Matching & HS Clears                                         |
-+-----------------------------------------------------------------------------------------------+
-| Slide 2: Commercial Paint Booth & Consumables                                                 |
-| Asset: images/paint_booth_hero.png                                                            |
-| Content: Gem Masking Tape, Dual-Cartridge Respirator, Paper Rolls, Plastic Film, HVLP Gun     |
-| Title: Commercial Spray Booths & Consumables                                                  |
-| Subtitle: Engineered Downdraft & Masking Systems                                              |
-+-----------------------------------------------------------------------------------------------+
-| Slide 3: Marine & Yacht Division                                                              |
-| Asset: images/marine_paint_hero.png                                                           |
-| Content: Sea-Line Marine Paint, Marine 2K Topcoat, Proo 638 Marine 2K Epoxy Primer, Brush     |
-| Title: Marine & Yacht Protective Finishes                                                     |
-| Subtitle: Formulated for Extreme Arabian Gulf Conditions                                      |
-+-----------------------------------------------------------------------------------------------+
-| Slide 4: Wood & Architectural Division                                                         |
-| Asset: images/wood_finishing_hero.png                                                         |
-| Content: Wood Paint Premium Finish, Wood Thinner, Wood Hardener, Hardwood Blocks, Brush       |
-| Title: Wood & Architectural Industrial Finishes                                               |
-| Subtitle: Polyurethane Lacquers, Stains & Sealers                                             |
-+-----------------------------------------------------------------------------------------------+
-| Slide 5: Industrial Coatings Division                                                         |
-| Asset: images/industrial_paint_hero.png                                                       |
-| Content: Industrial Coating, Industrial Thinner, Metal Primer, Steel I-Beam, HVLP Gun          |
-| Title: Heavy-Duty Industrial Coatings & Primers                                               |
-| Subtitle: Anti-Corrosion Metal Primers & Epoxy Systems                                        |
-+-----------------------------------------------------------------------------------------------+
-```
-
----
-
-## 5. Information Architecture & Page Catalog
-
-### 5.1 Route Mapping & Anchor Topology
+## 2. Complete Information Architecture & Section Topology
 
 ```mermaid
 flowchart TD
-    Home["Home (index.html#home)"] --> TopNav["Top Bar (Doha Tel, WhatsApp, Hours)"]
-    Home --> Nav["Sticky Header (Logo, 4 Links, Search, RFQ)"]
-    Nav --> Carousel["5-Slide Hero Carousel (Auto, Booth, Marine, Wood, Industrial)"]
-    Carousel --> Divs["4 Core Business Divisions (#divisions)"]
-    Divs --> Solutions["Featured Technical Solutions (#solutions)"]
-    Solutions --> About["About Section (#about)"]
-    About --> Contact["Location & Contact Desk (#contact)"]
-    Contact --> Footer["Corporate Footer (Street 23, Doha Map, RFQ)"]
+    TopNav["Top Utility Bar (Doha Tel, WhatsApp RFQ, Email, Hours)"] --> StickyNav["Sticky Navigation (Logo, 8 Links, Search Modal, Quick Actions)"]
+    StickyNav --> Hero["5-Slide Hero Carousel (Auto, Booth, Marine, Wood, Industrial)"]
+    Hero --> Services["Specialized Coating Services (#services)"]
+    Services --> Divisions["4 Core Business Divisions (#divisions)"]
+    Divisions --> Products["Filterable Product Catalog (#products)"]
+    Products --> Dealership["Authorized Dealership & Legacy (#dealership)"]
+    Dealership --> Brands["Brand Partner Showcase (#brands)"]
+    Brands --> About["About Facility & Capabilities (#about)"]
+    About --> Reviews["Client Testimonials (#testimonials)"]
+    Reviews --> Contact["Location Guide & Interactive Map (#contact)"]
+    Contact --> Footer["Corporate Footer & Social Hub (#tempaltemo_footer)"]
 
-    Nav -.-> SearchModal["Interactive Search Modal (#templatemo_search)"]
-    Carousel -.-> WhatsAppRFQ["WhatsApp RFQ Dispatch (+974 5039 5741)"]
-    Divs -.-> WhatsAppRFQ
-    Solutions -.-> WhatsAppRFQ
+    StickyNav -.-> SearchModal["Interactive Search Modal (#templatemo_search)"]
+    StickyNav -.-> FloatingWA["Floating WhatsApp RFQ (+974 5039 5741)"]
 ```
 
-### 5.2 Section Breakdown
+---
 
-| Section ID | Name | Layout Grid | Key Contents & Functionality |
+## 3. Section Breakdown & Specification Matrix
+
+| Section ID | Section Name | Source Origin | Key Contents & Components |
 | :--- | :--- | :--- | :--- |
-| `#home` | Hero Carousel | 2-Column Responsive (`col-lg-6` text, `col-lg-6` img) | 5 studio product slides, pre-filled WhatsApp RFQs, division badges. |
-| `#divisions` | Business Divisions | 4-Column Responsive (`col-lg-3` cards) | Automotive, Spray Booth, Marine, and Wood divisions with circular thumbnails and instant inquiry buttons. |
-| `#solutions` | Featured Solutions | 3-Column Product Cards (`col-lg-4`) | Technical specifications, HS Clear Coats, Downdraft Filtration, and Marine Epoxy Primers. |
-| `#about` | Company Overview | 2-Column Editorial | Doha Industrial Area warehouse capacity, computerized color mixing facilities, and brand distribution. |
-| `#contact` | Contact & Inquiries | 2-Column Map + Details | Street 23 location guide, telephone desk, WhatsApp RFQ dispatch, business hours. |
-| `footer` | Corporate Footer | 3-Column Global | Official logo white, division navigation, copyright, and verified location details. |
+| `#templatemo_nav_top` | Top Utility Bar | Zay Stock + Brand Spec | Doha Street 23 address, direct dialer `+974 4450 1669`, WhatsApp RFQ `+974 5039 5741`. |
+| `.navbar` | Master Sticky Navigation | Redesign Enhancement | Official 44px logo, mobile-responsive hamburger drawer, mobile quick action dials. |
+| `#template-mo-zay-hero-carousel` | 5 Studio Hero Slides | Blueprint Studio Renders | Automotive Refinish, Spray Booths, Marine Finishes, Wood Finishes, Industrial Primers. |
+| `#services` | Specialized Workshop Services | `royalautopaints-com-old` | Custom Colour Mixing (OEM digital lab), Aerosol Spray Can Filling, Motolux Refinish Systems. |
+| `#divisions` | 4 Core Business Divisions | Zay Stock + Brand Architecture | Automotive Refinish, Commercial Paint Booth, Marine & Yacht, Wood & Architectural. |
+| `#products` | Filterable Product Catalog | `royalautopaints-com-old` | Filter pills (Clears, Putties, Primers/Hardeners, Thinners, Paints, Tools) with 20+ authentic products and WhatsApp RFQs. |
+| `#dealership` | Authorized Dealership | `royalautopaints-com-old` | Challenger & HB BODY authorized Qatar dealer since 2012; genuine import guarantee. |
+| `#brands` | Strategic Brand Alliances | `royalautopaints-com-old` | Axalta, Imlar, Gem Auto Paints, Gemex Coatings, Moto Max logos with grayscale hover. |
+| `#about` | Facility & Strengths | Zay Stock + Brand Architecture | Computerized Lab, Local Warehouse, Booth Engineering, Fast WhatsApp RFQ dispatch. |
+| `#testimonials` | Client Testimonials | `royalautopaints-com-old` | 5 authentic customer reviews with 5 gold stars and verified customer badges. |
+| `#contact` | Location & Operating Hours | `royalautopaints-com-old` | Street 23 Wakalat St details, interactive Google Maps iframe, working hours table. |
+| `#tempaltemo_footer` | Corporate Footer | Zay Stock + Redesign | Logo white, division links, quick navigation, social channels, copyright 2026. |
+| `.floating-whatsapp-btn` | Floating Action Button | Redesign Enhancement | Fixed bottom-right pulsing WhatsApp quick link for instant RFQ from any screen position. |
 
 ---
 
-## 6. Complete Asset & Media Inventory
+## 4. Responsive Engineering & Breakpoint Specifications
 
-### 6.1 Core Hero Banner Graphics (`images/`)
-- `automotive_hero.png` (1.50 MB): Studio render of automotive refinishing cans, sandpaper, masking tape.
-- `paint_booth_hero.png` (1.55 MB): Studio render of Gem masking tape, respirator, spray gun, masking rolls, plastic wrap.
-- `marine_paint_hero.png` (1.57 MB): Studio render of Sea-Line marine paint, 2K topcoat, 638 epoxy primer, application brush.
-- `wood_finishing_hero.png` (1.59 MB): Studio render of wood paint, wood thinner, hardener, sample finished wood blocks, brush.
-- `industrial_paint_hero.png` (1.73 MB): Studio render of industrial coating, thinner, metal primer, HVLP spray gun, steel I-beam.
+### 4.1 Typography Scaling Across Viewports
+```css
+/* Large Desktop (>=992px) */
+.h1 { font-size: 46px !important; font-weight: 300 !important; }
+.h2 { font-size: 30px !important; }
+.h3 { font-size: 22px !important; }
 
-### 6.2 Brand Identity Graphics
-- `royal_logo.png` (60.5 KB): High-resolution official dark brand logo with custom typography.
-- `royal_logo_white.png` (64.2 KB): High-contrast white version for the footer.
-- `royal_favicon.png` (2.1 KB): 32x32 high-DPI browser tab icon.
+/* Tablet (768px - 991px) */
+.h1 { font-size: 36px !important; }
+.h2 { font-size: 26px !important; }
+.h3 { font-size: 20px !important; }
 
-### 6.3 Supporting Product Assets
-- `royalpaint_hero_3.jpg` (243 KB): Division circular thumbnail for Automotive Refinish.
-- `royalpaint_hero_booth.jpg` (634 KB): Division circular thumbnail for Spray Booth.
-- `royalpaint_hero_marine.jpg` (770 KB): Division circular thumbnail for Marine & Yacht.
-- `royalpaint_hero_wood.jpg` (667 KB): Division circular thumbnail for Wood & Architectural.
+/* Mobile Devices (<768px) */
+.h1 { font-size: 28px !important; font-weight: 400 !important; }
+.h2 { font-size: 22px !important; }
+.h3 { font-size: 18px !important; }
+body, p, ul, li, div { font-size: 15px !important; line-height: 1.5 !important; }
+.badge-subtle { font-size: 12px !important; }
+```
 
----
-
-## 7. WhatsApp Integration & Lead Generation Matrix
-
-Every division is equipped with deep-linked pre-filled WhatsApp URLs formatted for instant client context:
-
-| Division / Feature | Destination Trigger | Pre-filled Message Text |
-| :--- | :--- | :--- |
-| **Top Nav / Header RFQ** | `+974 5039 5741` | `Hello Royal Auto Paints Qatar, I would like to request an RFQ` |
-| **Slide 1: Automotive** | `+974 5039 5741` | `Hello Royal Auto Paints, I am inquiring about Automotive Refinish products` |
-| **Slide 2: Paint Booth** | `+974 5039 5741` | `Hello Royal Auto Paints, I am inquiring about Commercial Paint Booths` |
-| **Slide 3: Marine & Yacht** | `+974 5039 5741` | `Hello Royal Auto Paints, I am inquiring about Marine and Yacht Coatings` |
-| **Slide 4: Wood & Arch** | `+974 5039 5741` | `Hello Royal Auto Paints, I am inquiring about Wood and Architectural Finishes` |
-| **Slide 5: Industrial** | `+974 5039 5741` | `Hello Royal Auto Paints, I am inquiring about Industrial Coatings and Primers` |
-| **Search Modal Fallback**| `+974 5039 5741` | `Hello Royal Auto Paints, I am inquiring about a product` |
+### 4.2 Gutter & Container Overflow Prevention
+- Changed non-responsive row gutters `g-5` (which create negative margins exceeding mobile container padding) to responsive gutters `g-4 g-lg-5`.
+- Verified using Chrome DevTools Protocol (CDP) headless Edge testing across viewports:
+  - Mobile (375px): `scrollWidth: 375`, `innerWidth: 375`, `overflowing: []` (0px overflow).
+  - Tablet (768px): `scrollWidth: 768`, `innerWidth: 768`, `overflowing: []` (0px overflow).
+  - Desktop (1280px): `scrollWidth: 1265`, `innerWidth: 1280`, `overflowing: []` (0px overflow).
 
 ---
 
-## 8. Quality Assurance & Regression Prevention Protocol
+## 5. Asset Organization & File Structure
 
-### 8.1 Automated Verification Script
-A dedicated headless Edge script (`verify_all_banners.js`) using the Chrome DevTools Protocol (CDP) validates every release:
-- Tests viewport rendering at standard desktop resolutions (1400x900).
-- Programmatically advances through all 5 carousel slides.
-- Confirms image loading, container alignment, font sizes, and absence of visual glitches.
-- Captures full-resolution verification screenshots saved directly to the artifact directory.
+To maintain a clean and production-grade codebase, product assets have been isolated into dedicated subdirectories:
+```
+E:\xev\royalautopaints\
+├── css/
+│   ├── bootstrap.min.css
+│   ├── templatemo.css
+│   └── custom.css             (Zero drop shadow, responsive typography & badge overrides)
+├── docs/
+│   └── blueprint.md           (Architecture & Technical Specification)
+├── fonts/                     (FontAwesome assets)
+├── images/
+│   ├── products/              (83 authentic product images)
+│   ├── royal_logo.png         (44px official brand logo)
+│   ├── royal_logo_white.png   (Footer brand logo)
+│   ├── automotive_hero.png    (Slide 1 studio render)
+│   ├── paint_booth_hero.png   (Slide 2 studio render)
+│   ├── marine_paint_hero.png  (Slide 3 studio render)
+│   ├── wood_finishing_hero.png(Slide 4 studio render)
+│   ├── industrial_paint_hero.png (Slide 5 studio render)
+│   ├── auth.jpg               (Challenger & HB Body authorized dealer feature)
+│   └── ...                    (Division & service thumbnails, brand logos)
+├── js/
+│   ├── bootstrap.bundle.min.js
+│   ├── templatemo.js
+│   └── custom.js              (Interactive product filtering, mobile menu auto-close)
+├── products/                  (Directory junction pointing to images/products/)
+├── index.html                 (Main responsive landing page)
+└── README.md
+```
 
-### 8.2 Strict Architectural Rules (No Regressions)
-1. **Never Reintroduce Inline Heights on Banner Images:** Do not place `style="max-height: ..."` or `object-fit: cover` on hero banner images. The images must scale naturally via Bootstrap’s `.img-fluid`.
-2. **Never Reintroduce Drop Shadows:** No `shadow`, `shadow-sm`, or `box-shadow` styles may be added. Flat minimalist borders (`1px solid #e9ecef`) must be maintained.
-3. **Never Restrict the Navbar Container:** The navigation bar must always sit inside a standard `.container` with `.navbar-nav` constrained to `550px` on desktop.
-4. **Preserve Authentic Doha Location:** Never alter Street 23, Wakalat St, Industrial Area, Doha, Qatar or the verified phone numbers (`+974 4450 1669`, `+974 5039 5741`).
+---
+
+## 6. Verification & Quality Assurance Protocol
+
+Automated headless Edge test scripts validate each build:
+- `scratch/test_responsive.js`: Verifies viewport dimensions, element bounds, and horizontal scrolling across 375px, 768px, and 1280px viewports.
+- `scratch/test_full_page.js`: Tests interactive product filtering, mobile menu toggling, and captures high-resolution screenshots for all sections.
+- `scratch/test_nav.js`: Verifies that clicking any link in the mobile navigation drawer auto-closes the drawer and scrolls smoothly to the destination section.
