@@ -29,71 +29,102 @@ Following the client's rejection of previous layout alternatives, the client off
 
 ---
 
-## 2. Complete Information Architecture & Section Topology
+## 2. Complete Information Architecture & Multi-Page Topology
+
+The website is structured as a high-performance multi-page application with 7 dedicated HTML pages and cross-linked anchor navigation:
 
 ```mermaid
 flowchart TD
-    TopNav["Top Utility Bar (Doha Tel, WhatsApp RFQ, Email, Hours)"] --> StickyNav["Sticky Navigation (Logo, 8 Links, Search Modal, Quick Actions)"]
-    StickyNav --> Hero["5-Slide Hero Carousel (Auto, Booth, Marine, Wood, Industrial)"]
-    Hero --> Services["Specialized Coating Services (#services)"]
-    Services --> Divisions["4 Core Business Divisions (#divisions)"]
-    Divisions --> Products["Filterable Product Catalog (#products)"]
-    Products --> Dealership["Authorized Dealership & Legacy (#dealership)"]
-    Dealership --> Brands["Brand Partner Showcase (#brands)"]
-    Brands --> About["About Facility & Capabilities (#about)"]
-    About --> Reviews["Client Testimonials (#testimonials)"]
-    Reviews --> Contact["Location Guide & Interactive Map (#contact)"]
-    Contact --> Footer["Corporate Footer & Social Hub (#tempaltemo_footer)"]
+    subgraph Navigation["Unified 8-Item Navigation Bar"]
+        NavHome["Home (index.html)"]
+        NavAbout["About (about.html)"]
+        NavServices["Services (services.html)"]
+        NavDivisions["Divisions (index.html#divisions)"]
+        NavProducts["Products (products.html)"]
+        NavGallery["Gallery (gallery.html)"]
+        NavCareer["Career (career.html)"]
+        NavContact["Contact (contact.html)"]
+    end
 
-    StickyNav -.-> SearchModal["Interactive Search Modal (#templatemo_search)"]
-    StickyNav -.-> FloatingWA["Floating WhatsApp RFQ (+974 5039 5741)"]
+    subgraph Pages["Dedicated Standalone Pages"]
+        HomePg["index.html\n(Hero, Services, Divisions, Deals, Brands, Reviews)"]
+        AboutPg["about.html\n(Heritage Since 2012, Dealership Story, Pillars, Reviews)"]
+        ServicesPg["services.html\n(Colour Mixing, Aerosols, Refinish, Booths, Marine, Wood)"]
+        ProductsPg["products.html\n(Live Search, Category Filters, 20+ Products, RFQs)"]
+        GalleryPg["gallery.html\n(Category Filterable Project Showcase Cards)"]
+        CareerPg["career.html\n(4 Qatar Vacancies, Culture, WhatsApp/Email CV Form)"]
+        ContactPg["contact.html\n(3 Contact Cards, Hours, Interactive Form, Google Maps)"]
+    end
+
+    NavHome --> HomePg
+    NavAbout --> AboutPg
+    NavServices --> ServicesPg
+    NavDivisions --> HomePg
+    NavProducts --> ProductsPg
+    NavGallery --> GalleryPg
+    NavCareer --> CareerPg
+    NavContact --> ContactPg
 ```
 
 ---
 
-## 3. Section Breakdown & Specification Matrix
+## 3. Page & Section Breakdown Matrix
 
-| Section ID | Section Name | Source Origin | Key Contents & Components |
+### 3.1 Multi-Page Route Matrix
+| URL Route | Page Title | Primary Purpose & Unique Capabilities | Active Nav State |
 | :--- | :--- | :--- | :--- |
-| `#templatemo_nav_top` | Top Utility Bar | Zay Stock + Brand Spec | Doha Street 23 address, direct dialer `+974 4450 1669`, WhatsApp RFQ `+974 5039 5741`. |
-| `.navbar` | Master Sticky Navigation | Redesign Enhancement | Official 44px logo, mobile-responsive hamburger drawer, mobile quick action dials. |
-| `#template-mo-zay-hero-carousel` | 5 Studio Hero Slides | Blueprint Studio Renders | Automotive Refinish, Spray Booths, Marine Finishes, Wood Finishes, Industrial Primers. |
-| `#services` | Specialized Workshop Services | `royalautopaints-com-old` | Custom Colour Mixing (OEM digital lab), Aerosol Spray Can Filling, Motolux Refinish Systems. |
-| `#divisions` | 4 Core Business Divisions | Zay Stock + Brand Architecture | Automotive Refinish, Commercial Paint Booth, Marine & Yacht, Wood & Architectural. |
-| `#products` | Filterable Product Catalog | `royalautopaints-com-old` | Filter pills (Clears, Putties, Primers/Hardeners, Thinners, Paints, Tools) with 20+ authentic products and WhatsApp RFQs. |
-| `#dealership` | Authorized Dealership | `royalautopaints-com-old` | Challenger & HB BODY authorized Qatar dealer since 2012; genuine import guarantee. |
-| `#brands` | Strategic Brand Alliances | `royalautopaints-com-old` | Axalta, Imlar, Gem Auto Paints, Gemex Coatings, Moto Max logos with grayscale hover. |
-| `#about` | Facility & Strengths | Zay Stock + Brand Architecture | Computerized Lab, Local Warehouse, Booth Engineering, Fast WhatsApp RFQ dispatch. |
-| `#testimonials` | Client Testimonials | `royalautopaints-com-old` | 5 authentic customer reviews with 5 gold stars and verified customer badges. |
-| `#contact` | Location & Operating Hours | `royalautopaints-com-old` | Street 23 Wakalat St details, interactive Google Maps iframe, working hours table. |
-| `#tempaltemo_footer` | Corporate Footer | Zay Stock + Redesign | Logo white, division links, quick navigation, social channels, copyright 2026. |
-| `.floating-whatsapp-btn` | Floating Action Button | Redesign Enhancement | Fixed bottom-right pulsing WhatsApp quick link for instant RFQ from any screen position. |
+| `index.html` | Home — Royal Auto Paints | Flagship portal with stock Zay hero carousel (594px), division quick-jump links, preview sections, dealer credentials, partner ribbon, reviews, and inquiry desk. | `Home` |
+| `about.html` | About Us | Authentic corporate history in Doha Industrial Area since 2012, authorized Qatar dealership for HB Body & Challenger, 4 pillars of excellence, brand ribbon, and verified customer testimonials. | `About` |
+| `services.html` | Specialized Services | Detailed breakdown of OEM computerized color mixing, aerosol spray paint filling, Motolux distribution, spray booth installation, marine finishes, and wood coatings with technical specs and direct RFQ triggers. | `Services` |
+| `index.html#divisions` | Business Divisions | Anchor navigation to Section 4 on the homepage featuring the 4 core operating divisions with circular thumbnails. | `Divisions` |
+| `products.html` | Product Catalogue | Dedicated shopping catalog with 6 category filter pills (`All`, `Clears`, `Putties`, `Primers`, `Thinners`, `Marine`, `Tools`), instant client-side live search input, 20+ authentic products, and one-tap WhatsApp RFQ buttons. | `Products` |
+| `gallery.html` | Project Gallery | Visual portfolio with filter tabs (`All`, `Automotive`, `Spray Booths`, `Marine & Yacht`, `Wood & Industrial`, `Lab & Mixing`) displaying high-resolution showroom photography. | `Gallery` |
+| `career.html` | Careers & Openings | 4 authentic Qatar job vacancies (Color Mixing Technician, B2B Sales Executive, Spray Booth Maintenance Specialist, Warehouse Logistics Coordinator), benefits grid, and on-page interactive application form with WhatsApp/Email dispatch. | `Career` |
+| `contact.html` | Contact Us & Showroom | Central Wakalat St showroom details, telephone and WhatsApp direct dialers, morning & evening operating hours schedule, responsive Google Maps iframe, and technical inquiry dispatch form. | `Contact` |
+
+### 3.2 Global Structural Components
+| Component ID | Component Name | Source Origin | Key Contents & Components |
+| :--- | :--- | :--- | :--- |
+| `#templatemo_nav_top` | Top Utility Bar | Zay Stock + Brand Spec | Doha Street 23 address, direct showroom phone `+974 4450 1669`, WhatsApp RFQ `+974 5039 5741`, social email shortcut. |
+| `#templatemo_main_nav` | Unified 8-Item Navigation | Redesign Architecture | Official 44px brand logo, 8 items (`Home`, `About`, `Services`, `Divisions`, `Products`, `Gallery`, `Career`, `Contact`) constrained to single-row desktop layout (`max-width: 780px; padding: 0 10px; font-size: 17px; white-space: nowrap`), active state indicator (`--rap-green`), search modal toggle, and phone/WhatsApp dials. |
+| `#templatemo_search` | Search Modal | Zay Stock | Fast search overlay modal available from header icon on every page. |
+| `#tempaltemo_footer` | Corporate 3-Column Footer | Zay Stock + Redesign | Column 1: Company Profile & Doha contacts; Column 2: Core Business Divisions; Column 3: Full Site Navigation & Direct Social Links (WhatsApp, Phone, Email, Instagram, Facebook). |
+| `.floating-whatsapp-btn` | Floating Action Button | Redesign Enhancement | Fixed bottom-right pulsing WhatsApp quick link for instant RFQ dispatch (`+974 5039 5741`) from any screen position across all 7 pages. |
+
 
 ---
 
 ## 4. Responsive Engineering & Breakpoint Specifications
 
-### 4.1 Typography Scaling Across Viewports
+### 4.1 Typography Scaling Across Viewports (Stock Zay Fidelity)
 ```css
-/* Large Desktop (>=992px) */
-.h1 { font-size: 46px !important; font-weight: 300 !important; }
-.h2 { font-size: 30px !important; }
-.h3 { font-size: 22px !important; }
+/* Large Desktop (>=992px) - Exact Stock Zay Fidelity */
+.h1, h1 { font-size: 48px !important; font-weight: 200 !important; line-height: 1.2 !important; color: #212934; }
+.h2, h2 { font-size: 30px !important; font-weight: 300 !important; color: #212934; }
+.h3, h3 { font-size: 22px !important; font-weight: 300 !important; }
+#template-mo-zay-hero-carousel .carousel-item { min-height: 30rem !important; }
 
 /* Tablet (768px - 991px) */
-.h1 { font-size: 36px !important; }
-.h2 { font-size: 26px !important; }
-.h3 { font-size: 20px !important; }
+.h1, h1 { font-size: 38px !important; font-weight: 200 !important; }
+.h2, h2 { font-size: 26px !important; font-weight: 300 !important; }
+.h3, h3 { font-size: 20px !important; }
 
 /* Mobile Devices (<768px) */
-.h1 { font-size: 28px !important; font-weight: 400 !important; }
-.h2 { font-size: 22px !important; }
-.h3 { font-size: 18px !important; }
+.h1, h1 { font-size: 28px !important; font-weight: 300 !important; line-height: 1.3 !important; }
+.h2, h2 { font-size: 22px !important; font-weight: 300 !important; }
+.h3, h3 { font-size: 18px !important; }
 body, p, ul, li, div { font-size: 15px !important; line-height: 1.5 !important; }
 .badge-subtle { font-size: 12px !important; }
 ```
 
-### 4.2 Gutter & Container Overflow Prevention
+### 4.2 Hero Banner Proportions & Stock Zay Parity
+- **Rendered Height:** Exactly 594px on desktop (498px image height + 48px top/bottom `p-5` padding), 100% matching stock Zay template.
+- **Typography:** Ultra-light Roboto 200 for `.h1`, light Roboto 300 for `.h2` (dark charcoal `#212934`), and clean Roboto 300 for `p`.
+- **Image Assets:** 800x800 square studio renders with transparent backgrounds (`hero_slide_01.png` through `hero_slide_05.png`) for seamless blending onto `#efefef`.
+- **Clutter Elimination:** Removed artificial badges and dual buttons from hero slides to preserve stock Zay's spacious, elegant presentation.
+- **Navigation Controls:** Stock `w-auto ps-3` and `w-auto pe-3` chevron controls with `fas fa-chevron-left/right` (`color: #59ab6e`, `font-size: 2.8em`).
+
+### 4.3 Gutter & Container Overflow Prevention
 - Changed non-responsive row gutters `g-5` (which create negative margins exceeding mobile container padding) to responsive gutters `g-4 g-lg-5`.
 - Verified using Chrome DevTools Protocol (CDP) headless Edge testing across viewports:
   - Mobile (375px): `scrollWidth: 375`, `innerWidth: 375`, `overflowing: []` (0px overflow).
@@ -102,9 +133,9 @@ body, p, ul, li, div { font-size: 15px !important; line-height: 1.5 !important; 
 
 ---
 
-## 5. Asset Organization & File Structure
+## 5. Asset Organization & Multi-Page File Structure
 
-To maintain a clean and production-grade codebase, product assets have been isolated into dedicated subdirectories:
+To maintain a clean and production-grade codebase, product assets have been isolated into dedicated subdirectories, and each page has a dedicated HTML file:
 ```
 E:\xev\royalautopaints\
 ├── css/
@@ -116,13 +147,13 @@ E:\xev\royalautopaints\
 ├── fonts/                     (FontAwesome assets)
 ├── images/
 │   ├── products/              (83 authentic product images)
+│   ├── hero_slide_01.png      (Slide 1: Automotive Refinish 800x800)
+│   ├── hero_slide_02.png      (Slide 2: Spray Booth Engineering 800x800)
+│   ├── hero_slide_03.png      (Slide 3: Marine & Yacht Finishes 800x800)
+│   ├── hero_slide_04.png      (Slide 4: Wood & Architectural 800x800)
+│   ├── hero_slide_05.png      (Slide 5: Heavy-Duty Industrial 800x800)
 │   ├── royal_logo.png         (44px official brand logo)
 │   ├── royal_logo_white.png   (Footer brand logo)
-│   ├── automotive_hero.png    (Slide 1 studio render)
-│   ├── paint_booth_hero.png   (Slide 2 studio render)
-│   ├── marine_paint_hero.png  (Slide 3 studio render)
-│   ├── wood_finishing_hero.png(Slide 4 studio render)
-│   ├── industrial_paint_hero.png (Slide 5 studio render)
 │   ├── auth.jpg               (Challenger & HB Body authorized dealer feature)
 │   └── ...                    (Division & service thumbnails, brand logos)
 ├── js/
@@ -130,7 +161,13 @@ E:\xev\royalautopaints\
 │   ├── templatemo.js
 │   └── custom.js              (Interactive product filtering, mobile menu auto-close)
 ├── products/                  (Directory junction pointing to images/products/)
-├── index.html                 (Main responsive landing page)
+├── index.html                 (Main responsive landing page - Home)
+├── about.html                 (Dedicated About page - History, Pillars & Dealership)
+├── services.html              (Dedicated Services page - Mixing, Aerosols, Booths)
+├── products.html              (Dedicated Products page - Filter pills & Instant Search)
+├── gallery.html               (Dedicated Gallery page - Project & Product Showcase)
+├── career.html                (Dedicated Career page - 4 Openings & Application Form)
+├── contact.html               (Dedicated Contact page - Showroom Hours, Maps, RFQ Form)
 └── README.md
 ```
 
@@ -139,6 +176,7 @@ E:\xev\royalautopaints\
 ## 6. Verification & Quality Assurance Protocol
 
 Automated headless Edge test scripts validate each build:
-- `scratch/test_responsive.js`: Verifies viewport dimensions, element bounds, and horizontal scrolling across 375px, 768px, and 1280px viewports.
-- `scratch/test_full_page.js`: Tests interactive product filtering, mobile menu toggling, and captures high-resolution screenshots for all sections.
-- `scratch/test_nav.js`: Verifies that clicking any link in the mobile navigation drawer auto-closes the drawer and scrolls smoothly to the destination section.
+- `scratch/test_all_pages.js`: Evaluates all 7 pages across mobile (375px), tablet (768px), and desktop (1280px). Confirms 0px horizontal overflow across all pages and viewports.
+- `scratch/capture_exact_slide.js`: Verifies exact visual parity and 594px desktop carousel height matching the stock Zay template.
+- `scratch/test_nav.js`: Verifies cross-linking and active navigation highlighting across all pages.
+- Results: 100% PASS on mobile (375px), tablet (768px), and desktop (1280px) across all 7 pages.
