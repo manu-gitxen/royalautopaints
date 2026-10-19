@@ -34,14 +34,29 @@ img,
    2. Typography & Color System
    -------------------------------------------------------------------------- */
 :root {
-    --rap-green: #59ab6e;
-    --rap-green-hover: #4d9c61;
-    --rap-dark: #212934;
-    --rap-charcoal: #1d242d;
-    --rap-muted: #5a6472;
-    --rap-border: #e9ecef;
-    --rap-canvas: #efefef;
-    --rap-light-bg: #f8f9fa;
+    /* Royal Auto Paints Brand Palette (Extracted directly from official logo) */
+    --rap-primary: #09465f;        /* Deep Royal Oceanic Blue / Navy Teal (Main Logo Brand Color) */
+    --rap-primary-hover: #07364a;  /* Darker Navy for hovers & focus */
+    --rap-primary-dark: #052736;   /* Deep Navy for active states */
+    --rap-primary-light: #e8f3f8;  /* Soft Ice Blue wash for subtle badges & highlights */
+    --rap-primary-border: #b5d6e4; /* Complementary light blue border */
+
+    --rap-accent-orange: #f68c50;  /* Royal Paint Splash Orange (Logo Accent) */
+    --rap-accent-orange-hover: #e07a3e;
+    --rap-accent-orange-light: #fef4ee;
+
+    --rap-accent-yellow: #ffe05e;  /* Royal Solar Gold / Yellow (Logo Accent) */
+
+    --rap-dark: #212934;           /* Deep Charcoal Header/Heading Text */
+    --rap-charcoal: #58585a;       /* Slate Grey ("AUTO PAINTS" in logo) */
+    --rap-muted: #5a6472;          /* Body copy muted text */
+    --rap-border: #e9ecef;         /* Clean 1px card/divider borders */
+    --rap-canvas: #efefef;         /* TemplateMo light gray canvas */
+    --rap-light-bg: #f8f9fa;       /* Off-white section background */
+
+    /* Backward compatibility alias */
+    --rap-green: var(--rap-primary);
+    --rap-green-hover: var(--rap-primary-hover);
 }
 
 /* Global scroll hygiene */
@@ -68,9 +83,21 @@ html, body {
 }
 
 .badge-subtle {
-    background-color: #eaf6ee !important;
-    color: #24753c !important;
-    border: 1px solid #c2e5cc !important;
+    background-color: var(--rap-primary-light) !important;
+    color: var(--rap-primary) !important;
+    border: 1px solid var(--rap-primary-border) !important;
+    font-weight: 600 !important;
+    font-size: 12px !important;
+    padding: 3px 8px !important;
+    border-radius: 4px;
+    display: inline-block;
+    letter-spacing: 0.5px;
+}
+
+.badge-accent {
+    background-color: var(--rap-accent-orange-light) !important;
+    color: #c95c1c !important;
+    border: 1px solid #fcd5be !important;
     font-weight: 600 !important;
     font-size: 12px !important;
     padding: 3px 8px !important;
@@ -220,7 +247,7 @@ html, body {
     }
     #templatemo_main_nav .nav-link.active,
     #templatemo_main_nav .nav-link:hover {
-        color: var(--rap-green) !important;
+        color: var(--rap-primary) !important;
     }
 }
 
@@ -234,13 +261,22 @@ html, body {
 
 #template-mo-zay-hero-carousel .carousel-indicators li {
     margin-top: -50px;
-    background-color: var(--rap-green) !important;
+    background-color: var(--rap-primary) !important;
+}
+
+#template-mo-zay-hero-carousel .carousel-indicators li.active {
+    background-color: var(--rap-accent-orange) !important;
 }
 
 #template-mo-zay-hero-carousel .carousel-control-next i,
 #template-mo-zay-hero-carousel .carousel-control-prev i {
-    color: var(--rap-green) !important;
+    color: var(--rap-primary) !important;
     font-size: 2.8em !important;
+}
+
+#template-mo-zay-hero-carousel .carousel-control-next:hover i,
+#template-mo-zay-hero-carousel .carousel-control-prev:hover i {
+    color: var(--rap-accent-orange) !important;
 }
 
 /* --------------------------------------------------------------------------
@@ -253,7 +289,7 @@ html, body {
 
 .division-card:hover {
     transform: translateY(-4px);
-    border-color: var(--rap-green) !important;
+    border-color: var(--rap-primary) !important;
 }
 
 .division-thumb {
@@ -266,7 +302,7 @@ html, body {
 }
 
 .division-card:hover .division-thumb {
-    border-color: var(--rap-green);
+    border-color: var(--rap-primary);
 }
 
 /* --------------------------------------------------------------------------
@@ -280,7 +316,7 @@ html, body {
 
 .service-card:hover {
     transform: translateY(-4px);
-    border-color: var(--rap-green) !important;
+    border-color: var(--rap-primary) !important;
 }
 
 .service-img-wrap {
@@ -322,8 +358,8 @@ html, body {
 
 .product-filter-btn:hover,
 .product-filter-btn.active {
-    background-color: var(--rap-green) !important;
-    border-color: var(--rap-green) !important;
+    background-color: var(--rap-primary) !important;
+    border-color: var(--rap-primary) !important;
     color: #ffffff !important;
 }
 
@@ -335,7 +371,7 @@ html, body {
 
 .product-item:hover {
     transform: translateY(-3px);
-    border-color: var(--rap-green) !important;
+    border-color: var(--rap-primary) !important;
 }
 
 .product-item-img-wrap {
@@ -370,7 +406,7 @@ html, body {
 }
 
 .brand-partner-item:hover {
-    border-color: var(--rap-green);
+    border-color: var(--rap-primary);
 }
 
 .brand-partner-item img {
@@ -408,8 +444,56 @@ html, body {
 }
 
 .testimonial-stars {
-    color: #ffc107;
+    color: var(--rap-accent-orange);
     font-size: 14px;
+}
+
+/* Contrast enhancement for dark components (Top bar & Footer) using logo orange */
+#templatemo_nav_top .text-success,
+#tempaltemo_footer .text-success {
+    color: var(--rap-accent-orange) !important;
+}
+
+#tempaltemo_footer a:hover {
+    color: var(--rap-accent-orange) !important;
+}
+
+/* Custom Accent Orange Button */
+.btn-accent-orange {
+    background-color: var(--rap-accent-orange) !important;
+    border-color: var(--rap-accent-orange) !important;
+    color: #ffffff !important;
+}
+.btn-accent-orange:hover, .btn-accent-orange:focus {
+    background-color: var(--rap-accent-orange-hover) !important;
+    border-color: var(--rap-accent-orange-hover) !important;
+    color: #ffffff !important;
+}
+
+/* Branded Outline Buttons (Matching Logo Primary) */
+.btn-outline-success {
+    color: var(--rap-primary) !important;
+    border-color: var(--rap-primary) !important;
+    background-color: transparent !important;
+}
+.btn-outline-success:hover,
+.btn-outline-success:focus,
+.btn-outline-success:active {
+    background-color: var(--rap-primary) !important;
+    border-color: var(--rap-primary) !important;
+    color: #ffffff !important;
+}
+
+/* WhatsApp Icon Specificity */
+.fa-whatsapp {
+    color: #25D366;
+}
+.btn .fa-whatsapp,
+.floating-whatsapp-btn .fa-whatsapp {
+    color: inherit;
+}
+.btn-outline-success:hover .fa-whatsapp {
+    color: #ffffff !important;
 }
 
 .testimonial-text {

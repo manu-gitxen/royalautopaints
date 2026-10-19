@@ -16,7 +16,7 @@
 Following the client's rejection of previous layout alternatives, the client officially approved the clean, minimalist aesthetic of **TemplateMo 559 Zay Shop** (`zay_royal_paint_template_stock`).
 
 ### Strict Client Visual Guidelines:
-1. **Preserve Stock Visual Identity:** The Google font (`Roboto`), typography hierarchy, and clean white (`#ffffff`), light gray canvas (`#efefef`), and slate dark (`#212934`) palette from the stock template must be strictly preserved without unauthorized alterations.
+1. **Royal Auto Paints Logo Brand Palette:** Swapped the stock generic template green (`#59ab6e`) with the authentic Royal Auto Paints logo color system: Primary Royal Oceanic Blue (`#09465f`), Paint Splash Warm Orange (`#f68c50`), Solar Gold (`#ffe05e`), and Slate Charcoal (`#58585a` / `#212934`) over a clean white (`#ffffff`) and light gray canvas (`#efefef`). The Google font (`Roboto`) typography hierarchy is strictly maintained.
 2. **Zero Drop Shadows:** Complete elimination of artificial elevations, blurred shadows, and drop shadows (`box-shadow: none !important`). Crisp 1px borders (`#e9ecef`) provide all component separation.
 3. **Comprehensive Section Integration from Legacy Site (`royalautopaints-com-old`):** The stock template lacked crucial business sections present in the original website. These have been redesigned and integrated in complete visual harmony:
    - **Services Section:** Computerized Colour Mixing, Aerosol Can Filling, Motolux Refinish Distribution.
@@ -122,7 +122,7 @@ body, p, ul, li, div { font-size: 15px !important; line-height: 1.5 !important; 
 - **Typography:** Ultra-light Roboto 200 for `.h1`, light Roboto 300 for `.h2` (dark charcoal `#212934`), and clean Roboto 300 for `p`.
 - **Image Assets:** 800x800 square studio renders with transparent backgrounds (`hero_slide_01.png` through `hero_slide_05.png`) for seamless blending onto `#efefef`.
 - **Clutter Elimination:** Removed artificial badges and dual buttons from hero slides to preserve stock Zay's spacious, elegant presentation.
-- **Navigation Controls:** Stock `w-auto ps-3` and `w-auto pe-3` chevron controls with `fas fa-chevron-left/right` (`color: #59ab6e`, `font-size: 2.8em`).
+- **Navigation Controls:** Stock `w-auto ps-3` and `w-auto pe-3` chevron controls with `fas fa-chevron-left/right` (`color: #09465f`, hover: `#f68c50`, `font-size: 2.8em`).
 
 ### 4.3 Gutter & Container Overflow Prevention
 - Changed non-responsive row gutters `g-5` (which create negative margins exceeding mobile container padding) to responsive gutters `g-4 g-lg-5`.
