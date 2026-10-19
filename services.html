@@ -40,10 +40,9 @@
                     </span>
                 </div>
                 <div class="d-flex align-items-center">
-                    <span class="small text-muted me-3">Direct Inquiries:</span>
-                    <a class="text-light me-2" href="https://wa.me/97450395741" target="_blank" title="WhatsApp Inquiry"><i class="fab fa-whatsapp"></i></a>
-                    <a class="text-light me-2" href="tel:+97444501669" title="Call Showroom"><i class="fa fa-phone"></i></a>
-                    <a class="text-light" href="mailto:info@royalautopaints.com" title="Email Desk"><i class="fa fa-envelope"></i></a>
+                    <a class="navbar-sm-brand text-light text-decoration-none small" href="mailto:info@royalautopaints.com" title="Email Royal Auto Paints">
+                        <i class="fa fa-envelope fa-sm fa-fw me-2 text-light"></i>info@royalautopaints.com
+                    </a>
                 </div>
             </div>
         </div>
@@ -60,14 +59,9 @@
 
             <!-- Mobile Quick Actions & Hamburger -->
             <div class="d-flex align-items-center d-lg-none mobile-header-actions">
-                <a class="nav-icon text-decoration-none text-dark" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
-                    <i class="fa fa-fw fa-search"></i>
-                </a>
-                <a class="nav-icon text-decoration-none text-success" href="https://wa.me/97450395741" target="_blank">
-                    <i class="fab fa-fw fa-whatsapp"></i>
-                </a>
-                <a class="nav-icon text-decoration-none text-dark" href="tel:+97444501669">
-                    <i class="fa fa-fw fa-phone"></i>
+                <a href="tel:+97444501669" class="btn-call-pill text-decoration-none me-2" title="Call Showroom: +974 4450 1669">
+                    <i class="fa fa-phone me-1 me-sm-2"></i>
+                    <span>Call Us</span>
                 </a>
                 <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="templatemo_main_nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -88,9 +82,6 @@
                             <a class="nav-link active" href="services.html">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html#divisions">Divisions</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="products.html">Products</a>
                         </li>
                         <li class="nav-item">
@@ -105,16 +96,11 @@
                     </ul>
                 </div>
 
-                <!-- Desktop Action Icons -->
+                <!-- Desktop Call Action -->
                 <div class="navbar align-self-center d-none d-lg-flex">
-                    <a class="nav-icon text-decoration-none me-3" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search" title="Search Catalogue">
-                        <i class="fa fa-fw fa-search text-dark"></i>
-                    </a>
-                    <a class="nav-icon text-decoration-none me-3" href="https://wa.me/97450395741?text=Hello%20Royal%20Auto%20Paints%20Qatar%2C%20I%20would%20like%20to%20request%20an%20RFQ" target="_blank" title="WhatsApp RFQ">
-                        <i class="fab fa-fw fa-whatsapp text-success fa-lg"></i>
-                    </a>
-                    <a class="nav-icon text-decoration-none" href="tel:+97444501669" title="Call: +974 4450 1669">
-                        <i class="fa fa-fw fa-phone text-dark"></i>
+                    <a href="tel:+97444501669" class="btn-call-pill text-decoration-none" title="Call Showroom: +974 4450 1669">
+                        <i class="fa fa-phone me-2"></i>
+                        <span>Call Us</span>
                     </a>
                 </div>
             </div>
@@ -163,18 +149,26 @@
 
             <!-- Service 1: Custom Colour Mixing -->
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 service-card bg-white">
-                    <div class="service-img-wrap">
-                        <img src="images/20230326070959.png" alt="Custom Colour Mixing Doha Qatar" class="img-fluid">
+                <div class="card h-100 service-modern-card bg-white">
+                    <div class="service-card-img-wrap">
+                        <img src="images/service_card_color_mixing.png" alt="Custom Colour Mixing Doha Qatar" class="service-card-img">
                     </div>
-                    <div class="card-body p-4 d-flex flex-column">
-                        <span class="badge-subtle mb-2 align-self-start">Computerized Lab</span>
-                        <h3 class="h4 text-dark mb-2">Custom Colour Mixing</h3>
-                        <p class="text-muted small flex-grow-1">
-                            High-precision computerized automotive color matching using advanced spectrophotometer technology. We formulate exact OEM shades for European, American, Japanese, and Korean vehicles with test spray-out validation cards.
-                        </p>
-                        <a href="https://wa.me/97450395741?text=Hello%20Royal%20Auto%20Paints%2C%20I%20am%20inquiring%20about%20Custom%20Colour%20Mixing%20Service" target="_blank" class="btn btn-outline-success btn-sm mt-3 w-100">
-                            <i class="fab fa-whatsapp me-2"></i> Inquire via WhatsApp
+                    <div class="service-floating-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="card-body service-card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h3 class="service-card-title text-dark">Custom Colour Mixing</h3>
+                            <p class="service-card-text text-muted small">
+                                High-precision computerized automotive color matching using advanced spectrophotometer technology. We formulate exact OEM shades for European, American, Japanese, and Korean vehicles with test spray-out validation cards.
+                            </p>
+                        </div>
+                        <a href="https://wa.me/97450395741?text=Hello%20Royal%20Auto%20Paints%2C%20I%20am%20inquiring%20about%20Custom%20Colour%20Mixing%20Service" target="_blank" class="service-inquiry-btn btn w-100">
+                            <span class="d-flex align-items-center">
+                                <i class="fab fa-whatsapp me-2 text-whatsapp fs-5"></i>
+                                <span class="service-btn-label">Inquiry Color Mixing</span>
+                            </span>
+                            <i class="fas fa-arrow-right service-btn-arrow"></i>
                         </a>
                     </div>
                 </div>
@@ -182,18 +176,26 @@
 
             <!-- Service 2: Aerosol Spray Paint Filling -->
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 service-card bg-white">
-                    <div class="service-img-wrap">
-                        <img src="images/20230326071123.png" alt="Aerosol Spray Paint Filling Qatar" class="img-fluid">
+                <div class="card h-100 service-modern-card bg-white">
+                    <div class="service-card-img-wrap">
+                        <img src="images/service_card_aerosol.png" alt="Aerosol Spray Paint Filling Qatar" class="service-card-img">
                     </div>
-                    <div class="card-body p-4 d-flex flex-column">
-                        <span class="badge-subtle mb-2 align-self-start">Packaging Lab</span>
-                        <h3 class="h4 text-dark mb-2">Aerosol Spray Paint Filling</h3>
-                        <p class="text-muted small flex-grow-1">
-                            Same-day custom aerosol can filling for professional body shops, detailing centers, and DIY enthusiasts. We package pre-mixed automotive, industrial, and architectural paints into pressurized spray cans with precision fan nozzles.
-                        </p>
-                        <a href="https://wa.me/97450395741?text=Hello%20Royal%20Auto%20Paints%2C%20I%20am%20inquiring%20about%20Aerosol%20Spray%20Filling%20Service" target="_blank" class="btn btn-outline-success btn-sm mt-3 w-100">
-                            <i class="fab fa-whatsapp me-2"></i> Inquire via WhatsApp
+                    <div class="service-floating-icon">
+                        <i class="fas fa-spray-can"></i>
+                    </div>
+                    <div class="card-body service-card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h3 class="service-card-title text-dark">Aerosol Spray Paint Filling</h3>
+                            <p class="service-card-text text-muted small">
+                                Same-day custom aerosol can filling for professional body shops, detailing centers, and DIY enthusiasts. We package pre-mixed automotive, industrial, and architectural paints into pressurized spray cans with precision fan nozzles.
+                            </p>
+                        </div>
+                        <a href="https://wa.me/97450395741?text=Hello%20Royal%20Auto%20Paints%2C%20I%20am%20inquiring%20about%20Aerosol%20Spray%20Filling%20Service" target="_blank" class="service-inquiry-btn btn w-100">
+                            <span class="d-flex align-items-center">
+                                <i class="fab fa-whatsapp me-2 text-whatsapp fs-5"></i>
+                                <span class="service-btn-label">Inquiry Aerosol Filling</span>
+                            </span>
+                            <i class="fas fa-arrow-right service-btn-arrow"></i>
                         </a>
                     </div>
                 </div>
@@ -201,18 +203,26 @@
 
             <!-- Service 3: Motolux & HB Body Systems -->
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 service-card bg-white">
-                    <div class="service-img-wrap">
-                        <img src="images/20230428125507.png" alt="Motolux Refinish Systems Qatar" class="img-fluid">
+                <div class="card h-100 service-modern-card bg-white">
+                    <div class="service-card-img-wrap">
+                        <img src="images/service_card_motolux.png" alt="Motolux Refinish Systems Qatar" class="service-card-img">
                     </div>
-                    <div class="card-body p-4 d-flex flex-column">
-                        <span class="badge-subtle mb-2 align-self-start">Refinish Systems</span>
-                        <h3 class="h4 text-dark mb-2">Motolux &amp; HB Body Refinish</h3>
-                        <p class="text-muted small flex-grow-1">
-                            Complete wholesale and retail supply of Motolux, HB Body, and Challenger automotive refinish systems. High-solids 2K clear coats, HS hardeners, zinc-rich polyester putties, and professional surface prep thinners.
-                        </p>
-                        <a href="https://wa.me/97450395741?text=Hello%20Royal%20Auto%20Paints%2C%20I%20am%20inquiring%20about%20Motolux%20and%20HB%20Body%20Systems" target="_blank" class="btn btn-outline-success btn-sm mt-3 w-100">
-                            <i class="fab fa-whatsapp me-2"></i> Inquire via WhatsApp
+                    <div class="service-floating-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="card-body service-card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h3 class="service-card-title text-dark">Motolux &amp; HB Body Refinish</h3>
+                            <p class="service-card-text text-muted small">
+                                Complete wholesale and retail supply of Motolux, HB Body, and Challenger automotive refinish systems. High-solids 2K clear coats, HS hardeners, zinc-rich polyester putties, and professional surface prep thinners.
+                            </p>
+                        </div>
+                        <a href="https://wa.me/97450395741?text=Hello%20Royal%20Auto%20Paints%2C%20I%20am%20inquiring%20about%20Motolux%20and%20HB%20Body%20Systems" target="_blank" class="service-inquiry-btn btn w-100">
+                            <span class="d-flex align-items-center">
+                                <i class="fab fa-whatsapp me-2 text-whatsapp fs-5"></i>
+                                <span class="service-btn-label">Inquiry Motolux</span>
+                            </span>
+                            <i class="fas fa-arrow-right service-btn-arrow"></i>
                         </a>
                     </div>
                 </div>
@@ -220,18 +230,26 @@
 
             <!-- Service 4: Spray Booth Engineering -->
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 service-card bg-white">
-                    <div class="service-img-wrap">
-                        <img src="images/hero_slide_02.png" alt="Spray Booth Engineering Support" class="img-fluid p-3 bg-light">
+                <div class="card h-100 service-modern-card bg-white">
+                    <div class="service-card-img-wrap">
+                        <img src="images/hero_slide_02.png" alt="Spray Booth Engineering Support" class="service-card-img p-2 bg-light" style="object-fit: contain;">
                     </div>
-                    <div class="card-body p-4 d-flex flex-column">
-                        <span class="badge-subtle mb-2 align-self-start">Booth Engineering</span>
-                        <h3 class="h4 text-dark mb-2">Spray Booth Media &amp; Support</h3>
-                        <p class="text-muted small flex-grow-1">
-                            Comprehensive downdraft paint booth filtration solutions: European ceiling diffusion media, paint stop glass fiber floor filters, pre-filtration rolls, burner maintenance, and safety extraction equipment.
-                        </p>
-                        <a href="https://wa.me/97450395741?text=Hello%20Royal%20Auto%20Paints%2C%20I%20am%20inquiring%20about%20Spray%20Booth%20Filtration%20and%20Engineering" target="_blank" class="btn btn-outline-success btn-sm mt-3 w-100">
-                            <i class="fab fa-whatsapp me-2"></i> Inquire via WhatsApp
+                    <div class="service-floating-icon">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <div class="card-body service-card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h3 class="service-card-title text-dark">Spray Booth Media &amp; Support</h3>
+                            <p class="service-card-text text-muted small">
+                                Comprehensive downdraft paint booth filtration solutions: European ceiling diffusion media, paint stop glass fiber floor filters, pre-filtration rolls, burner maintenance, and safety extraction equipment.
+                            </p>
+                        </div>
+                        <a href="https://wa.me/97450395741?text=Hello%20Royal%20Auto%20Paints%2C%20I%20am%20inquiring%20about%20Spray%20Booth%20Filtration%20and%20Engineering" target="_blank" class="service-inquiry-btn btn w-100">
+                            <span class="d-flex align-items-center">
+                                <i class="fab fa-whatsapp me-2 text-whatsapp fs-5"></i>
+                                <span class="service-btn-label">Inquiry Booth Media</span>
+                            </span>
+                            <i class="fas fa-arrow-right service-btn-arrow"></i>
                         </a>
                     </div>
                 </div>
@@ -239,18 +257,26 @@
 
             <!-- Service 5: Marine & Yacht Finishing -->
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 service-card bg-white">
-                    <div class="service-img-wrap">
-                        <img src="images/hero_slide_03.png" alt="Marine Yacht Finishing Support" class="img-fluid p-3 bg-light">
+                <div class="card h-100 service-modern-card bg-white">
+                    <div class="service-card-img-wrap">
+                        <img src="images/hero_slide_03.png" alt="Marine Yacht Finishing Support" class="service-card-img p-2 bg-light" style="object-fit: contain;">
                     </div>
-                    <div class="card-body p-4 d-flex flex-column">
-                        <span class="badge-subtle mb-2 align-self-start">Marine Coatings</span>
-                        <h3 class="h4 text-dark mb-2">Marine &amp; Yacht Finishing</h3>
-                        <p class="text-muted small flex-grow-1">
-                            Technical specification and supply of Sea-Line certified marine finishes: 2K epoxy barrier primers, high-build anti-fouling coatings, and high-gloss yacht polyurethane topcoats engineered for extreme Arabian Gulf salinity.
-                        </p>
-                        <a href="https://wa.me/97450395741?text=Hello%20Royal%20Auto%20Paints%2C%20I%20am%20inquiring%20about%20Marine%20and%20Yacht%20Coatings" target="_blank" class="btn btn-outline-success btn-sm mt-3 w-100">
-                            <i class="fab fa-whatsapp me-2"></i> Inquire via WhatsApp
+                    <div class="service-floating-icon">
+                        <i class="fas fa-ship"></i>
+                    </div>
+                    <div class="card-body service-card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h3 class="service-card-title text-dark">Marine &amp; Yacht Finishing</h3>
+                            <p class="service-card-text text-muted small">
+                                Technical specification and supply of Sea-Line certified marine finishes: 2K epoxy barrier primers, high-build anti-fouling coatings, and high-gloss yacht polyurethane topcoats engineered for extreme Arabian Gulf salinity.
+                            </p>
+                        </div>
+                        <a href="https://wa.me/97450395741?text=Hello%20Royal%20Auto%20Paints%2C%20I%20am%20inquiring%20about%20Marine%20and%20Yacht%20Coatings" target="_blank" class="service-inquiry-btn btn w-100">
+                            <span class="d-flex align-items-center">
+                                <i class="fab fa-whatsapp me-2 text-whatsapp fs-5"></i>
+                                <span class="service-btn-label">Inquiry Marine Yacht</span>
+                            </span>
+                            <i class="fas fa-arrow-right service-btn-arrow"></i>
                         </a>
                     </div>
                 </div>
@@ -258,18 +284,26 @@
 
             <!-- Service 6: Wood & Architectural Finishes -->
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 service-card bg-white">
-                    <div class="service-img-wrap">
-                        <img src="images/hero_slide_04.png" alt="Wood & Architectural Coatings" class="img-fluid p-3 bg-light">
+                <div class="card h-100 service-modern-card bg-white">
+                    <div class="service-card-img-wrap">
+                        <img src="images/hero_slide_04.png" alt="Wood & Architectural Coatings" class="service-card-img p-2 bg-light" style="object-fit: contain;">
                     </div>
-                    <div class="card-body p-4 d-flex flex-column">
-                        <span class="badge-subtle mb-2 align-self-start">Wood Coatings</span>
-                        <h3 class="h4 text-dark mb-2">Wood &amp; Joinery Industrial Finishes</h3>
-                        <p class="text-muted small flex-grow-1">
-                            Premium polyurethane wood lacquers, non-yellowing clear coats, interior stains, fast-drying hardeners, and exterior architectural coatings for joinery, luxury interior fit-outs, and commercial developments across Doha.
-                        </p>
-                        <a href="https://wa.me/97450395741?text=Hello%20Royal%20Auto%20Paints%2C%20I%20am%20inquiring%20about%20Wood%20and%20Architectural%20Coatings" target="_blank" class="btn btn-outline-success btn-sm mt-3 w-100">
-                            <i class="fab fa-whatsapp me-2"></i> Inquire via WhatsApp
+                    <div class="service-floating-icon">
+                        <i class="fas fa-couch"></i>
+                    </div>
+                    <div class="card-body service-card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h3 class="service-card-title text-dark">Wood &amp; Joinery Industrial Finishes</h3>
+                            <p class="service-card-text text-muted small">
+                                Premium polyurethane wood lacquers, non-yellowing clear coats, interior stains, fast-drying hardeners, and exterior architectural coatings for joinery, luxury interior fit-outs, and commercial developments across Doha.
+                            </p>
+                        </div>
+                        <a href="https://wa.me/97450395741?text=Hello%20Royal%20Auto%20Paints%2C%20I%20am%20inquiring%20about%20Wood%20and%20Architectural%20Coatings" target="_blank" class="service-inquiry-btn btn w-100">
+                            <span class="d-flex align-items-center">
+                                <i class="fab fa-whatsapp me-2 text-whatsapp fs-5"></i>
+                                <span class="service-btn-label">Inquiry Wood Finishes</span>
+                            </span>
+                            <i class="fas fa-arrow-right service-btn-arrow"></i>
                         </a>
                     </div>
                 </div>

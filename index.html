@@ -42,10 +42,9 @@
                     </span>
                 </div>
                 <div class="d-flex align-items-center">
-                    <span class="text-muted small me-2">Direct Inquiries:</span>
-                    <a class="text-light text-decoration-none me-2" href="https://wa.me/97450395741" target="_blank" title="WhatsApp RFQ"><i class="fab fa-whatsapp fa-sm fa-fw text-success"></i></a>
-                    <a class="text-light text-decoration-none me-2" href="tel:+97444501669" title="Call Us"><i class="fa fa-phone fa-sm fa-fw"></i></a>
-                    <a class="text-light text-decoration-none" href="mailto:info@royalautopaints.com" title="Email"><i class="fa fa-envelope fa-sm fa-fw"></i></a>
+                    <a class="navbar-sm-brand text-light text-decoration-none small" href="mailto:info@royalautopaints.com" title="Email Royal Auto Paints">
+                        <i class="fa fa-envelope fa-sm fa-fw me-2 text-light"></i>info@royalautopaints.com
+                    </a>
                 </div>
             </div>
         </div>
@@ -54,23 +53,21 @@
     <!-- ========================================================================
          2. Master Sticky Navigation Header
          ======================================================================== -->
-    <nav class="navbar navbar-expand-lg navbar-light border-bottom sticky-top bg-white py-2">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top py-2">
         <div class="container d-flex justify-content-between align-items-center">
 
             <!-- Brand Logo -->
-            <a class="navbar-brand align-self-center py-0" href="#home">
+            <a class="navbar-brand text-success logo d-flex align-items-center m-0" href="index.html">
                 <img src="images/royal_logo.png" alt="Royal Auto Paints Qatar" height="44">
             </a>
 
-            <!-- Mobile Quick Actions & Toggler -->
-            <div class="d-flex align-items-center d-lg-none">
-                <a class="text-success text-decoration-none me-3 fs-5" href="https://wa.me/97450395741?text=Hello%20Royal%20Auto%20Paints%2C%20I%20would%20like%20to%20request%20an%20RFQ" target="_blank" title="WhatsApp RFQ">
-                    <i class="fab fa-whatsapp"></i>
+            <!-- Mobile Quick Actions & Hamburger -->
+            <div class="d-flex align-items-center d-lg-none mobile-header-actions">
+                <a href="tel:+97444501669" class="btn-call-pill text-decoration-none me-2" title="Call Showroom: +974 4450 1669">
+                    <i class="fa fa-phone me-1 me-sm-2"></i>
+                    <span>Call Us</span>
                 </a>
-                <a class="text-dark text-decoration-none me-3 fs-5" href="tel:+97444501669" title="Call Us">
-                    <i class="fa fa-phone"></i>
-                </a>
-                <button class="navbar-toggler border-0 p-1" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="templatemo_main_nav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="templatemo_main_nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
@@ -89,9 +86,6 @@
                             <a class="nav-link" href="services.html">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#divisions">Divisions</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="products.html">Products</a>
                         </li>
                         <li class="nav-item">
@@ -106,16 +100,11 @@
                     </ul>
                 </div>
 
-                <!-- Desktop Action Icons -->
+                <!-- Desktop Call Action -->
                 <div class="navbar align-self-center d-none d-lg-flex">
-                    <a class="nav-icon text-decoration-none me-3" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search" title="Search Catalogue">
-                        <i class="fa fa-fw fa-search text-dark"></i>
-                    </a>
-                    <a class="nav-icon text-decoration-none me-3" href="https://wa.me/97450395741?text=Hello%20Royal%20Auto%20Paints%20Qatar%2C%20I%20would%20like%20to%20request%20an%20RFQ" target="_blank" title="WhatsApp RFQ">
-                        <i class="fab fa-fw fa-whatsapp text-success fa-lg"></i>
-                    </a>
-                    <a class="nav-icon text-decoration-none" href="tel:+97444501669" title="Call: +974 4450 1669">
-                        <i class="fa fa-fw fa-phone text-dark"></i>
+                    <a href="tel:+97444501669" class="btn-call-pill text-decoration-none" title="Call Showroom: +974 4450 1669">
+                        <i class="fa fa-phone me-2"></i>
+                        <span>Call Us</span>
                     </a>
                 </div>
             </div>
@@ -281,77 +270,102 @@
     <!-- ========================================================================
          4. Specialized Services Section (From Old Website)
          ======================================================================== -->
-    <section class="container py-5" id="services">
-        <div class="row text-center pt-2 pb-4">
-            <div class="col-lg-8 m-auto">
-                <span class="text-uppercase text-success fw-bold" style="letter-spacing: 1.5px; font-size: 13px;">Specialized Workshop Services</span>
-                <h2 class="h1 mt-2 text-dark">Services We’re Offering</h2>
-                <p class="text-muted">
-                    Precision technical support, computerized color matching, and custom packaging tailored for body shops, collision centers, and contractors across Qatar.
-                </p>
-            </div>
-        </div>
-
-        <div class="row g-4">
-            <!-- Service 1: Custom Colour Mixing -->
-            <div class="col-12 col-md-4">
-                <div class="card h-100 service-card bg-white">
-                    <div class="service-img-wrap">
-                        <img src="images/20230326070959.png" alt="Custom Colour Mixing Doha Qatar">
+    <section class="py-5 services-section-wrapper" id="services">
+        <div class="container py-3">
+            <div class="row text-center pt-2 pb-4">
+                <div class="col-lg-8 m-auto">
+                    <!-- Eyebrow with flanking divider lines -->
+                    <div class="service-section-eyebrow d-flex align-items-center justify-content-center mb-2">
+                        <span class="eyebrow-line"></span>
+                        <span class="eyebrow-text px-3 text-uppercase fw-bold">Specialized Workshop Services</span>
+                        <span class="eyebrow-line"></span>
                     </div>
-                    <div class="card-body d-flex flex-column justify-content-between p-4">
-                        <div>
-                            <span class="badge-subtle mb-2">OEM Color Lab</span>
-                            <h3 class="h4 text-dark mb-2">Custom Colour Mixing</h3>
-                            <p class="card-text text-muted small mb-4">
-                                High-precision computerized color formulation utilizing digital spectrophotometers. Flawless OEM color matching for European, American, Japanese, and Korean vehicle finishes.
-                            </p>
-                        </div>
-                        <a class="btn btn-outline-success w-100" href="https://wa.me/97450395741?text=Hello%20Royal%20Auto%20Paints%2C%20I%20am%20inquiring%20about%20Custom%20Colour%20Mixing%20Service" target="_blank">
-                            <i class="fab fa-whatsapp me-2"></i> Inquire Color Mixing
-                        </a>
-                    </div>
+                    <h2 class="h1 mt-2 text-dark">Services <span class="text-primary-brand">We’re Offering</span></h2>
+                    <p class="text-muted mt-3">
+                        Precision technical support, computerized color matching, and custom packaging tailored for body shops, collision centers, and contractors across Qatar.
+                    </p>
                 </div>
             </div>
 
-            <!-- Service 2: Aerosol Spray Paint Filling -->
-            <div class="col-12 col-md-4">
-                <div class="card h-100 service-card bg-white">
-                    <div class="service-img-wrap">
-                        <img src="images/20230326071123.png" alt="Aerosol Spray Paint Filling Doha Qatar">
-                    </div>
-                    <div class="card-body d-flex flex-column justify-content-between p-4">
-                        <div>
-                            <span class="badge-subtle mb-2">Custom Aerosol</span>
-                            <h3 class="h4 text-dark mb-2">Aerosol Spray Paint Filling</h3>
-                            <p class="card-text text-muted small mb-4">
-                                Custom aerosol can filling with exact color formulation for rapid spot touch-ups, mirror caps, accessories, and industrial components without requiring full spray booth setup.
-                            </p>
+            <div class="row g-4">
+                <!-- Service 1: Custom Colour Mixing -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 service-modern-card bg-white">
+                        <div class="service-card-img-wrap">
+                            <img src="images/service_card_color_mixing.png" alt="Custom Colour Mixing Doha Qatar" class="service-card-img">
                         </div>
-                        <a class="btn btn-outline-success w-100" href="https://wa.me/97450395741?text=Hello%20Royal%20Auto%20Paints%2C%20I%20am%20inquiring%20about%20Aerosol%20Spray%20Paint%20Filling%20Service" target="_blank">
-                            <i class="fab fa-whatsapp me-2"></i> Inquire Aerosol Filling
-                        </a>
+                        <div class="service-floating-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="card-body service-card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h3 class="service-card-title text-dark">Custom Colour Mixing</h3>
+                                <p class="service-card-text text-muted small">
+                                    High-precision computerized color formulation utilizing digital spectrophotometers. Flawless OEM color matching for European, American, Japanese, and Korean vehicle finishes.
+                                </p>
+                            </div>
+                            <a class="service-inquiry-btn btn w-100" href="https://wa.me/97450395741?text=Hello%20Royal%20Auto%20Paints%2C%20I%20am%20inquiring%20about%20Custom%20Colour%20Mixing%20Service" target="_blank">
+                                <span class="d-flex align-items-center">
+                                    <i class="fab fa-whatsapp me-2 text-whatsapp fs-5"></i>
+                                    <span class="service-btn-label">Inquiry Color Mixing</span>
+                                </span>
+                                <i class="fas fa-arrow-right service-btn-arrow"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Service 3: Motolux Refinish Distribution -->
-            <div class="col-12 col-md-4">
-                <div class="card h-100 service-card bg-white">
-                    <div class="service-img-wrap">
-                        <img src="images/20230428125507.png" alt="Motolux Paint Systems Qatar">
-                    </div>
-                    <div class="card-body d-flex flex-column justify-content-between p-4">
-                        <div>
-                            <span class="badge-subtle mb-2">Authorized Distribution</span>
-                            <h3 class="h4 text-dark mb-2">Motolux Refinish Systems</h3>
-                            <p class="card-text text-muted small mb-4">
-                                Official distributor of Motolux premium automotive collision coatings, hardeners, thinners, and bodywork consumables ensuring optical depth and durability.
-                            </p>
+                <!-- Service 2: Aerosol Spray Paint Filling -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 service-modern-card bg-white">
+                        <div class="service-card-img-wrap">
+                            <img src="images/service_card_aerosol.png" alt="Aerosol Spray Paint Filling Doha Qatar" class="service-card-img">
                         </div>
-                        <a class="btn btn-outline-success w-100" href="https://wa.me/97450395741?text=Hello%20Royal%20Auto%20Paints%2C%20I%20am%20inquiring%20about%20Motolux%20products" target="_blank">
-                            <i class="fab fa-whatsapp me-2"></i> Inquire Motolux
-                        </a>
+                        <div class="service-floating-icon">
+                            <i class="fas fa-spray-can"></i>
+                        </div>
+                        <div class="card-body service-card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h3 class="service-card-title text-dark">Aerosol Spray Paint Filling</h3>
+                                <p class="service-card-text text-muted small">
+                                    Custom aerosol can filling with exact color formulation for rapid spot touch-ups, mirror caps, accessories, and industrial components without requiring full spray booth setup.
+                                </p>
+                            </div>
+                            <a class="service-inquiry-btn btn w-100" href="https://wa.me/97450395741?text=Hello%20Royal%20Auto%20Paints%2C%20I%20am%20inquiring%20about%20Aerosol%20Spray%20Paint%20Filling%20Service" target="_blank">
+                                <span class="d-flex align-items-center">
+                                    <i class="fab fa-whatsapp me-2 text-whatsapp fs-5"></i>
+                                    <span class="service-btn-label">Inquiry Aerosol Filling</span>
+                                </span>
+                                <i class="fas fa-arrow-right service-btn-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3: Motolux Refinish Distribution -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 service-modern-card bg-white">
+                        <div class="service-card-img-wrap">
+                            <img src="images/service_card_motolux.png" alt="Motolux Paint Systems Qatar" class="service-card-img">
+                        </div>
+                        <div class="service-floating-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="card-body service-card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h3 class="service-card-title text-dark">Motolux Refinish Systems</h3>
+                                <p class="service-card-text text-muted small">
+                                    Official distributor of Motolux premium automotive collision coatings, hardeners, thinners, and bodywork consumables ensuring optical depth and durability.
+                                </p>
+                            </div>
+                            <a class="service-inquiry-btn btn w-100" href="https://wa.me/97450395741?text=Hello%20Royal%20Auto%20Paints%2C%20I%20am%20inquiring%20about%20Motolux%20products" target="_blank">
+                                <span class="d-flex align-items-center">
+                                    <i class="fab fa-whatsapp me-2 text-whatsapp fs-5"></i>
+                                    <span class="service-btn-label">Inquiry Motolux</span>
+                                </span>
+                                <i class="fas fa-arrow-right service-btn-arrow"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -359,96 +373,128 @@
     </section>
 
     <!-- ========================================================================
-         5. Core Business Divisions (4 Pillars)
+         5. Core Business Divisions (4 Integrated Divisions - Reference Specification)
          ======================================================================== -->
-    <section class="bg-light py-5" id="divisions">
-        <div class="container">
-            <div class="row text-center pt-2 pb-4">
-                <div class="col-lg-8 m-auto">
-                    <span class="text-uppercase text-success fw-bold" style="letter-spacing: 1.5px; font-size: 13px;">Comprehensive Surface Solutions</span>
-                    <h2 class="h1 mt-2 text-dark">Our 4 Core Business Divisions</h2>
-                    <p class="text-muted">
+    <section class="divisions-section-wrapper" id="divisions">
+        <!-- Subtle Geometric Facet Background Accents (Behind content, z-index: 1) -->
+        <div class="divisions-bg-facet divisions-bg-facet-left" aria-hidden="true">
+            <svg viewBox="0 0 320 600" preserveAspectRatio="none" class="w-100 h-100">
+                <polygon points="0,60 220,220 0,380" fill="#D8E3F0" opacity="0.65" />
+                <polygon points="0,0 260,160 220,220 0,60" fill="#D8E3F0" opacity="0.35" />
+                <polygon points="0,220 220,220 70,440 0,440" fill="#BDCDDF" opacity="0.3" />
+                <polygon points="0,180 140,280 0,340" fill="#D8E3F0" opacity="0.45" />
+            </svg>
+        </div>
+        <div class="divisions-bg-facet divisions-bg-facet-right" aria-hidden="true">
+            <svg viewBox="0 0 320 600" preserveAspectRatio="none" class="w-100 h-100">
+                <polygon points="320,160 100,320 320,480" fill="#D8E3F0" opacity="0.65" />
+                <polygon points="320,40 60,220 100,320 320,160" fill="#D8E3F0" opacity="0.35" />
+                <polygon points="320,320 100,320 250,540 320,540" fill="#BDCDDF" opacity="0.3" />
+                <polygon points="320,260 180,360 320,440" fill="#D8E3F0" opacity="0.45" />
+            </svg>
+        </div>
+
+        <div class="container position-relative" style="z-index: 2;">
+            <!-- Section Header Flanked with Lines -->
+            <div class="row text-center mb-5">
+                <div class="col-lg-10 mx-auto">
+                    <div class="divisions-header-eyebrow">
+                        <span class="divisions-eyebrow-line"></span>
+                        <span>COMPREHENSIVE SURFACE SOLUTIONS</span>
+                        <span class="divisions-eyebrow-line"></span>
+                    </div>
+                    <h2 class="divisions-main-title">Our 4 Core Business Divisions</h2>
+                    <p class="divisions-lead-desc">
                         Supplying world-class coatings, OEM color formulation, and commercial spray booth engineering across Qatar.
                     </p>
                 </div>
             </div>
 
-            <div class="row g-4">
-                <!-- Division 1 -->
-                <div class="col-12 col-sm-6 col-lg-3 text-center">
-                    <div class="p-4 card h-100 division-card d-flex flex-column justify-content-between bg-white">
-                        <div>
-                            <div class="mb-3">
-                                <img src="images/royalpaint_hero_3.jpg" class="division-thumb img-fluid p-1" alt="Automotive Refinish Division">
-                            </div>
-                            <h3 class="h4 mt-2 mb-2 text-dark">Automotive Refinish</h3>
-                            <p class="text-muted small">
-                                Computerized OEM color formulation, HS clear coats, 2K primers, body putties, and professional reducers.
-                            </p>
+            <!-- 4 Integrated Business Divisions: Continuous Showcase -->
+            <div class="divisions-showcase-container">
+                <!-- Division 01: Automotive Refinish -->
+                <div class="division-col">
+                    <div class="division-img-box">
+                        <img src="images/division_card_1.png" alt="Automotive Refinish Division" class="w-100">
+                    </div>
+                    <div class="division-body-content">
+                        <div class="division-num-row">
+                            <span class="division-num-text">01</span>
+                            <div class="division-num-divider"></div>
                         </div>
-                        <div class="mt-3">
-                            <a class="btn btn-success btn-sm w-100 text-white" href="https://wa.me/97450395741?text=Inquiry%20regarding%20Automotive%20Refinish%20Division" target="_blank">
-                                <i class="fab fa-whatsapp me-1"></i> Inquire Refinish
+                        <h3 class="division-card-title">Automotive Refinish</h3>
+                        <p class="division-card-text">
+                            Computerized OEM color formulation, HS clear coats, 2K primers, body putties, and professional reducers.
+                        </p>
+                        <div class="division-btn-wrapper">
+                            <a href="services.html#color-mixing" class="btn-explore-division" aria-label="Explore Automotive Refinish Division">
+                                Explore Division <i class="fas fa-arrow-right ms-2" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Division 2 -->
-                <div class="col-12 col-sm-6 col-lg-3 text-center">
-                    <div class="p-4 card h-100 division-card d-flex flex-column justify-content-between bg-white">
-                        <div>
-                            <div class="mb-3">
-                                <img src="images/royalpaint_hero_booth.jpg" class="division-thumb img-fluid p-1" alt="Commercial Paint Booth Division">
-                            </div>
-                            <h3 class="h4 mt-2 mb-2 text-dark">Commercial Paint Booth</h3>
-                            <p class="text-muted small">
-                                Turnkey spray booths, downdraft filtration media, heating generators, extractors, and masking systems.
-                            </p>
+                <!-- Division 02: Commercial Paint Booth -->
+                <div class="division-col">
+                    <div class="division-img-box">
+                        <img src="images/division_card_2.png" alt="Commercial Paint Booth Engineering" class="w-100">
+                    </div>
+                    <div class="division-body-content">
+                        <div class="division-num-row">
+                            <span class="division-num-text">02</span>
+                            <div class="division-num-divider"></div>
                         </div>
-                        <div class="mt-3">
-                            <a class="btn btn-success btn-sm w-100 text-white" href="https://wa.me/97450395741?text=Inquiry%20regarding%20Commercial%20Paint%20Booth%20Division" target="_blank">
-                                <i class="fab fa-whatsapp me-1"></i> Inquire Booths
+                        <h3 class="division-card-title">Commercial Paint Booth</h3>
+                        <p class="division-card-text">
+                            Turnkey spray booths, downdraft filtration media, heating generators, extractors, and masking systems.
+                        </p>
+                        <div class="division-btn-wrapper">
+                            <a href="services.html#booths" class="btn-explore-division" aria-label="Explore Commercial Paint Booth Division">
+                                Explore Division <i class="fas fa-arrow-right ms-2" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Division 3 -->
-                <div class="col-12 col-sm-6 col-lg-3 text-center">
-                    <div class="p-4 card h-100 division-card d-flex flex-column justify-content-between bg-white">
-                        <div>
-                            <div class="mb-3">
-                                <img src="images/royalpaint_hero_marine.jpg" class="division-thumb img-fluid p-1" alt="Marine and Yacht Coatings Division">
-                            </div>
-                            <h3 class="h4 mt-2 mb-2 text-dark">Marine &amp; Yacht</h3>
-                            <p class="text-muted small">
-                                Sea-Line anti-fouling coatings, marine epoxy barrier primers, and salt-resistant polyurethane topcoats.
-                            </p>
+                <!-- Division 03: Marine & Yacht -->
+                <div class="division-col">
+                    <div class="division-img-box">
+                        <img src="images/division_card_3.png" alt="Marine & Yacht Protective Finishes" class="w-100">
+                    </div>
+                    <div class="division-body-content">
+                        <div class="division-num-row">
+                            <span class="division-num-text">03</span>
+                            <div class="division-num-divider"></div>
                         </div>
-                        <div class="mt-3">
-                            <a class="btn btn-success btn-sm w-100 text-white" href="https://wa.me/97450395741?text=Inquiry%20regarding%20Marine%20and%20Yacht%20Coatings" target="_blank">
-                                <i class="fab fa-whatsapp me-1"></i> Inquire Marine
+                        <h3 class="division-card-title">Marine &amp; Yacht</h3>
+                        <p class="division-card-text">
+                            Marine coatings, epoxy barrier primers, and salt-resistant polyurethane topcoats.
+                        </p>
+                        <div class="division-btn-wrapper">
+                            <a href="services.html#marine" class="btn-explore-division" aria-label="Explore Marine & Yacht Division">
+                                Explore Division <i class="fas fa-arrow-right ms-2" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Division 4 -->
-                <div class="col-12 col-sm-6 col-lg-3 text-center">
-                    <div class="p-4 card h-100 division-card d-flex flex-column justify-content-between bg-white">
-                        <div>
-                            <div class="mb-3">
-                                <img src="images/royalpaint_hero_wood.jpg" class="division-thumb img-fluid p-1" alt="Wood and Architectural Finishes Division">
-                            </div>
-                            <h3 class="h4 mt-2 mb-2 text-dark">Wood &amp; Architectural</h3>
-                            <p class="text-muted small">
-                                Industrial polyurethane wood lacquers, interior stains, non-yellowing sealers, and joinery coatings.
-                            </p>
+                <!-- Division 04: Wood & Architectural -->
+                <div class="division-col">
+                    <div class="division-img-box">
+                        <img src="images/division_card_4.png" alt="Wood & Architectural Industrial Finishes" class="w-100">
+                    </div>
+                    <div class="division-body-content">
+                        <div class="division-num-row">
+                            <span class="division-num-text">04</span>
+                            <div class="division-num-divider"></div>
                         </div>
-                        <div class="mt-3">
-                            <a class="btn btn-success btn-sm w-100 text-white" href="https://wa.me/97450395741?text=Inquiry%20regarding%20Wood%20and%20Architectural%20Finishes" target="_blank">
-                                <i class="fab fa-whatsapp me-1"></i> Inquire Architectural
+                        <h3 class="division-card-title">Wood &amp; Architectural</h3>
+                        <p class="division-card-text">
+                            Industrial polyurethane wood lacquers, interior stains, non-yellowing sealers, and joinery coatings.
+                        </p>
+                        <div class="division-btn-wrapper">
+                            <a href="services.html#wood" class="btn-explore-division" aria-label="Explore Wood & Architectural Division">
+                                Explore Division <i class="fas fa-arrow-right ms-2" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
