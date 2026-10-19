@@ -2,7 +2,7 @@
 
 **Project Name:** Royal Auto Paints Qatar Website Redesign  
 **Foundation Framework:** TemplateMo 559 Zay Shop (Bootstrap 5.0.0-beta1 / HTML5 / CSS3 / Vanilla JS)  
-**Project Path:** `E:\xev\royalautopaints`  
+**Project Path:** `D:\manu\projects\royalautopaints` (Primary) / `E:\xev\royalautopaints` (Multi-Device Remote Sync)  
 **Reference Stock Path:** `E:\xev\zay_royal_paint_template_stock`  
 **Legacy Website Path:** `E:\xev\royalautopaints-com-old`  
 **Physical Headquarters:** Street 23, Wakalat St, Industrial Area, Doha, Qatar  
@@ -137,7 +137,7 @@ body, p, ul, li, div { font-size: 15px !important; line-height: 1.5 !important; 
 
 To maintain a clean and production-grade codebase, product assets have been isolated into dedicated subdirectories, and each page has a dedicated HTML file:
 ```
-E:\xev\royalautopaints\
+royalautopaints/ (D:\manu\projects\royalautopaints / E:\xev\royalautopaints)
 ├── css/
 │   ├── bootstrap.min.css
 │   ├── templatemo.css

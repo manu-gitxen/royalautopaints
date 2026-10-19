@@ -5,19 +5,21 @@
 
 document.addEventListener('DOMContentLoaded', function () {
     // 1. Auto-close mobile navigation drawer on anchor click
-    const navLinks = document.querySelectorAll('#templatemo_main_nav .nav-link');
-    const navCollapse = document.getElementById('templatemo_main_nav');
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    const navCollapse = document.getElementById('templatemo_main_nav') || document.querySelector('.navbar-collapse');
 
-    navLinks.forEach(function (link) {
-        link.addEventListener('click', function () {
-            if (window.innerWidth < 992 && navCollapse.classList.contains('show')) {
-                const bsCollapse = bootstrap.Collapse.getInstance(navCollapse);
-                if (bsCollapse) {
-                    bsCollapse.hide();
+    if (navCollapse) {
+        navLinks.forEach(function (link) {
+            link.addEventListener('click', function () {
+                if (window.innerWidth < 992 && navCollapse.classList.contains('show')) {
+                    const bsCollapse = bootstrap.Collapse.getInstance(navCollapse) || new bootstrap.Collapse(navCollapse, { toggle: false });
+                    if (bsCollapse) {
+                        bsCollapse.hide();
+                    }
                 }
-            }
+            });
         });
-    });
+    }
 
     // 2. Product Catalog Filtering
     const filterButtons = document.querySelectorAll('.product-filter-btn');
