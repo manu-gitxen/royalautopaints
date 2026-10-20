@@ -1,466 +1,1903 @@
 /* ==========================================================================
+
+
+
    Royal Auto Paints Qatar — Custom Styles & Responsive Architecture
+
+
+
    Foundation: TemplateMo 559 Zay Shop (Bootstrap 5)
+
+
+
    Client Directive: Maintain original stock fonts, sizes, and white color palette.
+
+
+
    ========================================================================== */
 
+
+
+
+
+
+
 /* --------------------------------------------------------------------------
+
+
+
    1. Flat Minimalist Mandate (Strict Zero Drop Shadows)
+
+
+
    -------------------------------------------------------------------------- */
+
+
+
 .navbar,
+
+
+
 .card,
+
+
+
 .btn,
+
+
+
 img,
+
+
+
 .shadow,
+
+
+
 .shadow-sm,
+
+
+
 .shadow-lg,
+
+
+
 .product-wap,
+
+
+
 .dropdown-menu,
+
+
+
 .modal-content {
+
+
+
     box-shadow: none !important;
+
+
+
     -webkit-box-shadow: none !important;
+
+
+
 }
+
+
+
+
+
+
 
 .navbar {
+
+
+
     border-bottom: 1px solid #e9ecef !important;
+
+
+
 }
+
+
+
+
+
+
 
 .card {
+
+
+
     border: 1px solid #e9ecef !important;
+
+
+
     background-color: #ffffff;
+
+
+
 }
 
+
+
+
+
+
+
 /* --------------------------------------------------------------------------
+
+
+
    2. Typography & Color System
+
+
+
    -------------------------------------------------------------------------- */
+
+
+
 :root {
+
+
+
     /* Royal Auto Paints Brand Palette (Extracted directly from official logo) */
+
+
+
     --rap-primary: #09465f;        /* Deep Royal Oceanic Blue / Navy Teal (Main Logo Brand Color) */
+
+
+
     --rap-primary-hover: #07364a;  /* Darker Navy for hovers & focus */
+
+
+
     --rap-primary-dark: #052736;   /* Deep Navy for active states */
+
+
+
     --rap-primary-light: #e8f3f8;  /* Soft Ice Blue wash for subtle badges & highlights */
+
+
+
     --rap-primary-border: #b5d6e4; /* Complementary light blue border */
 
+
+
+
+
+
+
     --rap-accent-orange: #f68c50;  /* Royal Paint Splash Orange (Logo Accent) */
+
+
+
     --rap-accent-orange-hover: #e07a3e;
+
+
+
     --rap-accent-orange-light: #fef4ee;
+
+
+
+
+
+
 
     --rap-accent-yellow: #ffe05e;  /* Royal Solar Gold / Yellow (Logo Accent) */
 
+
+
+
+
+
+
     --rap-dark: #212934;           /* Deep Charcoal Header/Heading Text */
+
+
+
     --rap-charcoal: #58585a;       /* Slate Grey ("AUTO PAINTS" in logo) */
+
+
+
     --rap-muted: #5a6472;          /* Body copy muted text */
+
+
+
     --rap-border: #e9ecef;         /* Clean 1px card/divider borders */
+
+
+
     --rap-canvas: #efefef;         /* TemplateMo light gray canvas */
+
+
+
     --rap-light-bg: #f8f9fa;       /* Off-white section background */
 
+
+
+
+
+
+
     /* Backward compatibility alias */
+
+
+
     --rap-green: var(--rap-primary);
+
+
+
     --rap-green-hover: var(--rap-primary-hover);
+
+
+
 }
+
+
+
+
+
+
 
 /* Global scroll hygiene & cross-page layout stability */
+
+
+
 html {
+
+
+
     overflow-y: scroll;
+
+
+
     scrollbar-gutter: stable;
+
+
+
 }
+
+
+
+
+
+
 
 html, body {
+
+
+
     overflow-x: hidden !important;
+
+
+
     max-width: 100%;
+
+
+
     font-family: 'Roboto', sans-serif;
+
+
+
     color: var(--rap-dark);
+
+
+
     scroll-behavior: smooth;
+
+
+
 }
+
+
+
+
+
+
 
 /* Responsive gutter safeguard preventing horizontal overflow on narrow mobile screens */
+
+
+
 @media (max-width: 991.98px) {
+
+
+
     .row.g-5, .row.gx-5 {
+
+
+
         --bs-gutter-x: 1.5rem;
+
+
+
     }
+
+
+
 }
+
+
+
+
+
+
 
 /* Correct the template's blanket 'div { font-size: 18px !important; }'
+
+
+
    so utility classes, badges, small text, and cards scale properly */
+
+
+
 .small, small, .badge, .btn-sm, .form-text, .footer-link-list li, .card-text.small {
+
+
+
     font-size: 14px !important;
+
+
+
     font-weight: 400 !important;
+
+
+
 }
+
+
+
+
+
+
 
 .badge-subtle {
+
+
+
     background-color: var(--rap-primary-light) !important;
+
+
+
     color: var(--rap-primary) !important;
+
+
+
     border: 1px solid var(--rap-primary-border) !important;
+
+
+
     font-weight: 600 !important;
+
+
+
     font-size: 12px !important;
+
+
+
     padding: 3px 8px !important;
+
+
+
     border-radius: 4px;
+
+
+
     display: inline-block;
+
+
+
     letter-spacing: 0.5px;
+
+
+
 }
+
+
+
+
+
+
 
 .badge-accent {
+
+
+
     background-color: var(--rap-accent-orange-light) !important;
+
+
+
     color: #c95c1c !important;
+
+
+
     border: 1px solid #fcd5be !important;
+
+
+
     font-weight: 600 !important;
+
+
+
     font-size: 12px !important;
+
+
+
     padding: 3px 8px !important;
+
+
+
     border-radius: 4px;
+
+
+
     display: inline-block;
+
+
+
     letter-spacing: 0.5px;
+
+
+
 }
+
+
+
+
+
+
 
 /* Enhance text contrast for readability against light backgrounds */
+
+
+
 .hero-desc,
+
+
+
 .text-muted {
+
+
+
     color: #4a5568 !important;
+
+
+
 }
 
+
+
+
+
+
+
 /* --------------------------------------------------------------------------
+
+
+
    3. Responsive Typography & Viewport Scaling
+
+
+
    -------------------------------------------------------------------------- */
+
+
+
 /* Large Desktop (>=992px) - Exact Stock Zay Fidelity */
+
+
+
 @media (min-width: 992px) {
+
+
+
     .h1, h1 {
+
+
+
         font-size: 48px !important;
+
+
+
         font-weight: 200 !important;
+
+
+
         line-height: 1.2 !important;
+
+
+
         color: #212934;
+
+
+
     }
+
+
+
     .h2, h2 {
+
+
+
         font-size: 30px !important;
+
+
+
         font-weight: 300 !important;
+
+
+
         line-height: 1.25 !important;
+
+
+
         color: #212934;
+
+
+
     }
+
+
+
     .h3, h3 {
+
+
+
         font-size: 22px !important;
+
+
+
         font-weight: 300 !important;
+
+
+
     }
+
+
+
     #template-mo-zay-hero-carousel .carousel-item {
+
+
+
         min-height: 30rem !important;
+
+
+
     }
+
+
+
 }
+
+
+
+
+
+
 
 /* Tablet (768px - 991px) */
+
+
+
 @media (min-width: 768px) and (max-width: 991px) {
+
+
+
     .h1, h1 {
+
+
+
         font-size: 38px !important;
+
+
+
         font-weight: 200 !important;
+
+
+
         line-height: 1.25 !important;
+
+
+
     }
+
+
+
     .h2, h2 {
+
+
+
         font-size: 26px !important;
+
+
+
         font-weight: 300 !important;
+
+
+
     }
+
+
+
     .h3, h3 {
+
+
+
         font-size: 20px !important;
+
+
+
     }
+
+
+
 }
+
+
+
+
+
+
 
 /* Mobile Devices (<768px) - Fix for Zay Template Mobile Flaw */
+
+
+
 @media (max-width: 767.98px) {
+
+
+
     body, p, ul, li, div {
+
+
+
         font-size: 15px !important;
+
+
+
         line-height: 1.5 !important;
+
+
+
     }
+
+
+
     .h1, h1 {
+
+
+
         font-size: 28px !important;
+
+
+
         line-height: 1.3 !important;
+
+
+
         font-weight: 300 !important;
+
+
+
     }
+
+
+
     .h2, h2 {
+
+
+
         font-size: 22px !important;
+
+
+
         line-height: 1.3 !important;
+
+
+
         font-weight: 300 !important;
+
+
+
     }
+
+
+
     .h3, h3 {
+
+
+
         font-size: 18px !important;
+
+
+
         line-height: 1.35 !important;
+
+
+
     }
+
+
+
     #template-mo-zay-hero-carousel .row.p-5 {
+
+
+
         padding: 2rem 1rem 3.5rem 1rem !important;
+
+
+
     }
+
+
+
     /* Smaller arrows on mobile so they don't cover headings */
+
+
+
     #template-mo-zay-hero-carousel .carousel-control-next i,
+
+
+
     #template-mo-zay-hero-carousel .carousel-control-prev i {
+
+
+
         font-size: 1.8rem !important;
+
+
+
     }
+
+
+
     #template-mo-zay-hero-carousel .carousel-control-prev {
+
+
+
         left: 0 !important;
+
+
+
         width: 35px !important;
+
+
+
     }
+
+
+
     #template-mo-zay-hero-carousel .carousel-control-next {
+
+
+
         right: 0 !important;
+
+
+
         width: 35px !important;
+
+
+
     }
+
+
+
     /* Reposition carousel indicators to avoid overlapping on mobile */
+
+
+
     #template-mo-zay-hero-carousel .carousel-indicators {
+
+
+
         bottom: 8px !important;
+
+
+
         margin-bottom: 0 !important;
+
+
+
     }
+
+
+
     #template-mo-zay-hero-carousel .carousel-indicators li {
+
+
+
         margin-top: 0 !important;
+
+
+
         width: 24px !important;
+
+
+
         height: 4px !important;
+
+
+
     }
+
+
+
 }
 
+
+
+
+
+
+
 /* --------------------------------------------------------------------------
+
+
+
    4. Navbar & Mobile Navigation Drawer (Stock Zay Proportions & Generous Width)
+
+
+
    -------------------------------------------------------------------------- */
+
+
+
 nav.navbar.sticky-top {
+
+
+
     padding-top: 16px !important;
+
+
+
     padding-bottom: 16px !important;
+
+
+
 }
+
+
+
+
+
+
 
 .navbar-brand {
+
+
+
     padding: 0 !important;
+
+
+
     margin: 0 !important;
+
+
+
     display: flex !important;
+
+
+
     align-items: center !important;
+
+
+
 }
+
+
+
+
+
+
 
 .navbar-brand img {
+
+
+
     height: 48px;
+
+
+
     width: auto;
+
+
+
     object-fit: contain;
+
+
+
 }
+
+
+
+
+
+
 
 @media (max-width: 991.98px) {
+
+
+
     #templatemo_main_nav {
+
+
+
         background-color: #ffffff;
+
+
+
         border-top: 1px solid #e9ecef;
+
+
+
         padding: 1rem 0.5rem;
+
+
+
         margin-top: 0.5rem;
+
+
+
     }
+
+
+
     #templatemo_main_nav .navbar-nav .nav-item {
+
+
+
         border-bottom: 1px solid #f1f3f5;
+
+
+
     }
+
+
+
     #templatemo_main_nav .navbar-nav .nav-link {
+
+
+
         padding: 0.75rem 0.5rem;
+
+
+
         font-size: 16px !important;
+
+
+
         font-weight: 400 !important;
+
+
+
     }
+
+
+
     .mobile-header-actions {
+
+
+
         display: flex;
+
+
+
         align-items: center;
+
+
+
         gap: 12px;
+
+
+
     }
+
+
+
 }
+
+
+
+
+
+
 
 /* Desktop Navigation Alignment (Authentic Stock Zay Proportions & Generous Full-Width Expansion) */
+
+
+
 @media (min-width: 992px) {
+
+
+
     #templatemo_main_nav .flex-fill {
+
+
+
         padding-left: 1.5rem;
+
+
+
         padding-right: 1.5rem;
+
+
+
     }
+
+
+
     #templatemo_main_nav .navbar-nav {
+
+
+
         max-width: 100% !important;
+
+
+
         width: 100% !important;
+
+
+
     }
+
+
+
     #templatemo_main_nav .nav-link {
+
+
+
         padding-left: 14px !important;
+
+
+
         padding-right: 14px !important;
+
+
+
         font-size: 18px !important;
+
+
+
         font-weight: 300 !important;
+
+
+
         font-family: 'Roboto', sans-serif !important;
+
+
+
         white-space: nowrap;
+
+
+
     }
+
+
+
     #templatemo_main_nav .nav-link.active,
+
+
+
     #templatemo_main_nav .nav-link:hover {
+
+
+
         color: var(--rap-primary) !important;
+
+
+
     }
+
+
+
 }
+
+
+
+
+
+
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
+
+
+
     #templatemo_main_nav .flex-fill {
+
+
+
         padding-left: 0.5rem !important;
+
+
+
         padding-right: 0.5rem !important;
+
+
+
     }
+
+
+
     #templatemo_main_nav .nav-link {
+
+
+
         padding-left: 7px !important;
+
+
+
         padding-right: 7px !important;
+
+
+
         font-size: 15px !important;
+
+
+
     }
+
+
+
 }
+
+
+
+
+
+
 
 /* "Call Us" Pill Button (Modern Header CTA matching reference) */
+
+
+
 .btn-call-pill {
+
+
+
     background-color: #f1f5f9;
+
+
+
     color: var(--rap-primary) !important;
+
+
+
     font-family: 'Roboto', sans-serif !important;
+
+
+
     font-size: 15px !important;
+
+
+
     font-weight: 600 !important;
+
+
+
     padding: 8px 18px !important;
+
+
+
     border-radius: 12px !important;
+
+
+
     border: 1px solid #e2e8f0;
+
+
+
     transition: all 0.25s ease;
+
+
+
     white-space: nowrap;
+
+
+
     text-decoration: none !important;
+
+
+
     box-shadow: none !important;
+
+
+
     display: inline-flex;
+
+
+
     align-items: center;
+
+
+
     line-height: 1.4;
+
+
+
 }
+
+
+
+
+
+
 
 .btn-call-pill i {
+
+
+
     font-size: 14px;
+
+
+
     color: var(--rap-primary);
+
+
+
     transition: transform 0.25s ease, color 0.25s ease;
+
+
+
 }
+
+
+
+
+
+
 
 .btn-call-pill:hover {
+
+
+
     background-color: var(--rap-primary) !important;
+
+
+
     color: #ffffff !important;
+
+
+
     border-color: var(--rap-primary) !important;
+
+
+
 }
+
+
+
+
+
+
 
 .btn-call-pill:hover i {
+
+
+
     color: #ffffff !important;
+
+
+
     transform: rotate(15deg);
+
+
+
 }
+
+
+
+
+
+
 
 @media (max-width: 575.98px) {
+
+
+
     .btn-call-pill {
+
+
+
         padding: 5px 12px !important;
+
+
+
         font-size: 13px !important;
+
+
+
         border-radius: 10px !important;
+
+
+
     }
+
+
+
     .btn-call-pill i {
+
+
+
         font-size: 12px;
+
+
+
     }
+
+
+
 }
 
+
+
+
+
+
+
 /* --------------------------------------------------------------------------
+
+
+
    5. Hero Carousel Styling (Stock Zay Fidelity)
+
+
+
    -------------------------------------------------------------------------- */
+
+
+
 #template-mo-zay-hero-carousel {
+
+
+
     background-color: var(--rap-canvas) !important;
+
+
+
     position: relative;
+
+
+
 }
+
+
+
+
+
+
 
 #template-mo-zay-hero-carousel .carousel-indicators li {
+
+
+
     margin-top: -50px;
+
+
+
     background-color: var(--rap-primary) !important;
+
+
+
 }
+
+
+
+
+
+
 
 #template-mo-zay-hero-carousel .carousel-indicators li.active {
+
+
+
     background-color: var(--rap-accent-orange) !important;
+
+
+
 }
+
+
+
+
+
+
 
 #template-mo-zay-hero-carousel .carousel-control-next i,
+
+
+
 #template-mo-zay-hero-carousel .carousel-control-prev i {
+
+
+
     color: var(--rap-primary) !important;
+
+
+
     font-size: 2.8em !important;
+
+
+
 }
+
+
+
+
+
+
 
 #template-mo-zay-hero-carousel .carousel-control-next:hover i,
+
+
+
 #template-mo-zay-hero-carousel .carousel-control-prev:hover i {
+
+
+
     color: var(--rap-accent-orange) !important;
+
+
+
 }
+
+
+
+
+
+
 
 /* --------------------------------------------------------------------------
+
+
+
    6. Core Divisions Section (Exact Reference Specification)
+
+
+
    -------------------------------------------------------------------------- */
+
+
+
 #divisions.divisions-section-wrapper {
+
+
+
     position: relative;
+
+
+
     background-color: #E9EFF7;
+
+
+
     overflow: hidden;
+
+
+
     padding-top: 5rem;
+
+
+
     padding-bottom: 5.5rem;
+
+
+
 }
+
+
+
+
+
+
 
 /* Subtle Geometric Facet Background Accents */
+
+
+
 .divisions-bg-facet {
+
+
+
     position: absolute;
+
+
+
     top: 0;
+
+
+
     bottom: 0;
+
+
+
     width: 320px;
+
+
+
     height: 100%;
+
+
+
     pointer-events: none;
+
+
+
     z-index: 1;
+
+
+
 }
+
+
+
+
+
+
 
 .divisions-bg-facet-left {
+
+
+
     left: 0;
+
+
+
 }
+
+
+
+
+
+
 
 .divisions-bg-facet-right {
+
+
+
     right: 0;
+
+
+
 }
+
+
+
+
+
+
 
 .divisions-header-eyebrow {
+
+
+
     display: inline-flex;
+
+
+
     align-items: center;
+
+
+
     gap: 14px;
+
+
+
     font-size: 13px;
+
+
+
     font-weight: 600;
+
+
+
     letter-spacing: 2px;
+
+
+
     color: #17365B;
+
+
+
     text-transform: uppercase;
+
+
+
     margin-bottom: 10px;
+
+
+
 }
+
+
+
+
+
+
 
 .divisions-eyebrow-line {
+
+
+
     width: 36px;
+
+
+
     height: 1.5px;
+
+
+
     background-color: #BDCDDF;
+
+
+
     display: inline-block;
+
+
+
 }
+
+
+
+
+
+
 
 .divisions-main-title {
+
+
+
     font-family: 'Roboto', sans-serif;
+
+
+
     font-size: 42px;
+
+
+
     font-weight: 300;
+
+
+
     color: #142F50;
+
+
+
     letter-spacing: -0.5px;
+
+
+
     line-height: 1.25;
+
+
+
     margin-bottom: 14px;
+
+
+
 }
+
+
+
+
+
+
 
 .divisions-lead-desc {
+
+
+
     font-family: 'Roboto', sans-serif;
+
+
+
     font-size: 15px;
+
+
+
     line-height: 1.6;
+
+
+
     color: #5D6F86;
+
+
+
     max-width: 720px;
+
+
+
     margin: 0 auto;
+
+
+
 }
 
-/* 4-Division Continuous Showcase Container */
-.divisions-showcase-container {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #FFFFFF;
-    border: 1px solid #BDCDDF;
-    box-shadow: none !important;
-    position: relative;
-    z-index: 2;
+
+
+
+
+
+
+/* 4-Division Continuous Showcase Container (Wider desktop proportion matching reference) */
+
+
+
+#divisions .divisions-container {
+
+
+
+    width: 95% !important;
+
+
+
+    max-width: 1580px !important;
+
+
+
+    padding-left: 15px;
+
+
+
+    padding-right: 15px;
+
+
+
+    margin-left: auto;
+
+
+
+    margin-right: auto;
+
+
+
 }
+
+
+
+
+
+
+
+#divisions .divisions-header-box {
+
+
+
+    max-width: 780px;
+
+
+
+    margin-left: auto;
+
+
+
+    margin-right: auto;
+
+
+
+}
+
+
+
+
+
+
+
+.divisions-showcase-container {
+
+
+
+    display: flex;
+
+
+
+    flex-wrap: wrap;
+
+
+
+    background-color: #FFFFFF;
+
+
+
+    border: 1px solid #BDCDDF;
+
+
+
+    box-shadow: none !important;
+
+
+
+    position: relative;
+
+
+
+    z-index: 2;
+
+
+
+}
+
+
+
+
+
+
 
 /* Four Equal Connected Columns */
+
+
+
 .division-col {
+
+
+
     flex: 0 0 25%;
+
+
+
     max-width: 25%;
+
+
+
     display: flex;
+
+
+
     flex-direction: column;
+
+
+
     background-color: #FFFFFF;
+
+
+
     border-right: 1px solid #BDCDDF;
+
+
+
     position: relative;
+
+
+
     box-shadow: none !important;
+
+
+
 }
+
+
+
+
+
+
 
 .division-col:last-child {
+
+
+
     border-right: none;
+
+
+
 }
 
-/* Image Container */
+
+
+
+
+
+
+/* Image Container & High-Fidelity Vector Badge */
+
+
+
 .division-img-box {
     position: relative;
-    width: 100%;
-    overflow: hidden;
+    margin: 8px 8px 0 8px;
+    overflow: visible;
     background-color: #FFFFFF;
 }
 
@@ -469,588 +1906,2484 @@ nav.navbar.sticky-top {
     height: auto;
     object-fit: cover;
     display: block;
+    border-radius: 6px 6px 0 0;
 }
+
+
+
+
+
+
+
+.division-badge {
+
+
+
+    position: absolute;
+
+
+
+    left: 17.3%;
+
+
+
+    top: 84.2%;
+
+
+
+    transform: translate(-50%, -50%);
+
+
+
+    width: 64px;
+
+
+
+    height: 64px;
+
+
+
+    border-radius: 50%;
+
+
+
+    background-color: #17365B;
+
+
+
+    border: 3.5px solid #FFFFFF;
+
+
+
+    display: flex;
+
+
+
+    align-items: center;
+
+
+
+    justify-content: center;
+
+
+
+    z-index: 5;
+
+
+
+    box-shadow: none !important;
+
+
+
+    pointer-events: none;
+
+
+
+}
+
+
+
+
+
+
+
+.division-badge-icon {
+
+
+
+    width: 30px;
+
+
+
+    height: 30px;
+
+
+
+    stroke: #FFFFFF;
+
+
+
+    fill: none;
+
+
+
+    display: block;
+
+
+
+}
+
+
+
+
+
+
 
 /* Column Body Content */
+
+
+
 .division-body-content {
-    padding: 16px 24px 28px 24px;
+
+
+
+    padding: 24px 24px 28px 24px;
+
+
+
     display: flex;
+
+
+
     flex-direction: column;
+
+
+
     flex-grow: 1;
+
+
+
     background-color: #FFFFFF;
+
+
+
 }
+
+
+
+
+
+
 
 .division-num-row {
+
+
+
     display: flex;
+
+
+
     align-items: center;
+
+
+
     margin-bottom: 6px;
+
+
+
 }
+
+
+
+
+
+
 
 .division-num-text {
+
+
+
     font-family: 'Roboto', sans-serif;
+
+
+
     font-size: 36px;
+
+
+
     font-weight: 300;
+
+
+
     line-height: 1;
+
+
+
     color: #475D81;
+
+
+
     margin-right: 14px;
+
+
+
     letter-spacing: -0.5px;
+
+
+
 }
+
+
+
+
+
+
 
 .division-num-divider {
+
+
+
     height: 1px;
+
+
+
     background-color: #BDCDDF;
+
+
+
     flex-grow: 1;
+
+
+
 }
+
+
+
+
+
+
 
 .division-card-title {
+
+
+
     font-family: 'Roboto', sans-serif;
+
+
+
     font-size: 19px;
+
+
+
     font-weight: 700;
+
+
+
     color: #142F50;
+
+
+
     margin-top: 6px;
+
+
+
     margin-bottom: 10px;
+
+
+
     line-height: 1.35;
+
+
+
 }
+
+
+
+
+
+
 
 .division-card-text {
+
+
+
     font-family: 'Roboto', sans-serif;
+
+
+
     font-size: 13.5px;
+
+
+
     line-height: 1.6;
+
+
+
     color: #5D6F86;
+
+
+
     margin-bottom: 24px;
+
+
+
     flex-grow: 1;
+
+
+
 }
+
+
+
+
+
+
 
 .division-btn-wrapper {
+
+
+
     margin-top: auto;
+
+
+
 }
+
+
+
+
+
+
 
 /* Explore Division Button - Strict Cool Navy Palette */
+
+
+
 .btn-explore-division {
+
+
+
     display: inline-flex;
+
+
+
     align-items: center;
+
+
+
     background-color: #17365B;
+
+
+
     color: #FFFFFF !important;
+
+
+
     font-family: 'Roboto', sans-serif;
+
+
+
     font-size: 13px;
+
+
+
     font-weight: 600;
+
+
+
     padding: 7px 18px;
+
+
+
     border-radius: 3px;
+
+
+
     text-decoration: none !important;
+
+
+
     box-shadow: none !important;
+
+
+
     border: none;
+
+
+
     transition: background-color 0.2s ease;
+
+
+
     width: fit-content;
+
+
+
 }
+
+
+
+
+
+
 
 .btn-explore-division i {
+
+
+
     font-size: 11px;
+
+
+
     transition: transform 0.2s ease;
+
+
+
 }
+
+
+
+
+
+
 
 .btn-explore-division:hover {
+
+
+
     background-color: #142F50 !important;
+
+
+
     color: #FFFFFF !important;
+
+
+
 }
+
+
+
+
+
+
 
 .btn-explore-division:hover i {
+
+
+
     transform: translateX(4px);
+
+
+
 }
+
+
+
+
+
+
 
 /* Responsive Layout */
+
+
+
 @media (max-width: 991.98px) {
+
+
+
     .divisions-main-title {
+
+
+
         font-size: 32px;
+
+
+
     }
+
+
+
     .division-col {
+
+
+
         flex: 0 0 50%;
+
+
+
         max-width: 50%;
+
+
+
     }
+
+
+
     .division-col:nth-child(2) {
+
+
+
         border-right: none;
+
+
+
     }
+
+
+
     .division-col:nth-child(1),
+
+
+
     .division-col:nth-child(2) {
+
+
+
         border-bottom: 1px solid #BDCDDF;
+
+
+
     }
+
+
+
     .division-body-content {
+
+
+
         padding: 16px 20px 24px 20px;
+
+
+
     }
+
+
+
 }
+
+
+
+
+
+
 
 @media (max-width: 767.98px) {
+
+
+
     .division-col {
+
+
+
         flex: 0 0 100%;
+
+
+
         max-width: 100%;
+
+
+
         border-right: none !important;
+
+
+
         border-bottom: 1px solid #BDCDDF;
+
+
+
     }
+
+
+
     .division-col:last-child {
+
+
+
         border-bottom: none;
+
+
+
     }
+
+
+
 }
+
+
+
+
+
+
 
 @media (max-width: 575.98px) {
+
+
+
     #divisions.divisions-section-wrapper {
+
+
+
         padding-top: 3.5rem;
+
+
+
         padding-bottom: 4rem;
+
+
+
     }
+
+
+
     .divisions-header-eyebrow {
+
+
+
         font-size: 11px;
+
+
+
         letter-spacing: 1.2px;
+
+
+
         gap: 8px;
+
+
+
     }
+
+
+
     .divisions-eyebrow-line {
+
+
+
         width: 20px;
+
+
+
     }
+
+
+
     .divisions-main-title {
+
+
+
         font-size: 26px;
+
+
+
     }
+
+
+
     .division-body-content {
+
+
+
         padding: 14px 18px 22px 18px;
+
+
+
     }
+
+
+
+    .division-badge {
+
+
+
+        width: 52px;
+
+
+
+        height: 52px;
+
+
+
+        border-width: 3px;
+
+
+
+    }
+
+
+
+    .division-badge-icon {
+
+
+
+        width: 25px;
+
+
+
+        height: 25px;
+
+
+
+    }
+
+
+
 }
 
+
+
+
+
+
+
 /* --------------------------------------------------------------------------
+
+
+
    7. Specialized Services Section (Modern Card Architecture)
+
+
+
    -------------------------------------------------------------------------- */
+
+
+
 .services-section-wrapper {
+
+
+
     position: relative;
+
+
+
     background-color: #fbfcfd;
+
+
+
     overflow: hidden;
+
+
+
 }
+
+
+
+
+
+
 
 /* Background Polygon Accents matching reference mockup corners */
+
+
+
 .services-section-wrapper::before {
+
+
+
     content: "";
+
+
+
     position: absolute;
+
+
+
     top: 0;
+
+
+
     left: 0;
+
+
+
     width: 260px;
+
+
+
     height: 260px;
+
+
+
     background: linear-gradient(135deg, rgba(9, 70, 95, 0.07) 0%, rgba(9, 70, 95, 0.02) 45%, transparent 70%);
+
+
+
     clip-path: polygon(0 0, 100% 0, 0 100%);
+
+
+
     pointer-events: none;
+
+
+
     z-index: 1;
+
+
+
 }
+
+
+
+
+
+
 
 .services-section-wrapper::after {
+
+
+
     content: "";
+
+
+
     position: absolute;
+
+
+
     top: 0;
+
+
+
     right: 0;
+
+
+
     width: 260px;
+
+
+
     height: 260px;
+
+
+
     background: linear-gradient(225deg, rgba(9, 70, 95, 0.07) 0%, rgba(9, 70, 95, 0.02) 45%, transparent 70%);
+
+
+
     clip-path: polygon(100% 0, 100% 100%, 0 0);
+
+
+
     pointer-events: none;
+
+
+
     z-index: 1;
+
+
+
 }
+
+
+
+
+
+
 
 /* Eyebrow with flanking divider lines */
+
+
+
 .service-section-eyebrow .eyebrow-line {
+
+
+
     display: inline-block;
+
+
+
     width: 38px;
+
+
+
     height: 2px;
+
+
+
     background-color: var(--rap-primary);
+
+
+
     opacity: 0.35;
+
+
+
 }
+
+
+
+
+
+
 
 .service-section-eyebrow .eyebrow-text {
+
+
+
     color: var(--rap-primary);
+
+
+
     font-size: 13px;
+
+
+
     letter-spacing: 1.5px;
+
+
+
     font-weight: 700;
+
+
+
 }
+
+
+
+
+
+
 
 .text-primary-brand {
+
+
+
     color: var(--rap-primary) !important;
+
+
+
 }
+
+
+
+
+
+
 
 /* Modern Card Container */
+
+
+
 .service-modern-card {
+
+
+
     border: 1px solid #e9ecef !important;
+
+
+
     border-radius: 8px !important;
+
+
+
     overflow: hidden;
+
+
+
     position: relative;
+
+
+
     z-index: 2;
+
+
+
     transition: transform 0.25s ease, border-color 0.25s ease;
+
+
+
     box-shadow: none !important;
+
+
+
 }
+
+
+
+
+
+
 
 .service-modern-card:hover {
+
+
+
     transform: translateY(-4px);
+
+
+
     border-color: var(--rap-primary) !important;
+
+
+
 }
+
+
+
+
+
+
 
 /* Full-bleed Header Photo */
+
+
+
 .service-card-img-wrap {
+
+
+
     width: 100%;
+
+
+
     height: 220px;
+
+
+
     overflow: hidden;
+
+
+
     background-color: #f1f3f5;
+
+
+
     position: relative;
+
+
+
 }
+
+
+
+
+
+
 
 .service-card-img {
+
+
+
     width: 100%;
+
+
+
     height: 100%;
+
+
+
     object-fit: cover;
+
+
+
     display: block;
+
+
+
     transition: transform 0.35s ease;
+
+
+
 }
+
+
+
+
+
+
 
 .service-modern-card:hover .service-card-img {
+
+
+
     transform: scale(1.04);
+
+
+
 }
+
+
+
+
+
+
 
 /* Floating Overlapping Icon Box */
+
+
+
 .service-floating-icon {
+
+
+
     width: 54px;
+
+
+
     height: 54px;
+
+
+
     background-color: var(--rap-primary-light);
+
+
+
     border: 1.5px solid var(--rap-primary-border);
+
+
+
     color: var(--rap-primary);
+
+
+
     border-radius: 8px;
+
+
+
     display: flex;
+
+
+
     align-items: center;
+
+
+
     justify-content: center;
+
+
+
     font-size: 22px;
+
+
+
     margin-top: -27px;
+
+
+
     margin-left: 20px;
+
+
+
     position: relative;
+
+
+
     z-index: 3;
+
+
+
     transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+
+
+
 }
+
+
+
+
+
+
 
 .service-modern-card:hover .service-floating-icon {
+
+
+
     background-color: var(--rap-primary);
+
+
+
     color: #ffffff;
+
+
+
     border-color: var(--rap-primary);
+
+
+
     transform: translateY(-2px);
+
+
+
 }
+
+
+
+
+
+
 
 /* Card Body Content */
+
+
+
 .service-card-body {
+
+
+
     padding: 16px 24px 24px 24px;
+
+
+
 }
+
+
+
+
+
+
 
 .service-card-title {
+
+
+
     font-size: 21px;
+
+
+
     font-weight: 600;
+
+
+
     margin-top: 10px;
+
+
+
     margin-bottom: 12px;
+
+
+
     color: #212934;
+
+
+
     transition: color 0.2s ease;
+
+
+
 }
+
+
+
+
+
+
 
 .service-modern-card:hover .service-card-title {
+
+
+
     color: var(--rap-primary);
+
+
+
 }
+
+
+
+
+
+
 
 .service-card-text {
+
+
+
     color: #5a6472 !important;
+
+
+
     font-size: 14.5px !important;
+
+
+
     line-height: 1.6 !important;
+
+
+
     margin-bottom: 24px;
+
+
+
 }
+
+
+
+
+
+
 
 /* Bottom Inquiry Button (Matching Mockup with Arrow) */
+
+
+
 .service-inquiry-btn {
+
+
+
     border: 1.5px solid var(--rap-primary) !important;
+
+
+
     color: var(--rap-primary) !important;
+
+
+
     background-color: transparent !important;
+
+
+
     border-radius: 6px !important;
+
+
+
     padding: 9px 18px !important;
+
+
+
     font-size: 14.5px !important;
+
+
+
     font-weight: 500 !important;
+
+
+
     display: flex;
+
+
+
     align-items: center;
+
+
+
     justify-content: space-between;
+
+
+
     text-decoration: none;
+
+
+
     transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+
+
+
 }
+
+
+
+
+
+
 
 .service-inquiry-btn .text-whatsapp {
+
+
+
     color: #25D366 !important;
+
+
+
     transition: color 0.2s ease;
+
+
+
 }
+
+
+
+
+
+
 
 .service-inquiry-btn .service-btn-label {
+
+
+
     font-weight: 500;
+
+
+
     color: var(--rap-primary);
+
+
+
     transition: color 0.2s ease;
+
+
+
 }
+
+
+
+
+
+
 
 .service-inquiry-btn .service-btn-arrow {
+
+
+
     font-size: 14px;
+
+
+
     color: var(--rap-primary);
+
+
+
     transition: transform 0.2s ease, color 0.2s ease;
+
+
+
 }
+
+
+
+
+
+
 
 .service-inquiry-btn:hover {
+
+
+
     background-color: var(--rap-primary) !important;
+
+
+
     border-color: var(--rap-primary) !important;
+
+
+
     color: #ffffff !important;
+
+
+
 }
+
+
+
+
+
+
 
 .service-inquiry-btn:hover .service-btn-label,
-.service-inquiry-btn:hover .service-btn-arrow {
-    color: #ffffff !important;
-}
+
+
 
 .service-inquiry-btn:hover .service-btn-arrow {
-    transform: translateX(4px);
+
+
+
+    color: #ffffff !important;
+
+
+
 }
+
+
+
+
+
+
+
+.service-inquiry-btn:hover .service-btn-arrow {
+
+
+
+    transform: translateX(4px);
+
+
+
+}
+
+
+
+
+
+
 
 .service-inquiry-btn:hover .text-whatsapp {
+
+
+
     color: #ffffff !important;
+
+
+
 }
+
+
+
+
+
+
 
 /* Legacy service-card support */
+
+
+
 .service-card {
+
+
+
     border-radius: 8px;
+
+
+
     overflow: hidden;
+
+
+
     transition: transform 0.25s ease, border-color 0.25s ease;
-}
-.service-card:hover {
-    transform: translateY(-4px);
-    border-color: var(--rap-primary) !important;
-}
-.service-img-wrap {
-    height: 200px;
-    background-color: #f8f9fa;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    padding: 12px;
-}
-.service-img-wrap img {
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: contain;
-    transition: transform 0.3s ease;
-}
-.service-card:hover .service-img-wrap img {
-    transform: scale(1.04);
+
+
+
 }
 
-/* --------------------------------------------------------------------------
-   8. Product Catalog & Filter Architecture
-   -------------------------------------------------------------------------- */
-.product-filter-btn {
-    border: 1px solid var(--rap-border);
-    background: #ffffff;
-    color: var(--rap-dark);
-    padding: 6px 16px;
-    font-size: 14px !important;
-    font-weight: 500 !important;
-    border-radius: 20px;
-    margin: 4px;
-    cursor: pointer;
-    transition: all 0.2s ease;
+
+
+.service-card:hover {
+
+
+
+    transform: translateY(-4px);
+
+
+
+    border-color: var(--rap-primary) !important;
+
+
+
 }
+
+
+
+.service-img-wrap {
+
+
+
+    height: 200px;
+
+
+
+    background-color: #f8f9fa;
+
+
+
+    display: flex;
+
+
+
+    align-items: center;
+
+
+
+    justify-content: center;
+
+
+
+    overflow: hidden;
+
+
+
+    padding: 12px;
+
+
+
+}
+
+
+
+.service-img-wrap img {
+
+
+
+    max-height: 100%;
+
+
+
+    max-width: 100%;
+
+
+
+    object-fit: contain;
+
+
+
+    transition: transform 0.3s ease;
+
+
+
+}
+
+
+
+.service-card:hover .service-img-wrap img {
+
+
+
+    transform: scale(1.04);
+
+
+
+}
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------------
+
+
+
+   8. Product Catalog & Filter Architecture
+
+
+
+   -------------------------------------------------------------------------- */
+
+
+
+.product-filter-btn {
+
+
+
+    border: 1px solid var(--rap-border);
+
+
+
+    background: #ffffff;
+
+
+
+    color: var(--rap-dark);
+
+
+
+    padding: 6px 16px;
+
+
+
+    font-size: 14px !important;
+
+
+
+    font-weight: 500 !important;
+
+
+
+    border-radius: 20px;
+
+
+
+    margin: 4px;
+
+
+
+    cursor: pointer;
+
+
+
+    transition: all 0.2s ease;
+
+
+
+}
+
+
+
+
+
+
 
 .product-filter-btn:hover,
+
+
+
 .product-filter-btn.active {
+
+
+
     background-color: var(--rap-primary) !important;
+
+
+
     border-color: var(--rap-primary) !important;
+
+
+
     color: #ffffff !important;
+
+
+
 }
+
+
+
+
+
+
 
 .product-item {
+
+
+
     transition: transform 0.25s ease, border-color 0.25s ease;
+
+
+
     border-radius: 8px;
+
+
+
     background-color: #ffffff;
+
+
+
 }
+
+
+
+
+
+
 
 .product-item:hover {
+
+
+
     transform: translateY(-3px);
+
+
+
     border-color: var(--rap-primary) !important;
+
+
+
 }
+
+
+
+
+
+
 
 .product-item-img-wrap {
+
+
+
     height: 190px;
+
+
+
     background-color: #ffffff;
+
+
+
     display: flex;
+
+
+
     align-items: center;
+
+
+
     justify-content: center;
+
+
+
     padding: 15px;
+
+
+
     border-bottom: 1px solid #f1f3f5;
+
+
+
 }
+
+
+
+
+
+
 
 .product-item-img-wrap img {
+
+
+
     max-height: 100%;
+
+
+
     max-width: 100%;
+
+
+
     object-fit: contain;
+
+
+
 }
 
+
+
+
+
+
+
 /* --------------------------------------------------------------------------
+
+
+
    9. Brand Partners & Dealership Showcase
+
+
+
    -------------------------------------------------------------------------- */
+
+
+
 .brand-partner-item {
+
+
+
     display: flex;
+
+
+
     align-items: center;
+
+
+
     justify-content: center;
+
+
+
     padding: 15px 20px;
+
+
+
     height: 80px;
+
+
+
     background: #ffffff;
+
+
+
     border: 1px solid #f1f3f5;
+
+
+
     border-radius: 6px;
+
+
+
     transition: border-color 0.3s ease, filter 0.3s ease;
+
+
+
 }
+
+
+
+
+
+
 
 .brand-partner-item:hover {
+
+
+
     border-color: var(--rap-primary);
+
+
+
 }
+
+
+
+
+
+
 
 .brand-partner-item img {
+
+
+
     max-height: 48px;
+
+
+
     max-width: 120px;
+
+
+
     object-fit: contain;
+
+
+
     filter: grayscale(100%);
+
+
+
     opacity: 0.7;
+
+
+
     transition: filter 0.3s ease, opacity 0.3s ease;
+
+
+
 }
+
+
+
+
+
+
 
 .brand-partner-item:hover img {
+
+
+
     filter: grayscale(0%);
+
+
+
     opacity: 1;
+
+
+
 }
+
+
+
+
+
+
 
 /* Dealership badge banner */
+
+
+
 .dealership-banner {
+
+
+
     background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+
+
+
     border: 1px solid var(--rap-border);
+
+
+
     border-radius: 8px;
+
+
+
 }
 
+
+
+
+
+
+
 /* --------------------------------------------------------------------------
+
+
+
    10. Customer Testimonials Section
+
+
+
    -------------------------------------------------------------------------- */
+
+
+
 .testimonial-card {
+
+
+
     border-radius: 8px;
+
+
+
     background-color: #ffffff;
+
+
+
     border: 1px solid var(--rap-border);
+
+
+
     height: 100%;
+
+
+
     display: flex;
+
+
+
     flex-column: column;
+
+
+
     justify-content: space-between;
+
+
+
 }
+
+
+
+
+
+
 
 .testimonial-stars {
+
+
+
     color: var(--rap-accent-orange);
+
+
+
     font-size: 14px;
+
+
+
 }
+
+
+
+
+
+
 
 /* Contrast enhancement for dark components (Top bar & Footer) using logo orange */
+
+
+
 #templatemo_nav_top .text-success,
+
+
+
 #tempaltemo_footer .text-success {
+
+
+
     color: var(--rap-accent-orange) !important;
+
+
+
 }
+
+
+
+
+
+
 
 #tempaltemo_footer a:hover {
+
+
+
     color: var(--rap-accent-orange) !important;
+
+
+
 }
+
+
+
+
+
+
 
 /* Custom Accent Orange Button */
+
+
+
 .btn-accent-orange {
+
+
+
     background-color: var(--rap-accent-orange) !important;
+
+
+
     border-color: var(--rap-accent-orange) !important;
+
+
+
     color: #ffffff !important;
+
+
+
 }
+
+
+
 .btn-accent-orange:hover, .btn-accent-orange:focus {
+
+
+
     background-color: var(--rap-accent-orange-hover) !important;
+
+
+
     border-color: var(--rap-accent-orange-hover) !important;
+
+
+
     color: #ffffff !important;
+
+
+
 }
+
+
+
+
+
+
 
 /* Branded Outline Buttons (Matching Logo Primary) */
+
+
+
 .btn-outline-success {
+
+
+
     color: var(--rap-primary) !important;
+
+
+
     border-color: var(--rap-primary) !important;
+
+
+
     background-color: transparent !important;
+
+
+
 }
+
+
+
 .btn-outline-success:hover,
+
+
+
 .btn-outline-success:focus,
+
+
+
 .btn-outline-success:active {
+
+
+
     background-color: var(--rap-primary) !important;
+
+
+
     border-color: var(--rap-primary) !important;
+
+
+
     color: #ffffff !important;
+
+
+
 }
+
+
+
+
+
+
 
 /* WhatsApp Icon Specificity */
+
+
+
 .fa-whatsapp {
+
+
+
     color: #25D366;
+
+
+
 }
+
+
+
 .btn .fa-whatsapp,
+
+
+
 .floating-whatsapp-btn .fa-whatsapp {
+
+
+
     color: inherit;
+
+
+
 }
+
+
+
 .btn-outline-success:hover .fa-whatsapp {
+
+
+
     color: #ffffff !important;
+
+
+
 }
+
+
+
+
+
+
 
 .testimonial-text {
+
+
+
     font-size: 15px !important;
+
+
+
     color: #4a5568;
+
+
+
     line-height: 1.6;
+
+
+
     font-style: italic;
+
+
+
 }
 
+
+
+
+
+
+
 /* --------------------------------------------------------------------------
+
+
+
    11. Floating WhatsApp Action Button
+
+
+
    -------------------------------------------------------------------------- */
+
+
+
 .floating-whatsapp-btn {
+
+
+
     position: fixed;
+
+
+
     bottom: 24px;
+
+
+
     right: 24px;
+
+
+
     width: 58px;
+
+
+
     height: 58px;
+
+
+
     border-radius: 50%;
+
+
+
     background-color: #25D366;
+
+
+
     color: #ffffff;
+
+
+
     display: flex;
+
+
+
     align-items: center;
+
+
+
     justify-content: center;
+
+
+
     font-size: 32px;
+
+
+
     z-index: 1060;
+
+
+
     text-decoration: none;
+
+
+
     border: 2px solid #ffffff;
+
+
+
     transition: transform 0.3s ease, background-color 0.3s ease;
+
+
+
 }
+
+
+
+
+
+
 
 .floating-whatsapp-btn:hover {
+
+
+
     background-color: #20ba59;
+
+
+
     color: #ffffff;
+
+
+
     transform: scale(1.1);
+
+
+
 }
+
+
+
+
+
+
 
 @media (max-width: 576px) {
+
+
+
     .floating-whatsapp-btn {
+
+
+
         bottom: 16px;
+
+
+
         right: 16px;
+
+
+
         width: 50px;
+
+
+
         height: 50px;
+
+
+
         font-size: 26px;
+
+
+
     }
+
+
+
 }
+
+
+
+
+
+
 
 /* --------------------------------------------------------------------------
+
+
+
    12. Interactive Location & Google Map Embed
+
+
+
    -------------------------------------------------------------------------- */
+
+
+
 .map-responsive-container {
+
+
+
     position: relative;
+
+
+
     width: 100%;
+
+
+
     height: 380px;
+
+
+
     border-radius: 8px;
+
+
+
     overflow: hidden;
+
+
+
     border: 1px solid var(--rap-border);
+
+
+
 }
 
+
+
+
+
+
+
 .map-responsive-container iframe {
+
+
+
     width: 100%;
+
+
+
     height: 100%;
+
+
+
     border: 0;
+
+
+
 }
+
+
+
