@@ -58,7 +58,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function filterProductsBySearch(query) {
         if (!query) {
-            productItems.forEach(item => item.style.display = 'block');
+            if (productItems.length > 0) {
+                productItems.forEach(item => item.style.display = 'block');
+            }
+            return;
+        }
+
+        // If on homepage, redirect to dedicated products.html catalog
+        if (!window.location.pathname.includes('products.html')) {
+            window.location.href = 'products.html?search=' + encodeURIComponent(query);
             return;
         }
 
