@@ -834,509 +834,269 @@ html, body {
 
 
 
-/* --------------------------------------------------------------------------
+/* ==========================================================================
+   4. Navbar & Mobile Navigation Drawer (Redesigned per Reference)
+   ========================================================================== */
 
+/* Top Utility Navigation (Desktop Dark Navy) */
+#templatemo_nav_top {
+    background-color: #0d2238 !important;
+}
 
+#templatemo_nav_top a {
+    transition: color 0.2s ease;
+}
 
-   4. Navbar & Mobile Navigation Drawer (Stock Zay Proportions & Generous Width)
+#templatemo_nav_top a:hover {
+    color: #f68c50 !important;
+}
 
-
-
-   -------------------------------------------------------------------------- */
-
-
-
+/* Master Sticky Navbar */
 nav.navbar.sticky-top {
-
-
-
-    padding-top: 16px !important;
-
-
-
-    padding-bottom: 16px !important;
-
-
-
+    padding-top: 14px !important;
+    padding-bottom: 14px !important;
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #EAECEF !important;
+    box-shadow: none !important;
+    transition: background-color 0.25s ease;
 }
 
-
-
-
-
-
-
+/* Brand Logo */
 .navbar-brand {
-
-
-
     padding: 0 !important;
-
-
-
     margin: 0 !important;
-
-
-
     display: flex !important;
-
-
-
     align-items: center !important;
-
-
-
+    transition: opacity 0.2s ease;
 }
 
-
-
-
-
-
+.navbar-brand:hover {
+    opacity: 0.92;
+}
 
 .navbar-brand img {
-
-
-
-    height: 48px;
-
-
-
+    height: 44px;
     width: auto;
-
-
-
     object-fit: contain;
-
-
-
 }
 
-
-
-
-
-
-
-@media (max-width: 991.98px) {
-
-
-
-    #templatemo_main_nav {
-
-
-
-        background-color: #ffffff;
-
-
-
-        border-top: 1px solid #e9ecef;
-
-
-
-        padding: 1rem 0.5rem;
-
-
-
-        margin-top: 0.5rem;
-
-
-
-    }
-
-
-
-    #templatemo_main_nav .navbar-nav .nav-item {
-
-
-
-        border-bottom: 1px solid #f1f3f5;
-
-
-
-    }
-
-
-
-    #templatemo_main_nav .navbar-nav .nav-link {
-
-
-
-        padding: 0.75rem 0.5rem;
-
-
-
-        font-size: 16px !important;
-
-
-
-        font-weight: 400 !important;
-
-
-
-    }
-
-
-
-    .mobile-header-actions {
-
-
-
-        display: flex;
-
-
-
-        align-items: center;
-
-
-
-        gap: 12px;
-
-
-
-    }
-
-
-
-}
-
-
-
-
-
-
-
-/* Desktop Navigation Alignment (Authentic Stock Zay Proportions & Generous Full-Width Expansion) */
-
-
-
+/* --------------------------------------------------------------------------
+   Desktop Navigation Links (Min-Width: 992px)
+   -------------------------------------------------------------------------- */
 @media (min-width: 992px) {
-
-
+    #templatemo_main_nav {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+    }
 
     #templatemo_main_nav .flex-fill {
-
-
-
-        padding-left: 1.5rem;
-
-
-
-        padding-right: 1.5rem;
-
-
-
+        display: flex !important;
+        justify-content: center !important;
+        padding: 0 !important;
+        margin: 0 !important;
     }
-
-
 
     #templatemo_main_nav .navbar-nav {
-
-
-
-        max-width: 100% !important;
-
-
-
-        width: 100% !important;
-
-
-
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 36px !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+        width: auto !important;
+        max-width: none !important;
     }
 
-
+    #templatemo_main_nav .nav-item {
+        margin: 0 !important;
+        padding: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+    }
 
     #templatemo_main_nav .nav-link {
-
-
-
-        padding-left: 14px !important;
-
-
-
-        padding-right: 14px !important;
-
-
-
-        font-size: 18px !important;
-
-
-
-        font-weight: 300 !important;
-
-
-
+        position: relative;
+        padding: 6px 0 !important;
+        margin: 0 !important;
+        font-size: 15.5px !important;
+        font-weight: 500 !important;
         font-family: 'Roboto', sans-serif !important;
-
-
-
+        color: #5D6F86 !important;
+        border-radius: 0 !important;
         white-space: nowrap;
-
-
-
+        background: transparent !important;
+        box-shadow: none !important;
+        transition: color 0.2s ease !important;
+        line-height: 1.4 !important;
     }
 
+    /* Orange Underline Indicator */
+    #templatemo_main_nav .nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+        width: 0;
+        height: 2.5px;
+        background-color: #f68c50; /* Brand Warm Orange */
+        border-radius: 2px;
+        transition: width 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
 
-
-    #templatemo_main_nav .nav-link.active,
-
-
-
+    /* Hover State */
     #templatemo_main_nav .nav-link:hover {
-
-
-
-        color: var(--rap-primary) !important;
-
-
-
+        color: #142F50 !important; /* Brand Dark Navy */
+        background: transparent !important;
+        transform: none !important;
     }
 
+    #templatemo_main_nav .nav-link:not(.active):hover::after {
+        width: 100%;
+        background-color: rgba(246, 140, 80, 0.6);
+    }
 
+    /* Active Page State */
+    #templatemo_main_nav .nav-link.active {
+        color: #142F50 !important;
+        font-weight: 500 !important;
+        background: transparent !important;
+    }
 
+    #templatemo_main_nav .nav-link.active::after {
+        width: 100%;
+        background-color: #f68c50 !important;
+    }
+
+    #templatemo_main_nav .nav-link.active:hover {
+        color: #142F50 !important;
+    }
 }
 
-
-
-
-
-
-
+/* Medium Desktop Viewports (992px to 1199.98px) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-
-
-
-    #templatemo_main_nav .flex-fill {
-
-
-
-        padding-left: 0.5rem !important;
-
-
-
-        padding-right: 0.5rem !important;
-
-
-
+    #templatemo_main_nav .navbar-nav {
+        gap: 22px !important;
     }
-
-
 
     #templatemo_main_nav .nav-link {
+        font-size: 14.5px !important;
+    }
+}
 
-
-
-        padding-left: 7px !important;
-
-
-
-        padding-right: 7px !important;
-
-
-
-        font-size: 15px !important;
-
-
-
+/* --------------------------------------------------------------------------
+   Mobile Drawer Navigation (Max-Width: 991.98px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 991.98px) {
+    #templatemo_main_nav {
+        background-color: #ffffff;
+        border-top: 1px solid #e9ecef;
+        padding: 0.75rem 0.5rem;
+        margin-top: 0.5rem;
+        border-radius: 8px;
+        box-shadow: none !important;
+        border: 1px solid #EAECEF;
     }
 
+    #templatemo_main_nav .navbar-nav .nav-item {
+        border-bottom: 1px solid #f1f3f5;
+    }
 
+    #templatemo_main_nav .navbar-nav .nav-item:last-child {
+        border-bottom: none;
+    }
 
+    #templatemo_main_nav .navbar-nav .nav-link {
+        padding: 0.75rem 1rem !important;
+        font-size: 16px !important;
+        font-weight: 500 !important;
+        color: #4A5B6D !important;
+        border-radius: 6px;
+        transition: all 0.22s ease !important;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #templatemo_main_nav .navbar-nav .nav-link:hover {
+        background-color: #EEF4F9;
+        color: #142F50 !important;
+        padding-left: 1.25rem !important;
+    }
+
+    #templatemo_main_nav .navbar-nav .nav-link.active {
+        background-color: #EEF4F9;
+        color: #142F50 !important;
+        font-weight: 600 !important;
+        border-left: 3px solid #f68c50;
+        padding-left: 1.25rem !important;
+    }
+
+    .mobile-header-actions {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
 }
 
-
-
-
-
-
-
-/* "Call Us" Pill Button (Modern Header CTA matching reference) */
-
-
-
+/* --------------------------------------------------------------------------
+   "Call Us" Pill Button (Matching Reference Exactly)
+   -------------------------------------------------------------------------- */
 .btn-call-pill {
-
-
-
-    background-color: #f1f5f9;
-
-
-
-    color: var(--rap-primary) !important;
-
-
-
+    background-color: #EEF4F9 !important;
+    color: #142F50 !important;
     font-family: 'Roboto', sans-serif !important;
-
-
-
-    font-size: 15px !important;
-
-
-
+    font-size: 14.5px !important;
     font-weight: 600 !important;
-
-
-
-    padding: 8px 18px !important;
-
-
-
-    border-radius: 12px !important;
-
-
-
-    border: 1px solid #e2e8f0;
-
-
-
-    transition: all 0.25s ease;
-
-
-
+    padding: 9px 24px !important;
+    border-radius: 50px !important;
+    border: 1px solid transparent !important;
+    transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
     white-space: nowrap;
-
-
-
     text-decoration: none !important;
-
-
-
     box-shadow: none !important;
-
-
-
-    display: inline-flex;
-
-
-
-    align-items: center;
-
-
-
-    line-height: 1.4;
-
-
-
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    line-height: 1.4 !important;
 }
-
-
-
-
-
-
 
 .btn-call-pill i {
-
-
-
-    font-size: 14px;
-
-
-
-    color: var(--rap-primary);
-
-
-
-    transition: transform 0.25s ease, color 0.25s ease;
-
-
-
+    font-size: 13.5px !important;
+    color: #142F50 !important; /* Dark Navy Phone Icon */
+    transition: color 0.2s ease, transform 0.25s ease;
 }
-
-
-
-
-
-
 
 .btn-call-pill:hover {
-
-
-
-    background-color: var(--rap-primary) !important;
-
-
-
+    background-color: #142F50 !important; /* Solid Navy */
     color: #ffffff !important;
-
-
-
-    border-color: var(--rap-primary) !important;
-
-
-
+    border-color: #142F50 !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(20, 47, 80, 0.12) !important;
 }
-
-
-
-
-
-
 
 .btn-call-pill:hover i {
-
-
-
     color: #ffffff !important;
-
-
-
-    transform: rotate(15deg);
-
-
-
+    transform: scale(1.1) rotate(-8deg);
 }
 
-
-
-
-
-
+.btn-call-pill:active {
+    transform: translateY(0);
+    box-shadow: none !important;
+}
 
 @media (max-width: 575.98px) {
-
-
-
     .btn-call-pill {
-
-
-
-        padding: 5px 12px !important;
-
-
-
+        padding: 6px 14px !important;
         font-size: 13px !important;
-
-
-
-        border-radius: 10px !important;
-
-
-
+        border-radius: 50px !important;
     }
-
-
 
     .btn-call-pill i {
-
-
-
-        font-size: 12px;
-
-
-
+        font-size: 12px !important;
     }
-
-
-
 }
-
-
-
-
-
-
 
 /* --------------------------------------------------------------------------
 
@@ -3527,6 +3287,7 @@ nav.navbar.sticky-top {
     text-align: center;
     flex-shrink: 0;
 }
+
 
 /* ==========================================================================
    Section 10: Project & Product Gallery (#gallery) - 1:1 Reference Match
