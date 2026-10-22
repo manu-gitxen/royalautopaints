@@ -134,6 +134,19 @@ flowchart TD
 
 ### 3.3 Detailed Homepage Section Specifications
 
+#### Section 4: Hero Presentation Carousel (`#template-mo-zay-hero-carousel`)
+- **Canvas:** Ice Canvas `#EEF5FA` / `var(--rap-canvas)`.
+- **Slide 1 Redesign (Automotive Refinish & HS Clears):**
+  - **Eyebrow:** Tracked uppercase eyebrow `ROYAL AUTO PAINTS` (`#5D6F86`, `11px`, `letter-spacing: 2.4px`, `font-weight: 700`) flanked by a Brand Orange left accent line (`#f68c50`, `34px × 1.5px`) and a subtle slate right divider line (`#CBD5E1`, `34px × 1.5px`).
+  - **Main Display Heading:** `Royal Auto Paints` (`font-size: 48px`, `#142F50`, line-height `1.15`), featuring bold brand accent `Royal` (`font-weight: 800`) with light modern typography `Auto Paints` (`font-weight: 300`).
+  - **Sub-Heading:** `Qatar's Premier Refinish Coatings & HS Clears` (`font-size: 28px`, `#142F50`, `font-weight: 400`, line-height `1.3`).
+  - **Descriptive Narrative:** Refined slate body paragraph (`#5D6F86`, `14.5px`, line-height `1.65`, `max-width: 480px`) detailing certified European refinish systems, clear coats, primers, putties, and digital spectrophotometer color matching.
+  - **Twin Action Controls:**
+    - Primary Solid Dark Navy button (`#142F50`, pure white text, `border-radius: 6px`, padding `12px × 24px`, hover `#f68c50`) with Brand Orange forward arrow: `Explore Our Products →` (linking to `products.html`).
+    - Secondary Underline Link (`color: #142F50`, `font-weight: 500`, border-bottom `1.5px solid #142F50`, hover `#f68c50`) with Brand Orange forward arrow: `Discover Our Services →` (linking to `services.html`).
+  - **Right Visual Asset:** High-resolution studio composite render (`images/hero_slide_01.png`, 800×800) featuring HB Body 698 HS Clear, Lens Clear, H 754 Hardener, Challenger CL660, and Pro F202 Zinc Plus.
+- **Controls & Indicators:** Circular chevron controls (`carousel-control-prev`, `carousel-control-next`) in Dark Navy with Brand Orange hover, and standardized pill indicators at bottom.
+
 #### Section 5: 4 Core Business Divisions (`#divisions`)
 - **Canvas:** Ice Canvas `#EEF5FA`.
 - **Eyebrow:** Centered `COMPREHENSIVE SURFACE SOLUTIONS` (`#17365B`, `letter-spacing: 2px`, `font-weight: 700`) flanked by thin horizontal divider rules (`#BDCDDF`).
@@ -201,6 +214,8 @@ flowchart TD
   - Thin separator line (`#EAECEF`) and Dark Navy pin and envelope icons for Headquarters & Email info.
 
 #### Section 10: Project & Product Gallery (`#gallery`)
+- **Canvas:** Pure White `#FFFFFF`.
+- **Inner Container Architecture:** Standardized responsive container width (`1320px` at ≥1400px, `1140px` at ≥1200px, `960px` at ≥992px, `720px` at ≥768px, and 100% on mobile), resolving previous narrow margin constraints and matching the master page grid flush.
 - **Canvas:** Pure White `#FFFFFF`.
 - **Eyebrow:** Centered `— PORTFOLIO & FINISHES —` with flanked horizontal separator lines (`#CFD7DF`).
 - **Heading:** `Project & Product Gallery` (Roboto 300, 42px, `#142F50`).
