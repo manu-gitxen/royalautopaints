@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // 2. Product Catalog Filtering
     const filterButtons = document.querySelectorAll('.product-filter-btn');
-    const productItems = document.querySelectorAll('.product-item-col');
+    const productItems = document.querySelectorAll('.product-item-col, .product-item-card');
 
     filterButtons.forEach(function (btn) {
         btn.addEventListener('click', function () {
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             productItems.forEach(function (item) {
                 if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
-                    item.style.display = 'block';
+                    item.style.display = '';
                 } else {
                     item.style.display = 'none';
                 }

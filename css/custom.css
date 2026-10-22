@@ -1451,1168 +1451,164 @@ nav.navbar.sticky-top {
 
 
 /* --------------------------------------------------------------------------
-
-
-
-   6. Core Divisions Section (Exact Reference Specification)
-
-
-
+   6. Core Divisions Section (Exact Match to Reference Image)
    -------------------------------------------------------------------------- */
-
-
-
 #divisions.divisions-section-wrapper {
-
-
-
     position: relative;
-
-
-
-    background-color: #E9EFF7;
-
-
-
+    background-color: #EEF5FA;
     overflow: hidden;
-
-
-
     padding-top: 5rem;
-
-
-
     padding-bottom: 5.5rem;
-
-
-
 }
 
-
-
-
-
-
-
-/* Subtle Geometric Facet Background Accents */
-
-
-
-.divisions-bg-facet {
-
-
-
-    position: absolute;
-
-
-
-    top: 0;
-
-
-
-    bottom: 0;
-
-
-
-    width: 320px;
-
-
-
-    height: 100%;
-
-
-
-    pointer-events: none;
-
-
-
-    z-index: 1;
-
-
-
-}
-
-
-
-
-
-
-
-.divisions-bg-facet-left {
-
-
-
-    left: 0;
-
-
-
-}
-
-
-
-
-
-
-
-.divisions-bg-facet-right {
-
-
-
-    right: 0;
-
-
-
-}
-
-
-
-
-
-
-
-.divisions-header-eyebrow {
-
-
-
-    display: inline-flex;
-
-
-
-    align-items: center;
-
-
-
-    gap: 14px;
-
-
-
-    font-size: 13px;
-
-
-
-    font-weight: 600;
-
-
-
-    letter-spacing: 2px;
-
-
-
-    color: #17365B;
-
-
-
-    text-transform: uppercase;
-
-
-
-    margin-bottom: 10px;
-
-
-
-}
-
-
-
-
-
-
-
-.divisions-eyebrow-line {
-
-
-
-    width: 36px;
-
-
-
-    height: 1.5px;
-
-
-
-    background-color: #BDCDDF;
-
-
-
+.divisions-section-eyebrow .divisions-eyebrow-line {
     display: inline-block;
-
-
-
-}
-
-
-
-
-
-
-
-.divisions-main-title {
-
-
-
-    font-family: 'Roboto', sans-serif;
-
-
-
-    font-size: 42px;
-
-
-
-    font-weight: 300;
-
-
-
-    color: #142F50;
-
-
-
-    letter-spacing: -0.5px;
-
-
-
-    line-height: 1.25;
-
-
-
-    margin-bottom: 14px;
-
-
-
-}
-
-
-
-
-
-
-
-.divisions-lead-desc {
-
-
-
-    font-family: 'Roboto', sans-serif;
-
-
-
-    font-size: 15px;
-
-
-
-    line-height: 1.6;
-
-
-
-    color: #5D6F86;
-
-
-
-    max-width: 720px;
-
-
-
-    margin: 0 auto;
-
-
-
-}
-
-
-
-
-
-
-
-/* 4-Division Continuous Showcase Container (Wider desktop proportion matching reference) */
-
-
-
-#divisions .divisions-container {
-
-
-
-    width: 95% !important;
-
-
-
-    max-width: 1580px !important;
-
-
-
-    padding-left: 15px;
-
-
-
-    padding-right: 15px;
-
-
-
-    margin-left: auto;
-
-
-
-    margin-right: auto;
-
-
-
-}
-
-
-
-
-
-
-
-#divisions .divisions-header-box {
-
-
-
-    max-width: 780px;
-
-
-
-    margin-left: auto;
-
-
-
-    margin-right: auto;
-
-
-
-}
-
-
-
-
-
-
-
-.divisions-showcase-container {
-
-
-
-    display: flex;
-
-
-
-    flex-wrap: wrap;
-
-
-
-    background-color: #FFFFFF;
-
-
-
-    border: 1px solid #BDCDDF;
-
-
-
-    box-shadow: none !important;
-
-
-
-    position: relative;
-
-
-
-    z-index: 2;
-
-
-
-}
-
-
-
-
-
-
-
-/* Four Equal Connected Columns */
-
-
-
-.division-col {
-
-
-
-    flex: 0 0 25%;
-
-
-
-    max-width: 25%;
-
-
-
-    display: flex;
-
-
-
-    flex-direction: column;
-
-
-
-    background-color: #FFFFFF;
-
-
-
-    border-right: 1px solid #BDCDDF;
-
-
-
-    position: relative;
-
-
-
-    box-shadow: none !important;
-
-
-
-}
-
-
-
-
-
-
-
-.division-col:last-child {
-
-
-
-    border-right: none;
-
-
-
-}
-
-
-
-
-
-
-
-/* Image Container & High-Fidelity Vector Badge */
-
-
-
-.division-img-box {
-    position: relative;
-    margin: 8px 8px 0 8px;
-    overflow: visible;
-    background-color: #FFFFFF;
-}
-
-.division-img-box img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    display: block;
-    border-radius: 6px 6px 0 0;
-}
-
-
-
-
-
-
-
-.division-badge {
-
-
-
-    position: absolute;
-
-
-
-    left: 17.3%;
-
-
-
-    top: 84.2%;
-
-
-
-    transform: translate(-50%, -50%);
-
-
-
-    width: 64px;
-
-
-
-    height: 64px;
-
-
-
-    border-radius: 50%;
-
-
-
-    background-color: #17365B;
-
-
-
-    border: 3.5px solid #FFFFFF;
-
-
-
-    display: flex;
-
-
-
-    align-items: center;
-
-
-
-    justify-content: center;
-
-
-
-    z-index: 5;
-
-
-
-    box-shadow: none !important;
-
-
-
-    pointer-events: none;
-
-
-
-}
-
-
-
-
-
-
-
-.division-badge-icon {
-
-
-
-    width: 30px;
-
-
-
-    height: 30px;
-
-
-
-    stroke: #FFFFFF;
-
-
-
-    fill: none;
-
-
-
-    display: block;
-
-
-
-}
-
-
-
-
-
-
-
-/* Column Body Content */
-
-
-
-.division-body-content {
-
-
-
-    padding: 24px 24px 28px 24px;
-
-
-
-    display: flex;
-
-
-
-    flex-direction: column;
-
-
-
-    flex-grow: 1;
-
-
-
-    background-color: #FFFFFF;
-
-
-
-}
-
-
-
-
-
-
-
-.division-num-row {
-
-
-
-    display: flex;
-
-
-
-    align-items: center;
-
-
-
-    margin-bottom: 6px;
-
-
-
-}
-
-
-
-
-
-
-
-.division-num-text {
-
-
-
-    font-family: 'Roboto', sans-serif;
-
-
-
-    font-size: 36px;
-
-
-
-    font-weight: 300;
-
-
-
-    line-height: 1;
-
-
-
-    color: #475D81;
-
-
-
-    margin-right: 14px;
-
-
-
-    letter-spacing: -0.5px;
-
-
-
-}
-
-
-
-
-
-
-
-.division-num-divider {
-
-
-
+    width: 34px;
     height: 1px;
-
-
-
-    background-color: #BDCDDF;
-
-
-
-    flex-grow: 1;
-
-
-
+    background-color: #CFD7DF;
 }
 
-
-
-
-
-
-
-.division-card-title {
-
-
-
-    font-family: 'Roboto', sans-serif;
-
-
-
-    font-size: 19px;
-
-
-
-    font-weight: 700;
-
-
-
-    color: #142F50;
-
-
-
-    margin-top: 6px;
-
-
-
-    margin-bottom: 10px;
-
-
-
-    line-height: 1.35;
-
-
-
-}
-
-
-
-
-
-
-
-.division-card-text {
-
-
-
-    font-family: 'Roboto', sans-serif;
-
-
-
-    font-size: 13.5px;
-
-
-
-    line-height: 1.6;
-
-
-
-    color: #5D6F86;
-
-
-
-    margin-bottom: 24px;
-
-
-
-    flex-grow: 1;
-
-
-
-}
-
-
-
-
-
-
-
-.division-btn-wrapper {
-
-
-
-    margin-top: auto;
-
-
-
-}
-
-
-
-
-
-
-
-/* Explore Division Button - Strict Cool Navy Palette */
-
-
-
-.btn-explore-division {
-
-
-
-    display: inline-flex;
-
-
-
-    align-items: center;
-
-
-
-    background-color: #17365B;
-
-
-
-    color: #FFFFFF !important;
-
-
-
-    font-family: 'Roboto', sans-serif;
-
-
-
-    font-size: 13px;
-
-
-
-    font-weight: 600;
-
-
-
-    padding: 7px 18px;
-
-
-
-    border-radius: 3px;
-
-
-
-    text-decoration: none !important;
-
-
-
-    box-shadow: none !important;
-
-
-
-    border: none;
-
-
-
-    transition: background-color 0.2s ease;
-
-
-
-    width: fit-content;
-
-
-
-}
-
-
-
-
-
-
-
-.btn-explore-division i {
-
-
-
+.divisions-section-eyebrow .divisions-eyebrow-text {
+    color: #09465f;
     font-size: 11px;
-
-
-
-    transition: transform 0.2s ease;
-
-
-
+    letter-spacing: 2.2px;
+    font-weight: 700;
 }
 
-
-
-
-
-
-
-.btn-explore-division:hover {
-
-
-
-    background-color: #142F50 !important;
-
-
-
-    color: #FFFFFF !important;
-
-
-
+.divisions-heading {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 42px;
+    font-weight: 300;
+    color: #142F50;
+    letter-spacing: -0.5px;
+    margin: 6px 0 0 0;
 }
-
-
-
-
-
-
-
-.btn-explore-division:hover i {
-
-
-
-    transform: translateX(4px);
-
-
-
-}
-
-
-
-
-
-
-
-/* Responsive Layout */
-
-
-
-@media (max-width: 991.98px) {
-
-
-
-    .divisions-main-title {
-
-
-
-        font-size: 32px;
-
-
-
-    }
-
-
-
-    .division-col {
-
-
-
-        flex: 0 0 50%;
-
-
-
-        max-width: 50%;
-
-
-
-    }
-
-
-
-    .division-col:nth-child(2) {
-
-
-
-        border-right: none;
-
-
-
-    }
-
-
-
-    .division-col:nth-child(1),
-
-
-
-    .division-col:nth-child(2) {
-
-
-
-        border-bottom: 1px solid #BDCDDF;
-
-
-
-    }
-
-
-
-    .division-body-content {
-
-
-
-        padding: 16px 20px 24px 20px;
-
-
-
-    }
-
-
-
-}
-
-
-
-
-
-
 
 @media (max-width: 767.98px) {
-
-
-
-    .division-col {
-
-
-
-        flex: 0 0 100%;
-
-
-
-        max-width: 100%;
-
-
-
-        border-right: none !important;
-
-
-
-        border-bottom: 1px solid #BDCDDF;
-
-
-
+    .divisions-heading {
+        font-size: 30px;
     }
-
-
-
-    .division-col:last-child {
-
-
-
-        border-bottom: none;
-
-
-
-    }
-
-
-
 }
 
-
-
-
-
-
-
-@media (max-width: 575.98px) {
-
-
-
-    #divisions.divisions-section-wrapper {
-
-
-
-        padding-top: 3.5rem;
-
-
-
-        padding-bottom: 4rem;
-
-
-
-    }
-
-
-
-    .divisions-header-eyebrow {
-
-
-
-        font-size: 11px;
-
-
-
-        letter-spacing: 1.2px;
-
-
-
-        gap: 8px;
-
-
-
-    }
-
-
-
-    .divisions-eyebrow-line {
-
-
-
-        width: 20px;
-
-
-
-    }
-
-
-
-    .divisions-main-title {
-
-
-
-        font-size: 26px;
-
-
-
-    }
-
-
-
-    .division-body-content {
-
-
-
-        padding: 14px 18px 22px 18px;
-
-
-
-    }
-
-
-
-    .division-badge {
-
-
-
-        width: 52px;
-
-
-
-        height: 52px;
-
-
-
-        border-width: 3px;
-
-
-
-    }
-
-
-
-    .division-badge-icon {
-
-
-
-        width: 25px;
-
-
-
-        height: 25px;
-
-
-
-    }
-
-
-
+.divisions-lead-text {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: #4A5B6D;
+    font-size: 15.5px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 14px auto 0 auto;
 }
 
+/* Division Card (White card with clean border & flush 16:9 image) */
+.division-modern-card {
+    background-color: #FFFFFF !important;
+    border: 1px solid #EAECEF !important;
+    border-radius: 6px !important;
+    overflow: hidden;
+    box-shadow: none !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
 
+.division-modern-card:hover {
+    border-color: var(--rap-accent-orange, #f68c50) !important;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(13, 34, 56, 0.08) !important;
+}
 
+.division-card-img-wrap {
+    width: 100%;
+    aspect-ratio: 16 / 9.5;
+    overflow: hidden;
+    background-color: #EAECEF;
+}
 
+.division-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.35s ease;
+}
 
+.division-modern-card:hover .division-card-img {
+    transform: scale(1.04);
+}
+
+.division-card-body {
+    padding: 22px 18px 24px 18px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.division-card-num {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #142F50;
+    line-height: 1;
+    margin: 0 0 6px 0;
+}
+
+.division-card-divider {
+    width: 24px;
+    height: 1.5px;
+    background-color: var(--rap-accent-orange, #f68c50);
+    margin: 0 auto 12px auto;
+}
+
+.division-card-title {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #142F50;
+    margin: 0 0 10px 0;
+    line-height: 1.3;
+}
+
+.division-card-text {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: #5D6F86 !important;
+    font-size: 13.5px !important;
+    line-height: 1.55 !important;
+    margin-bottom: 20px;
+}
+
+.division-card-action {
+    margin-top: auto;
+}
+
+.division-explore-link {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #142F50;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s ease;
+}
+
+.division-explore-link:hover {
+    color: var(--rap-accent-orange, #f68c50) !important;
+}
+
+.division-arrow-icon {
+    color: var(--rap-accent-orange, #f68c50);
+    font-size: 12px;
+    transition: transform 0.2s ease;
+}
+
+.division-explore-link:hover .division-arrow-icon {
+    transform: translateX(4px);
+}
 
 
 /* --------------------------------------------------------------------------
@@ -2759,760 +1755,155 @@ nav.navbar.sticky-top {
 
 
 
-/* Eyebrow with flanking divider lines */
-
-
+/* --------------------------------------------------------------------------
+   5. Specialized Workshop Services (Exact Match to Reference Image)
+   -------------------------------------------------------------------------- */
+.services-section-wrapper {
+    background-color: #FFFFFF;
+}
 
 .service-section-eyebrow .eyebrow-line {
-
-
-
     display: inline-block;
-
-
-
-    width: 38px;
-
-
-
-    height: 2px;
-
-
-
-    background-color: var(--rap-primary);
-
-
-
-    opacity: 0.35;
-
-
-
+    width: 34px;
+    height: 1px;
+    background-color: #CFD7DF;
 }
-
-
-
-
-
-
 
 .service-section-eyebrow .eyebrow-text {
-
-
-
-    color: var(--rap-primary);
-
-
-
-    font-size: 13px;
-
-
-
-    letter-spacing: 1.5px;
-
-
-
+    color: #09465f;
+    font-size: 11px;
+    letter-spacing: 2.2px;
     font-weight: 700;
-
-
-
 }
 
-
-
-
-
-
-
-.text-primary-brand {
-
-
-
-    color: var(--rap-primary) !important;
-
-
-
+.services-heading {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 42px;
+    font-weight: 300;
+    color: #142F50;
+    letter-spacing: -0.5px;
+    margin: 6px 0 0 0;
 }
 
+@media (max-width: 767.98px) {
+    .services-heading {
+        font-size: 30px;
+    }
+}
 
+.services-lead-text {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: #4A5B6D;
+    font-size: 15.5px;
+    line-height: 1.6;
+    max-width: 680px;
+    margin: 14px auto 0 auto;
+}
 
-
-
-
-
-/* Modern Card Container */
-
-
-
-.service-modern-card {
-
-
-
-    border: 1px solid #e9ecef !important;
-
-
-
-    border-radius: 8px !important;
-
-
-
+/* Service Card Reference Design (#F8F8F8 surface with #EAECEF border) */
+.service-modern-card,
+.service-card-ref {
+    background-color: #F8F8F8 !important;
+    border: 1px solid #EAECEF !important;
+    border-radius: 6px !important;
     overflow: hidden;
-
-
-
-    position: relative;
-
-
-
-    z-index: 2;
-
-
-
-    transition: transform 0.25s ease, border-color 0.25s ease;
-
-
-
     box-shadow: none !important;
-
-
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
-
-
-
-
-
-
-.service-modern-card:hover {
-
-
-
+.service-modern-card:hover,
+.service-card-ref:hover {
+    border-color: var(--rap-accent-orange, #f68c50) !important;
     transform: translateY(-4px);
-
-
-
-    border-color: var(--rap-primary) !important;
-
-
-
+    box-shadow: 0 10px 24px rgba(13, 34, 56, 0.08) !important;
 }
-
-
-
-
-
-
-
-/* Full-bleed Header Photo */
-
-
 
 .service-card-img-wrap {
-
-
-
     width: 100%;
-
-
-
-    height: 220px;
-
-
-
+    height: 205px;
     overflow: hidden;
-
-
-
-    background-color: #f1f3f5;
-
-
-
-    position: relative;
-
-
-
+    background-color: #EAECEF;
 }
-
-
-
-
-
-
 
 .service-card-img {
-
-
-
     width: 100%;
-
-
-
     height: 100%;
-
-
-
     object-fit: cover;
-
-
-
     display: block;
-
-
-
     transition: transform 0.35s ease;
-
-
-
 }
 
-
-
-
-
-
-
-.service-modern-card:hover .service-card-img {
-
-
-
+.service-modern-card:hover .service-card-img,
+.service-card-ref:hover .service-card-img {
     transform: scale(1.04);
-
-
-
 }
-
-
-
-
-
-
-
-/* Floating Overlapping Icon Box */
-
-
-
-.service-floating-icon {
-
-
-
-    width: 54px;
-
-
-
-    height: 54px;
-
-
-
-    background-color: var(--rap-primary-light);
-
-
-
-    border: 1.5px solid var(--rap-primary-border);
-
-
-
-    color: var(--rap-primary);
-
-
-
-    border-radius: 8px;
-
-
-
-    display: flex;
-
-
-
-    align-items: center;
-
-
-
-    justify-content: center;
-
-
-
-    font-size: 22px;
-
-
-
-    margin-top: -27px;
-
-
-
-    margin-left: 20px;
-
-
-
-    position: relative;
-
-
-
-    z-index: 3;
-
-
-
-    transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
-
-
-
-}
-
-
-
-
-
-
-
-.service-modern-card:hover .service-floating-icon {
-
-
-
-    background-color: var(--rap-primary);
-
-
-
-    color: #ffffff;
-
-
-
-    border-color: var(--rap-primary);
-
-
-
-    transform: translateY(-2px);
-
-
-
-}
-
-
-
-
-
-
-
-/* Card Body Content */
-
-
 
 .service-card-body {
-
-
-
-    padding: 16px 24px 24px 24px;
-
-
-
+    padding: 24px 22px 24px 22px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
 }
-
-
-
-
-
-
 
 .service-card-title {
-
-
-
-    font-size: 21px;
-
-
-
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 19px;
     font-weight: 600;
-
-
-
-    margin-top: 10px;
-
-
-
-    margin-bottom: 12px;
-
-
-
-    color: #212934;
-
-
-
-    transition: color 0.2s ease;
-
-
-
+    color: #142F50;
+    margin: 0;
+    line-height: 1.3;
 }
 
-
-
-
-
-
-
-.service-modern-card:hover .service-card-title {
-
-
-
-    color: var(--rap-primary);
-
-
-
+.service-card-divider {
+    width: 28px;
+    height: 1.5px;
+    background-color: var(--rap-accent-orange, #f68c50);
+    margin: 10px auto 14px auto;
 }
-
-
-
-
-
-
 
 .service-card-text {
-
-
-
-    color: #5a6472 !important;
-
-
-
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: #4A5B6D !important;
     font-size: 14.5px !important;
-
-
-
     line-height: 1.6 !important;
-
-
-
-    margin-bottom: 24px;
-
-
-
+    margin-bottom: 22px;
 }
 
+.service-card-action {
+    margin-top: auto;
+}
 
-
-
-
-
-
-/* Bottom Inquiry Button (Matching Mockup with Arrow) */
-
-
-
-.service-inquiry-btn {
-
-
-
-    border: 1.5px solid var(--rap-primary) !important;
-
-
-
-    color: var(--rap-primary) !important;
-
-
-
-    background-color: transparent !important;
-
-
-
-    border-radius: 6px !important;
-
-
-
-    padding: 9px 18px !important;
-
-
-
-    font-size: 14.5px !important;
-
-
-
-    font-weight: 500 !important;
-
-
-
-    display: flex;
-
-
-
-    align-items: center;
-
-
-
-    justify-content: space-between;
-
-
-
+.service-explore-link {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #142F50;
     text-decoration: none;
-
-
-
-    transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
-
-
-
-}
-
-
-
-
-
-
-
-.service-inquiry-btn .text-whatsapp {
-
-
-
-    color: #25D366 !important;
-
-
-
-    transition: color 0.2s ease;
-
-
-
-}
-
-
-
-
-
-
-
-.service-inquiry-btn .service-btn-label {
-
-
-
-    font-weight: 500;
-
-
-
-    color: var(--rap-primary);
-
-
-
-    transition: color 0.2s ease;
-
-
-
-}
-
-
-
-
-
-
-
-.service-inquiry-btn .service-btn-arrow {
-
-
-
-    font-size: 14px;
-
-
-
-    color: var(--rap-primary);
-
-
-
-    transition: transform 0.2s ease, color 0.2s ease;
-
-
-
-}
-
-
-
-
-
-
-
-.service-inquiry-btn:hover {
-
-
-
-    background-color: var(--rap-primary) !important;
-
-
-
-    border-color: var(--rap-primary) !important;
-
-
-
-    color: #ffffff !important;
-
-
-
-}
-
-
-
-
-
-
-
-.service-inquiry-btn:hover .service-btn-label,
-
-
-
-.service-inquiry-btn:hover .service-btn-arrow {
-
-
-
-    color: #ffffff !important;
-
-
-
-}
-
-
-
-
-
-
-
-.service-inquiry-btn:hover .service-btn-arrow {
-
-
-
-    transform: translateX(4px);
-
-
-
-}
-
-
-
-
-
-
-
-.service-inquiry-btn:hover .text-whatsapp {
-
-
-
-    color: #ffffff !important;
-
-
-
-}
-
-
-
-
-
-
-
-/* Legacy service-card support */
-
-
-
-.service-card {
-
-
-
-    border-radius: 8px;
-
-
-
-    overflow: hidden;
-
-
-
-    transition: transform 0.25s ease, border-color 0.25s ease;
-
-
-
-}
-
-
-
-.service-card:hover {
-
-
-
-    transform: translateY(-4px);
-
-
-
-    border-color: var(--rap-primary) !important;
-
-
-
-}
-
-
-
-.service-img-wrap {
-
-
-
-    height: 200px;
-
-
-
-    background-color: #f8f9fa;
-
-
-
-    display: flex;
-
-
-
+    display: inline-flex;
     align-items: center;
-
-
-
     justify-content: center;
-
-
-
-    overflow: hidden;
-
-
-
-    padding: 12px;
-
-
-
+    transition: color 0.2s ease;
 }
 
-
-
-.service-img-wrap img {
-
-
-
-    max-height: 100%;
-
-
-
-    max-width: 100%;
-
-
-
-    object-fit: contain;
-
-
-
-    transition: transform 0.3s ease;
-
-
-
+.service-explore-link:hover {
+    color: var(--rap-accent-orange, #f68c50) !important;
 }
 
-
-
-.service-card:hover .service-img-wrap img {
-
-
-
-    transform: scale(1.04);
-
-
-
+.service-arrow-icon {
+    color: var(--rap-accent-orange, #f68c50) !important;
+    font-size: 12px;
+    transition: transform 0.2s ease;
 }
 
-
-
-
-
+.service-explore-link:hover .service-arrow-icon {
+    transform: translateX(4px);
+}
 
 
 /* --------------------------------------------------------------------------
@@ -4457,4 +2848,1683 @@ nav.navbar.sticky-top {
     background-color: var(--rap-accent-orange) !important;
     opacity: 1;
     transform: scale(1.2);
+}
+
+
+/* --------------------------------------------------------------------------
+   15. Editorial Product Showcase (Exact Reference 3 Implementation)
+   -------------------------------------------------------------------------- */
+.editorial-products-section {
+    background-color: #FFFFFF;
+}
+
+.editorial-products-header-wrap {
+    position: relative;
+    padding-bottom: 6px;
+}
+
+.editorial-header-top-bar {
+    width: 32px;
+    height: 2px;
+    background-color: var(--rap-accent-orange, #f68c50);
+    margin-bottom: 10px;
+}
+
+.editorial-header-title-row {
+    position: relative;
+    gap: 20px;
+}
+
+.editorial-section-heading {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: 2.2px;
+    text-transform: uppercase;
+    color: #142F50;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.editorial-header-connecting-line {
+    height: 1px;
+    background-color: #E2E8F0;
+    flex-grow: 1;
+    margin: 0 4px;
+}
+
+.editorial-products-subtitle {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 13.5px;
+    color: #6C7A89;
+    max-width: 580px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    line-height: 1.55;
+}
+
+.editorial-view-all-link {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #142F50;
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    transition: color 0.2s ease;
+}
+
+.editorial-view-all-link:hover {
+    color: var(--rap-accent-orange, #f68c50) !important;
+}
+
+.editorial-view-all-arrow {
+    color: var(--rap-accent-orange, #f68c50);
+    font-size: 11px;
+    transition: transform 0.2s ease;
+}
+
+.editorial-view-all-link:hover .editorial-view-all-arrow {
+    transform: translateX(4px);
+}
+
+/* Editorial Products Grid: 5-columns on wide desktop */
+.editorial-products-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 18px;
+}
+
+@media (max-width: 1199.98px) {
+    .editorial-products-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 16px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .editorial-products-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .editorial-products-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+}
+
+@media (max-width: 440px) {
+    .editorial-products-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+}
+
+/* Editorial Card (Exact Color from Reference 3: #F1F2F4) */
+.editorial-product-card {
+    background-color: #F1F2F4 !important;
+    border: 1px solid #EAECEF;
+    border-radius: 4px;
+    padding: 14px 12px 18px 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    box-shadow: none !important;
+    text-decoration: none !important;
+    cursor: pointer;
+    transition: transform 0.25s ease, border-color 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.editorial-product-card:hover {
+    background-color: #F6F8FA !important;
+    border-color: var(--rap-accent-orange, #f68c50) !important;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(13, 34, 56, 0.08) !important;
+}
+
+/* Image container */
+.editorial-img-container {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    background-color: transparent;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.editorial-product-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+    transition: transform 0.35s ease;
+}
+
+.editorial-product-card:hover .editorial-product-img {
+    transform: scale(1.03);
+}
+
+/* Typography Hierarchy */
+.editorial-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.editorial-title {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: #142F50;
+    margin: 0 0 2px 0;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.editorial-divider-orange {
+    width: 22px;
+    height: 1.5px;
+    background-color: var(--rap-accent-orange, #f68c50);
+    margin: 8px auto 8px auto;
+}
+
+.editorial-desc {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    color: #5D6F86;
+    margin-bottom: 4px;
+    font-weight: 500;
+    line-height: 1.25;
+}
+
+.editorial-brand {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #8C9BAE;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+
+
+/* --------------------------------------------------------------------------
+   16. Authorized Dealership Section (Exact Match to Reference Image)
+   -------------------------------------------------------------------------- */
+.dealership-section-wrapper {
+    background-color: #EEF4F9;
+    position: relative;
+    overflow: hidden;
+}
+
+.dealership-img-wrap {
+    width: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 20px rgba(13, 34, 56, 0.06);
+    border: 1px solid #E2E8F0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dealership-img-wrap:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 28px rgba(13, 34, 56, 0.1);
+}
+
+.dealership-showcase-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.dealership-top-bar {
+    width: 32px;
+    height: 2px;
+    background-color: var(--rap-accent-orange, #f68c50);
+    margin-bottom: 10px;
+}
+
+.dealership-eyebrow {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: #5D6F86;
+    font-size: 11.5px;
+    letter-spacing: 2.2px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.dealership-heading {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    color: #142F50;
+    letter-spacing: -0.5px;
+    margin: 0 0 16px 0;
+    line-height: 1.25;
+}
+
+@media (max-width: 767.98px) {
+    .dealership-heading {
+        font-size: 30px;
+    }
+}
+
+.dealership-lead-desc {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: #5D6F86;
+    font-size: 14.5px;
+    line-height: 1.6;
+    margin-bottom: 14px;
+}
+
+.dealership-body-desc {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: #5D6F86;
+    font-size: 14.5px;
+    line-height: 1.6;
+    margin-bottom: 22px;
+}
+
+.text-navy {
+    color: #142F50 !important;
+}
+
+/* Checkmark Badges */
+.dealership-check-badge {
+    width: 24px;
+    height: 24px;
+    background-color: #142F50;
+    color: #FFFFFF;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    margin-top: 2px;
+}
+
+.dealership-feature-title {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #142F50;
+}
+
+.dealership-feature-desc {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 13px;
+    color: #6C7A89;
+    line-height: 1.5;
+}
+
+/* Action Buttons */
+.dealership-btn-primary {
+    background-color: #142F50 !important;
+    border: 1px solid #142F50 !important;
+    color: #FFFFFF !important;
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 13.5px;
+    font-weight: 600;
+    padding: 10px 22px;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.25s ease, border-color 0.25s ease, transform 0.2s ease;
+}
+
+.dealership-btn-primary:hover {
+    background-color: var(--rap-accent-orange, #f68c50) !important;
+    border-color: var(--rap-accent-orange, #f68c50) !important;
+    color: #FFFFFF !important;
+    transform: translateY(-2px);
+}
+
+.dealership-btn-outline {
+    background-color: transparent !important;
+    border: 1px solid #142F50 !important;
+    color: #142F50 !important;
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 13.5px;
+    font-weight: 600;
+    padding: 10px 22px;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease, transform 0.2s ease;
+}
+
+.dealership-btn-outline:hover {
+    background-color: #142F50 !important;
+    color: #FFFFFF !important;
+    transform: translateY(-2px);
+}
+
+.dealership-btn-arrow {
+    transition: transform 0.2s ease;
+}
+
+.dealership-btn-outline:hover .dealership-btn-arrow {
+    transform: translateX(4px);
+}
+
+
+
+/* --------------------------------------------------------------------------
+   17. Brand Partner Showcase (Exact Match to Reference Image)
+   -------------------------------------------------------------------------- */
+.brands-section-wrapper {
+    background-color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+}
+
+.brands-section-eyebrow .brands-eyebrow-line {
+    display: inline-block;
+    width: 34px;
+    height: 1px;
+    background-color: #CFD7DF;
+}
+
+.brands-section-eyebrow .brands-eyebrow-text {
+    color: #09465f;
+    font-size: 11px;
+    letter-spacing: 2.2px;
+    font-weight: 700;
+}
+
+.brands-heading {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 42px;
+    font-weight: 300;
+    color: #142F50;
+    letter-spacing: -0.5px;
+    margin: 6px 0 0 0;
+}
+
+@media (max-width: 767.98px) {
+    .brands-heading {
+        font-size: 30px;
+    }
+}
+
+.brands-lead-text {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: #4A5B6D;
+    font-size: 15.5px;
+    line-height: 1.6;
+    max-width: 680px;
+    margin: 14px auto 0 auto;
+}
+
+/* 5 Evenly Spaced Brand Cards Grid */
+.brands-grid-row {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 10px;
+}
+
+@media (max-width: 991.98px) {
+    .brands-grid-row {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .brands-grid-row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+}
+
+.brand-partner-card {
+    background-color: #FFFFFF;
+    border: 1px solid #EAECEF;
+    border-radius: 6px;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 18px;
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    box-shadow: none !important;
+}
+
+.brand-partner-card:hover {
+    border-color: var(--rap-accent-orange, #f68c50) !important;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(13, 34, 56, 0.08) !important;
+}
+
+.brand-partner-logo {
+    max-width: 82%;
+    max-height: 48px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    filter: grayscale(100%) opacity(0.85);
+    transition: filter 0.25s ease, transform 0.25s ease;
+}
+
+.brand-partner-card:hover .brand-partner-logo {
+    filter: grayscale(0%) opacity(1);
+    transform: scale(1.04);
+}
+
+
+/* ==========================================================================
+   Section 9: Facility & Operational Strengths (#about)
+   ========================================================================== */
+.facility-section-wrapper {
+    background-color: #EEF4F9;
+    position: relative;
+    overflow: hidden;
+}
+
+.facility-top-bar {
+    width: 34px;
+    height: 2px;
+    background-color: #f68c50;
+    border-radius: 1px;
+}
+
+.facility-eyebrow {
+    color: #5D6F86;
+    font-size: 11.5px;
+    letter-spacing: 2.2px;
+    font-weight: 700;
+}
+
+.facility-heading {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 38px;
+    font-weight: 300;
+    color: #142F50;
+    letter-spacing: -0.5px;
+    line-height: 1.25;
+}
+
+@media (max-width: 767.98px) {
+    .facility-heading {
+        font-size: 28px;
+    }
+}
+
+.facility-description {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: #5D6F86;
+    font-size: 14.5px;
+    line-height: 1.65;
+    max-width: 530px;
+}
+
+.facility-icon-box {
+    width: 44px;
+    height: 44px;
+    background-color: #FFFFFF;
+    border: 1px solid #D8E2EC;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #142F50;
+    font-size: 18px;
+    box-shadow: 0 2px 6px rgba(13, 34, 56, 0.03);
+    transition: all 0.25s ease;
+}
+
+.facility-feature-item:hover .facility-icon-box {
+    border-color: #f68c50;
+    color: #f68c50;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(246, 140, 80, 0.15);
+}
+
+.facility-feature-title {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 14.5px;
+    font-weight: 700;
+    color: #142F50;
+    margin-bottom: 2px;
+}
+
+.facility-feature-desc {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 12.5px;
+    color: #6C7A89;
+    line-height: 1.45;
+}
+
+.facility-journey-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 22px;
+    background-color: transparent;
+    border: 1px solid #CBD5E1;
+    border-radius: 6px;
+    color: #142F50;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.facility-journey-btn:hover {
+    background-color: #FFFFFF;
+    border-color: #142F50;
+    color: #142F50;
+    box-shadow: 0 4px 12px rgba(13, 34, 56, 0.06);
+    transform: translateY(-1px);
+}
+
+/* Right Column Contact Card */
+.facility-contact-card {
+    background-color: #FFFFFF;
+    border: 1px solid #EAECEF;
+    border-radius: 8px;
+    padding: 34px 32px;
+    box-shadow: 0 4px 20px rgba(13, 34, 56, 0.05);
+}
+
+@media (max-width: 575.98px) {
+    .facility-contact-card {
+        padding: 24px 20px;
+    }
+}
+
+.facility-card-title {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #142F50;
+    letter-spacing: -0.2px;
+}
+
+.facility-card-subtitle {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 13px;
+    color: #6C7A89;
+    line-height: 1.55;
+}
+
+.facility-btn-solid-navy {
+    background-color: #142F50;
+    color: #FFFFFF !important;
+    border: 1px solid #142F50;
+    border-radius: 6px;
+    padding: 11px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.25s ease;
+}
+
+.facility-btn-solid-navy:hover {
+    background-color: #f68c50;
+    border-color: #f68c50;
+    color: #FFFFFF !important;
+    box-shadow: 0 4px 14px rgba(246, 140, 80, 0.3);
+    transform: translateY(-1px);
+}
+
+.facility-btn-outline-navy {
+    background-color: #FFFFFF;
+    color: #142F50 !important;
+    border: 1px solid #CBD5E1;
+    border-radius: 6px;
+    padding: 11px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.25s ease;
+}
+
+.facility-btn-outline-navy:hover {
+    border-color: #142F50;
+    color: #142F50 !important;
+    box-shadow: 0 4px 12px rgba(13, 34, 56, 0.06);
+    transform: translateY(-1px);
+}
+
+.facility-card-footer {
+    border-top: 1px solid #EAECEF;
+    font-size: 12.5px;
+    color: #5D6F86;
+    line-height: 1.5;
+}
+
+.facility-footer-icon {
+    color: #142F50;
+    font-size: 13px;
+    width: 16px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+/* ==========================================================================
+   Section 10: Project & Product Gallery (#gallery) - 1:1 Reference Match
+   ========================================================================== */
+.gallery-section-wrapper {
+    background-color: #FFFFFF !important;
+    position: relative;
+    padding-top: 25.5px !important;
+    padding-bottom: 21.5px !important;
+    box-sizing: border-box !important;
+}
+
+.gallery-inner-container {
+    max-width: 914px !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+.gallery-header-wrap {
+    text-align: center !important;
+    margin-bottom: 16px !important;
+}
+
+.gallery-section-eyebrow {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    margin-bottom: 6px !important;
+}
+
+.gallery-eyebrow-line {
+    display: inline-block !important;
+    width: 24px !important;
+    height: 1px !important;
+    background-color: #94A3B8 !important;
+}
+
+.gallery-eyebrow-text {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+    color: #64748B !important;
+    font-size: 9.5px !important;
+    letter-spacing: 1.5px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    line-height: 1 !important;
+}
+
+.gallery-heading {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+    font-size: 30px !important;
+    font-weight: 300 !important;
+    color: #1E293B !important;
+    letter-spacing: -0.4px !important;
+    line-height: 1.15 !important;
+    margin: 0 0 6px 0 !important;
+}
+
+.gallery-lead-text {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+    color: #64748B !important;
+    font-size: 12px !important;
+    line-height: 1.45 !important;
+    max-width: 535px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+}
+
+/* 4 Cards Grid */
+.gallery-cards-grid {
+    display: flex !important;
+    justify-content: space-between !important;
+    gap: 11px !important;
+    margin-bottom: 18px !important;
+}
+
+.gallery-card {
+    flex: 1 1 0px !important;
+    min-width: 0 !important;
+    width: 220px !important;
+    max-width: 220px !important;
+    height: 208px !important;
+    background-color: #FFFFFF !important;
+    border: 1px solid #E2E8F0 !important;
+    border-radius: 4px !important;
+    overflow: hidden !important;
+    display: flex !important;
+    flex-direction: column !important;
+    box-shadow: none !important;
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease !important;
+    box-sizing: border-box !important;
+}
+
+.gallery-card:hover {
+    border-color: #CBD5E1 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(15, 23, 42, 0.06) !important;
+}
+
+.gallery-card-img-wrap {
+    position: relative !important;
+    width: 100% !important;
+    height: 155px !important;
+    overflow: hidden !important;
+    background-color: #F8FAFC !important;
+}
+
+.gallery-card-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+    transition: transform 0.35s ease !important;
+}
+
+.gallery-card:hover .gallery-card-img {
+    transform: scale(1.03);
+}
+
+.gallery-card-body {
+    padding: 10px 14px 12px 14px !important;
+    height: 53px !important;
+    background-color: #FFFFFF !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+}
+
+.gallery-card-category {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+    font-size: 9px !important;
+    letter-spacing: 1.2px !important;
+    font-weight: 600 !important;
+    color: #64748B !important;
+    text-transform: uppercase !important;
+    margin-bottom: 2px !important;
+    line-height: 1.2 !important;
+}
+
+.gallery-card-title {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+    font-size: 13.5px !important;
+    font-weight: 500 !important;
+    color: #1E293B !important;
+    line-height: 1.25 !important;
+    margin: 0 !important;
+}
+
+/* Bottom Button */
+.gallery-btn-wrap {
+    text-align: center !important;
+}
+
+.gallery-view-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 29px !important;
+    padding: 0 18px !important;
+    background-color: #FFFFFF !important;
+    border: 1px solid #CBD5E1 !important;
+    border-radius: 3px !important;
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+    font-size: 11.5px !important;
+    font-weight: 500 !important;
+    color: #475569 !important;
+    text-decoration: none !important;
+    transition: all 0.2s ease !important;
+    box-sizing: border-box !important;
+}
+
+.gallery-view-btn i {
+    color: #f68c50 !important;
+    font-size: 10px !important;
+    margin-left: 6px !important;
+    transition: transform 0.2s ease;
+}
+
+.gallery-view-btn:hover {
+    border-color: #94A3B8 !important;
+    color: #1E293B !important;
+    background-color: #F8FAFC !important;
+}
+
+.gallery-view-btn:hover i {
+    transform: translateX(3px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 920px) {
+    .gallery-inner-container {
+        padding: 0 16px !important;
+    }
+    .gallery-cards-grid {
+        flex-wrap: wrap !important;
+        gap: 14px !important;
+    }
+    .gallery-card {
+        flex: 1 1 calc(50% - 10px) !important;
+        max-width: calc(50% - 10px) !important;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .gallery-cards-grid {
+        flex-direction: column !important;
+    }
+    .gallery-card {
+        flex: 1 1 100% !important;
+        max-width: 100% !important;
+    }
+    .gallery-card-img-wrap {
+        height: 180px !important;
+    }
+    .gallery-heading {
+        font-size: 26px !important;
+    }
+}
+
+/* ==========================================================================
+   Section 11: Careers at Royal Auto Paints (#career)
+   ========================================================================== */
+.career-section-wrapper {
+    background-color: #EEF4F9;
+    position: relative;
+    overflow: hidden;
+}
+
+.career-top-bar {
+    width: 36px;
+    height: 2px;
+    background-color: #f68c50;
+    border-radius: 1px;
+}
+
+.career-eyebrow {
+    color: #5D6F86;
+    font-size: 11.5px;
+    letter-spacing: 2.2px;
+    font-weight: 700;
+}
+
+.career-heading {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    color: #142F50;
+    letter-spacing: -0.5px;
+    line-height: 1.25;
+}
+
+@media (max-width: 767.98px) {
+    .career-heading {
+        font-size: 28px;
+    }
+}
+
+.career-description {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: #5D6F86;
+    font-size: 14.5px;
+    line-height: 1.65;
+    max-width: 680px;
+}
+
+.career-perks-row {
+    margin-top: 4px;
+}
+
+.career-perk-item {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.career-perk-icon {
+    color: #f68c50;
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+.career-perk-text {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #142F50;
+}
+
+.career-perk-divider {
+    display: inline-block;
+    width: 1px;
+    height: 18px;
+    background-color: #CBD5E1;
+}
+
+.career-action-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 28px;
+    background-color: #142F50;
+    color: #FFFFFF !important;
+    border: 1px solid #142F50;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 14px rgba(20, 47, 80, 0.15);
+}
+
+.career-action-btn:hover {
+    background-color: #f68c50;
+    border-color: #f68c50;
+    color: #FFFFFF !important;
+    box-shadow: 0 4px 14px rgba(246, 140, 80, 0.3);
+    transform: translateY(-1px);
+}
+
+.career-action-btn:hover i {
+    color: #FFFFFF !important;
+}
+
+@media (max-width: 575.98px) {
+    .career-action-btn {
+        width: 100%;
+    }
+}
+
+/* ==========================================================================
+   Section 12: Customer Testimonials (#testimonials)
+   ========================================================================== */
+.testimonials-section-wrapper {
+    background-color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonials-section-eyebrow .testimonials-eyebrow-line {
+    display: inline-block;
+    width: 34px;
+    height: 1px;
+    background-color: #CFD7DF;
+}
+
+.testimonials-section-eyebrow .testimonials-eyebrow-text {
+    color: #5D6F86;
+    font-size: 11px;
+    letter-spacing: 2.2px;
+    font-weight: 700;
+}
+
+.testimonials-heading {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 42px;
+    font-weight: 300;
+    color: #142F50;
+    letter-spacing: -0.5px;
+    margin: 6px 0 0 0;
+}
+
+@media (max-width: 767.98px) {
+    .testimonials-heading {
+        font-size: 30px;
+    }
+}
+
+.testimonials-lead-text {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: #4A5B6D;
+    font-size: 15.5px;
+    line-height: 1.6;
+    max-width: 680px;
+}
+
+.testimonial-card {
+    background-color: #FFFFFF;
+    border: 1px solid #EAECEF;
+    border-radius: 8px;
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    box-shadow: none !important;
+}
+
+.testimonial-card:hover {
+    border-color: #f68c50 !important;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(13, 34, 56, 0.08) !important;
+}
+
+.testimonial-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #142F50;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: background-color 0.25s ease;
+}
+
+.testimonial-card:hover .testimonial-avatar {
+    background-color: #f68c50;
+}
+
+.testimonial-author-name {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: #142F50;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.testimonial-author-meta {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: #5D6F86;
+    font-size: 12.5px;
+}
+
+/* ==========================================================================
+   Section 13: Location Guide & Contact Desk (#contact)
+   ========================================================================== */
+.contact-section-wrapper {
+    background-color: #EEF4F9;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-section-eyebrow .contact-eyebrow-line {
+    display: inline-block;
+    width: 34px;
+    height: 1px;
+    background-color: #CFD7DF;
+}
+
+.contact-section-eyebrow .contact-eyebrow-text {
+    color: #5D6F86;
+    font-size: 11px;
+    letter-spacing: 2.2px;
+    font-weight: 700;
+}
+
+.contact-heading {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 42px;
+    font-weight: 300;
+    color: #142F50;
+    letter-spacing: -0.5px;
+    margin: 6px 0 0 0;
+}
+
+@media (max-width: 767.98px) {
+    .contact-heading {
+        font-size: 30px;
+    }
+}
+
+.contact-lead-text {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: #4A5B6D;
+    font-size: 15.5px;
+    line-height: 1.6;
+    max-width: 680px;
+}
+
+/* Left Card: Details */
+.contact-details-card {
+    background-color: #FFFFFF;
+    border: 1px solid #EAECEF;
+    border-radius: 8px;
+    padding: 30px 26px;
+    box-shadow: 0 4px 20px rgba(13, 34, 56, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-card-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #142F50;
+    letter-spacing: -0.2px;
+}
+
+.contact-title-bar {
+    width: 34px;
+    height: 2px;
+    background-color: #f68c50;
+    border-radius: 1px;
+}
+
+.contact-icon-box {
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+    background-color: #EEF4F9;
+    color: #142F50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    flex-shrink: 0;
+    margin-top: 2px;
+    transition: all 0.25s ease;
+}
+
+.contact-info-item:hover .contact-icon-box {
+    background-color: #f68c50;
+    color: #FFFFFF;
+}
+
+.contact-info-label {
+    font-family: 'Roboto', sans-serif;
+    color: #142F50;
+    font-size: 13.5px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.contact-info-value, .contact-info-link {
+    font-family: 'Roboto', sans-serif;
+    color: #5D6F86;
+    font-size: 13px;
+    line-height: 1.45;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.contact-info-link:hover {
+    color: #f68c50;
+}
+
+.contact-hours-box {
+    background-color: #EEF4F9;
+    border-radius: 6px;
+    padding: 14px 16px;
+}
+
+.contact-hours-clock {
+    color: #142F50;
+    font-size: 15px;
+}
+
+.contact-hours-title {
+    font-family: 'Roboto', sans-serif;
+    color: #142F50;
+    font-size: 13.5px;
+    font-weight: 700;
+}
+
+.contact-hours-day {
+    color: #5D6F86;
+    font-size: 12.5px;
+}
+
+.contact-hours-time {
+    color: #142F50;
+    font-size: 12.5px;
+    font-weight: 700;
+}
+
+.contact-closed-badge {
+    background-color: #718096;
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 4px;
+}
+
+/* Right Card: Map */
+.contact-map-card {
+    background-color: #FFFFFF;
+    border: 1px solid #EAECEF;
+    border-radius: 8px;
+    padding: 14px;
+    box-shadow: 0 4px 20px rgba(13, 34, 56, 0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-map-frame-wrap {
+    width: 100%;
+    height: 310px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #E2E8F0;
+    flex-grow: 1;
+}
+
+@media (max-width: 767.98px) {
+    .contact-map-frame-wrap {
+        height: 250px;
+    }
+}
+
+.contact-map-iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+
+.contact-map-footer {
+    padding-top: 14px;
+}
+
+.contact-map-footer-title {
+    font-family: 'Roboto', sans-serif;
+    color: #142F50;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.contact-map-footer-desc {
+    font-family: 'Roboto', sans-serif;
+    color: #5D6F86;
+    font-size: 12px;
+}
+
+.contact-map-action-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 20px;
+    background-color: #142F50;
+    color: #FFFFFF !important;
+    border: 1px solid #142F50;
+    border-radius: 6px;
+    font-size: 13.5px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 12px rgba(20, 47, 80, 0.15);
+}
+
+.contact-map-action-btn:hover {
+    background-color: #f68c50;
+    border-color: #f68c50;
+    color: #FFFFFF !important;
+    box-shadow: 0 4px 14px rgba(246, 140, 80, 0.3);
+    transform: translateY(-1px);
+}
+
+.contact-map-action-btn:hover i {
+    color: #FFFFFF !important;
+}
+
+@media (max-width: 575.98px) {
+    .contact-map-action-btn {
+        width: 100%;
+    }
+}
+
+/* ==========================================================================
+   Section 14: Corporate Footer (#tempaltemo_footer) - 1:1 Design Parity
+   ========================================================================== */
+.footer-main-wrapper {
+    background-color: #16222E !important;
+    color: #94A3B8;
+    position: relative;
+    padding-top: 36px !important;
+    padding-bottom: 24px !important;
+    box-sizing: border-box !important;
+}
+
+.footer-inner-container {
+    max-width: 860px !important;
+    margin: 0 auto !important;
+    padding: 0 11px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+.footer-grid-row {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: stretch !important;
+}
+
+/* Three Columns with Vertical Divider Lines */
+.footer-col-profile {
+    flex: 1.15 !important;
+    min-width: 0 !important;
+    padding-right: 28px !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.08) !important;
+    box-sizing: border-box !important;
+}
+
+.footer-col-divisions {
+    flex: 1.12 !important;
+    min-width: 0 !important;
+    padding-left: 28px !important;
+    padding-right: 28px !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.08) !important;
+    box-sizing: border-box !important;
+}
+
+.footer-col-nav {
+    flex: 1 !important;
+    min-width: 0 !important;
+    padding-left: 28px !important;
+    box-sizing: border-box !important;
+}
+
+@media (max-width: 860px) {
+    .footer-grid-row {
+        flex-direction: column !important;
+        gap: 32px !important;
+    }
+    .footer-col-profile,
+    .footer-col-divisions,
+    .footer-col-nav {
+        padding: 0 !important;
+        border-right: none !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+        padding-bottom: 24px !important;
+    }
+    .footer-col-nav {
+        border-bottom: none !important;
+        padding-bottom: 0 !important;
+    }
+}
+
+/* Col 1: Logo & Accent */
+.footer-logo-wrap {
+    margin-bottom: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    height: 32px !important;
+}
+
+.footer-logo-wrap img {
+    height: 32px !important;
+    width: auto !important;
+    display: block !important;
+}
+
+.footer-accent-bar {
+    width: 28px !important;
+    height: 2px !important;
+    background-color: #f68c50 !important;
+    border-radius: 2px !important;
+    margin-top: 12px !important;
+    margin-bottom: 8px !important;
+}
+
+.footer-accent-col1 {
+    margin-top: 18px !important;
+    margin-bottom: 18px !important;
+}
+
+.footer-lead-text {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+    color: #94A3B8 !important;
+    font-size: 11px !important;
+    line-height: 1.55 !important;
+    margin-bottom: 16px !important;
+    max-width: 275px !important;
+}
+
+/* Col 1 Contact List */
+.footer-contact-list {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+}
+
+.footer-contact-item {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    margin-bottom: 8px !important;
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+    font-size: 11.5px !important;
+    line-height: 1.3 !important;
+    color: #CBD5E1 !important;
+}
+
+.footer-contact-badge {
+    width: 28px !important;
+    height: 28px !important;
+    border-radius: 50% !important;
+    background-color: #1C2A38 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-shrink: 0 !important;
+    transition: background-color 0.2s ease;
+}
+
+.footer-contact-item:hover .footer-contact-badge {
+    background-color: #243547 !important;
+}
+
+.footer-contact-icon {
+    color: #f68c50 !important;
+    font-size: 11px !important;
+}
+
+.footer-contact-text,
+.footer-contact-link {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+    color: #CBD5E1 !important;
+    font-size: 11.5px !important;
+    text-decoration: none !important;
+    transition: color 0.2s ease;
+}
+
+.footer-contact-link:hover {
+    color: #f68c50 !important;
+}
+
+/* Headings in Col 2 and Col 3 */
+.footer-col-title {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+    color: #FFFFFF !important;
+    font-size: 15.5px !important;
+    font-weight: 600 !important;
+    letter-spacing: -0.2px !important;
+    margin-bottom: 0 !important;
+    line-height: 1.2 !important;
+    height: 18px !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+/* Col 2: Business Divisions List */
+.footer-divisions-list {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+}
+
+.footer-division-item {
+    margin: 0 !important;
+    padding: 0 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07) !important;
+}
+
+.footer-division-link {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    height: 36px !important;
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+    color: #CBD5E1 !important;
+    font-size: 11.5px !important;
+    text-decoration: none !important;
+    transition: all 0.2s ease !important;
+}
+
+.footer-division-link:hover {
+    color: #f68c50 !important;
+    padding-left: 2px;
+}
+
+.footer-chevron {
+    color: #f68c50 !important;
+    font-size: 9.5px !important;
+    transition: transform 0.2s ease;
+}
+
+.footer-division-link:hover .footer-chevron,
+.footer-nav-link:hover .footer-chevron {
+    transform: translateX(3px);
+}
+
+/* Col 3: Navigation List */
+.footer-nav-list {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+}
+
+.footer-nav-item {
+    margin: 0 !important;
+    padding: 0 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07) !important;
+}
+
+.footer-nav-link {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    height: 22px !important;
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+    color: #CBD5E1 !important;
+    font-size: 11px !important;
+    text-decoration: none !important;
+    transition: all 0.2s ease !important;
+}
+
+.footer-nav-link:hover {
+    color: #f68c50 !important;
+    padding-left: 2px;
+}
+
+/* Col 3 Socials */
+.footer-social-wrap {
+    margin-top: 14px !important;
+}
+
+.footer-social-label {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+    color: #CBD5E1 !important;
+    font-size: 11.5px !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.1px;
+    margin-bottom: 8px !important;
+    line-height: 1.2 !important;
+}
+
+.footer-social-icons-row {
+    display: flex !important;
+    gap: 9px !important;
+}
+
+.footer-social-btn {
+    width: 34px !important;
+    height: 34px !important;
+    border-radius: 50% !important;
+    border: 1px solid rgba(255, 255, 255, 0.22) !important;
+    color: #FFFFFF !important;
+    background-color: transparent !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 13px !important;
+    text-decoration: none !important;
+    transition: all 0.2s ease;
+    padding: 0 !important;
+}
+
+.footer-social-btn:hover {
+    background-color: #f68c50 !important;
+    border-color: #f68c50 !important;
+    color: #FFFFFF !important;
+    transform: translateY(-2px);
+}
+
+.footer-social-btn i {
+    color: inherit !important;
+    font-size: 13px !important;
+}
+
+/* Bottom Copyright Bar */
+.footer-copyright-bar {
+    background-color: #111B25 !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+    padding: 0 !important;
+    height: 49px !important;
+    display: flex !important;
+    align-items: center !important;
+    box-sizing: border-box !important;
+}
+
+.footer-copyright-inner {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+}
+
+@media (max-width: 767.98px) {
+    .footer-copyright-bar {
+        height: auto !important;
+        padding: 12px 0 !important;
+    }
+    .footer-copyright-inner {
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: 6px !important;
+    }
+}
+
+.footer-copyright-text {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+    color: #8C9BAE !important;
+    font-size: 10.5px !important;
+    line-height: 1.4 !important;
+    margin: 0 !important;
+}
+
+.footer-copyright-text strong {
+    color: #FFFFFF !important;
+    font-weight: 600 !important;
+}
+
+.footer-tagline-text {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+    color: #718096 !important;
+    font-size: 10.5px !important;
+    line-height: 1.4 !important;
 }

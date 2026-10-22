@@ -2,33 +2,36 @@
 
 **Project Name:** Royal Auto Paints Qatar Website Redesign  
 **Foundation Framework:** TemplateMo 559 Zay Shop (Bootstrap 5.0.0-beta1 / HTML5 / CSS3 / Vanilla JS)  
-**Project Path:** `D:\manu\projects\royalautopaints` (Primary) / `E:\xev\royalautopaints` (Multi-Device Remote Sync)  
+**Project Path:** `D:\manu\projects\royal_paints_1` (Active Workspace) / `D:\manu\projects\royalautopaints` (Primary Mirror) / `E:\xev\royalautopaints` (Multi-Device Remote Sync)  
 **Reference Stock Path:** `E:\xev\zay_royal_paint_template_stock`  
 **Legacy Website Path:** `E:\xev\royalautopaints-com-old`  
 **Live Production Domain:** `https://www.royalautopaints.com/`  
 **Physical Headquarters:** Street 23, Wakalat St, Industrial Area, Doha, Qatar  
 **Direct Contacts:** Tel: `+974 4450 1669` | WhatsApp RFQ: `+974 5039 5741` | Email: `info@royalautopaints.com`  
-**Status:** Redesign Fully Integrated, Authenticated & Production Ready  
+**Status:** Redesign Fully Integrated, Authenticated & Production Ready (Sections 1–13 Complete)  
 
 ---
 
 ## 1. Executive Summary & Client Mandate
 
-Following the client's rejection of previous layout alternatives, the client officially approved the clean, minimalist aesthetic of **TemplateMo 559 Zay Shop** (`zay_royal_paint_template_stock`).
+Following the client's rejection of previous layout alternatives, the client officially approved the clean, minimalist aesthetic of **TemplateMo 559 Zay Shop** (`zay_royal_paint_template_stock`), customized with the authentic corporate brand identity of Royal Auto Paints Qatar.
 
 ### Strict Client Visual & Business Guidelines:
-1. **Royal Auto Paints Logo Brand Palette:** Swapped the stock generic template green (`#59ab6e`) with the authentic Royal Auto Paints logo color system: Primary Royal Oceanic Blue (`#09465f`), Paint Splash Warm Orange (`#f68c50`), Solar Gold (`#ffe05e`), and Slate Charcoal (`#58585a` / `#212934`) over a clean white (`#ffffff`) and light gray canvas (`#efefef`). The Google font (`Roboto`) typography hierarchy is strictly maintained.
-2. **Zero Drop Shadows:** Complete elimination of artificial elevations, blurred shadows, and drop shadows (`box-shadow: none !important`). Crisp 1px borders (`#e9ecef`) provide all component separation.
-3. **Comprehensive Section Integration from Legacy Site (`royalautopaints-com-old`):** The stock template lacked crucial business sections present in the original website. These have been redesigned and integrated in complete visual harmony:
-   - **Services Section:** Computerized Colour Mixing, Aerosol Can Filling, Motolux Refinish Distribution.
-   - **Comprehensive Product Catalog:** Categorized, filterable catalog containing authentic HB Body, Challenger, Axalta, and Imlar products with actual photos and instant WhatsApp RFQs.
-   - **Authorized Dealership & Brand Story:** Official Qatar dealership for Challenger and HB BODY since 2012.
-   - **Brand Partner Showcase:** Interactive grayscale-to-color hover logo ribbon (Axalta, Imlar, Gem Auto Paints, Gemex Coatings, Moto Max).
-   - **Verified Client Testimonials:** Authentic reviews from Qatar customers (James, Nasar, Abaan, Qaazi Ali, Shameem Akthar).
-   - **Location & Inquiries Desk:** Google Maps interactive embed for Street 23 Wakalat St, operating hours, telephone desk, and floating WhatsApp RFQ button.
-4. **Complete Responsive Architecture:** Solved the Zay template's core responsive flaws (`!important` 18px body font on mobile, massive 48px headings on small screens, overlapping carousel arrows, overflowing rows, and broken mobile menu collapses).
-5. **Exact Business Divisions Section Fidelity:** Redesigned `#divisions` into an integrated 4-column corporate division showcase matching the client-supplied specification: cool slate/navy palette (`#E9EFF7`, `#17365B`, `#142F50`, `#5D6F86`, `#BDCDDF`), high-definition vector SVG badge icons, 8px image insets with 17px divider gaps, and exact sub-pixel diagonal alignment.
+1. **Royal Auto Paints Logo Brand Palette:** Swapped the stock generic template green (`#59ab6e`) with the authentic Royal Auto Paints logo color system: Primary Royal Oceanic Blue (`#09465f`), Brand Navy (`#142F50`), Paint Splash Warm Orange (`#f68c50`), Solar Gold (`#ffe05e`), and Slate Charcoal (`#58585a` / `#212934`) over a clean white (`#ffffff`) and soft ice-tint canvas (`#EEF4F9` / `#EEF5FA`). The Google font (`Roboto`) typography hierarchy is strictly maintained.
+2. **Alternating Section Canvas Rhythm:** To establish visual structure, sections alternate seamlessly between:
+   - **Soft Ice-Tint Canvas (`#EEF4F9` / `#EEF5FA`):** Section 5 (`#divisions`), Section 7 (`#dealership`), Section 9 (`#about`), Section 11 (`#career`), and Section 13 (`#contact`).
+   - **Pure White Canvas (`#FFFFFF`):** Section 6 (`#products`), Section 8 (`#brands`), Section 10 (`#gallery`), and Section 12 (`#testimonials`).
+3. **Zero Drop Shadows Mandate:** Elimination of heavy artificial elevations and blurred shadows (`box-shadow: none !important`). Crisp 1px borders (`#EAECEF` / `#E2E8F0` / `#CBD5E1`) provide all component separation, complemented only by subtle ambient hover depth (`0 10px 24px rgba(13, 34, 56, 0.08)`) and Brand Orange hover borders (`#f68c50`).
+4. **Standardized Section Header Hierarchy:**
+   - **Flanked Eyebrows:** Uppercase tracked slate eyebrow (`#5D6F86`, `11px`, `letter-spacing: 2.2px`, `font-weight: 700`) flanked by subtle horizontal separator lines (`#CFD7DF`, `34px × 1px`) on centered sections (`#brands`, `#gallery`, `#testimonials`, `#contact`).
+   - **Accent Bar Eyebrows:** Small Brand Orange horizontal accent bar (`34px–36px × 2px`, `#f68c50`) positioned above uppercase tracked slate eyebrows on left-aligned narrative sections (`#products`, `#dealership`, `#about`, `#career`).
+   - **Light Typography Headings:** Refined, modern display headings in light Roboto weight (`font-weight: 300`, `font-size: 38px–42px`, `#142F50`, `letter-spacing: -0.5px`, `line-height: 1.25`).
+   - **Balanced Slate Subtitles:** Centered or left-aligned narrative paragraphs (`color: #5D6F86` / `#4A5B6D`, `font-size: 14.5px–15.5px`, `line-height: 1.6`, `max-width: 680px`).
+5. **Standardized Interactive Action Buttons:**
+   - **Solid Dark Navy Action Buttons:** (`#142F50`, pure white text, `border-radius: 6px`, padding `11px–12px × 24px–28px`) featuring Brand Orange forward arrows (`<i class="fas fa-arrow-right ms-2" style="color: #f68c50;"></i>`) with smooth hover state to Brand Orange (`#f68c50`).
+   - **Outline Navy Buttons:** (`border: 1px solid #CBD5E1`, `#142F50` text, `border-radius: 6px`) with smooth hover state to solid navy or pure white with subtle elevation.
 6. **Zero SEO Ranking Equity Loss (Live Domain Preservation):** Preserved 100% of organic search visibility, local map pack rankings, and backlink authority from `royalautopaints.com` through strict 1:1 route continuity, strategic Homepage E-E-A-T / NAP content retention, and complete Schema.org JSON-LD structured data implementation.
+7. **Complete Responsive Architecture:** Elimination of horizontal overflow (`0px` horizontal overflow across 1366px desktop, 768px tablet, and 390px mobile viewports).
 
 ---
 
@@ -49,13 +52,20 @@ flowchart TD
     end
 
     subgraph Pages["Dedicated Standalone Pages"]
-        HomePg["index.html\n(Hero, Services, Divisions, Deals, Brands, Reviews)"]
-        AboutPg["about.html\n(Heritage Since 2012, Dealership Story, Pillars, Reviews)"]
-        ServicesPg["services.html\n(Colour Mixing, Aerosols, Refinish, Booths, Marine, Wood)"]
-        ProductsPg["products.html\n(Live Search, Category Filters, 20+ Products, RFQs)"]
-        GalleryPg["gallery.html\n(Category Filterable Project Showcase Cards)"]
-        CareerPg["career.html\n(4 Qatar Vacancies, Culture, WhatsApp/Email CV Form)"]
-        ContactPg["contact.html\n(3 Contact Cards, Hours, Interactive Form, Google Maps)"]
+        HomePg["index.html
+(Hero, Divisions, Products, Dealer, Brands, About, Gallery, Career, Reviews, Location)"]
+        AboutPg["about.html
+(Heritage Since 2012, Dealership Story, Pillars, Reviews)"]
+        ServicesPg["services.html
+(Colour Mixing, Aerosols, Refinish, Booths, Marine, Wood)"]
+        ProductsPg["products.html
+(Live Search, Category Filters, 20+ Products, RFQs)"]
+        GalleryPg["gallery.html
+(Category Filterable Project Showcase Cards)"]
+        CareerPg["career.html
+(4 Qatar Vacancies, Culture, WhatsApp/Email CV Form)"]
+        ContactPg["contact.html
+(Headquarters Details, Operating Hours, Google Maps)"]
     end
 
     NavHome --> HomePg
@@ -74,7 +84,7 @@ flowchart TD
 ### 3.1 Multi-Page Route Matrix
 | URL Route | Page Title | Primary Purpose & Unique Capabilities | Active Nav State |
 | :--- | :--- | :--- | :--- |
-| `index.html` | Home — Royal Auto Paints | Flagship portal with stock Zay hero carousel (594px), 4 Core Business Divisions showcase, Dealership highlights, local SEO NAP signals, partner ribbon, reviews, and inquiry desk. | `Home` |
+| `index.html` | Home — Royal Auto Paints | Flagship portal with stock Zay hero carousel (594px), 4 Core Business Divisions, Product Highlights, Dealership highlights, Leading Brands ribbon, Facility capabilities, Gallery preview, Careers callout, Client reviews, and Doha Location Guide. | `Home` |
 | `about.html` | About Us | Authentic corporate history in Doha Industrial Area since 2012, authorized Qatar dealership for HB Body & Challenger, 4 pillars of excellence, brand ribbon, and verified customer testimonials. | `About` |
 | `services.html` | Specialized Services | Detailed breakdown of OEM computerized color mixing, aerosol spray paint filling, Motolux distribution, spray booth installation, marine finishes, and wood coatings with technical specs and direct RFQ triggers. | `Services` |
 | `products.html` | Product Catalogue | Dedicated shopping catalog with 6 category filter pills (`All`, `Clears`, `Putties`, `Primers`, `Thinners`, `Marine`, `Tools`), instant client-side live search input, 20+ authentic products, and one-tap WhatsApp RFQ buttons. | `Products` |
@@ -82,54 +92,190 @@ flowchart TD
 | `career.html` | Careers & Openings | 4 authentic Qatar job vacancies (Color Mixing Technician, B2B Sales Executive, Spray Booth Maintenance Specialist, Warehouse Logistics Coordinator), benefits grid, and on-page interactive application form with WhatsApp/Email dispatch. | `Career` |
 | `contact.html` | Contact Us & Showroom | Central Wakalat St showroom details, telephone and WhatsApp direct dialers, morning & evening operating hours schedule, responsive Google Maps iframe, and technical inquiry dispatch form. | `Contact` |
 
-### 3.2 Global Structural Components
-| Component ID | Component Name | Source Origin | Key Contents & Components |
-| :--- | :--- | :--- | :--- |
-| `#templatemo_nav_top` | Top Utility Bar | Zay Stock + Brand Spec | Doha Street 23 address, direct showroom phone `+974 4450 1669`, WhatsApp RFQ `+974 5039 5741`, and direct inquiry desk email `info@royalautopaints.com` with clickable mailto link. |
-| `#templatemo_main_nav` | Unified 7-Item Navigation | Stock Zay Fidelity + Call Us Action | Official 44px brand logo, 7 items (`Home`, `About`, `Services`, `Products`, `Gallery`, `Career`, `Contact`) in single-row desktop layout matching stock Zay proportions (`width: 100% !important; max-width: 100% !important; padding: 8px 14px; font-size: 18px; font-weight: 300; white-space: nowrap; flex-fill padding: 1.5rem`), sticky-top header (~82px total height), active state indicator (`--rap-primary`), and modern interactive `.btn-call-pill` (`border-radius: 12px; font-weight: 600; background: #f1f5f9; fa-phone icon + 'Call Us'`) linking directly to `tel:+97444501669` in both desktop and mobile headers. |
-| `#templatemo_search` | Search Modal | Zay Stock | Fast search overlay modal available from header icon on every page. |
-| `#divisions` | 4 Core Business Divisions Showcase | Exact Reference Specification | Integrated 4-column corporate showcase on `#E9EFF7` background with `#D8E3F0` geometric facets, thin vertical dividers (`#BDCDDF`), slanted visual headers with circular navy icon badges, `01`–`04` number lines, navy titles (`#142F50`), slate descriptions (`#5D6F86`), and compact rectangular navy buttons (`#17365B`) with zero drop shadows. |
-| `#tempaltemo_footer` | Corporate 3-Column Footer | Zay Stock + Redesign | Column 1: Company Profile & Doha contacts; Column 2: Core Business Divisions; Column 3: Full Site Navigation & Direct Social Links (WhatsApp, Phone, Email, Instagram, Facebook). |
-| `.floating-whatsapp-btn` | Floating Action Button | Redesign Enhancement | Fixed bottom-right pulsing WhatsApp quick link for instant RFQ dispatch (`+974 5039 5741`) from any screen position across all 7 pages. |
+---
 
-### 3.3 Core Business Divisions Specification (`#divisions`)
-Redesigned to replicate the approved corporate reference specification with mathematical precision and vector fidelity:
-- **Colour Palette Specification:**
-  - **Main Section Canvas:** `#E9EFF7`
-  - **Primary Navy:** `#17365B` (Buttons, Eyebrow & Badges)
-  - **Heading Navy:** `#142F50` (Section Title & Division Headings)
-  - **Body / Description Slate:** `#5D6F86`
-  - **Dividers & Accent Rules:** `#BDCDDF`
-  - **Showcase Surface:** `#FFFFFF`
-  - **Subtle Background Geometry:** `#D8E3F0` (layered low-opacity vector facets along section flanks)
-  - **Strict Palette Rule:** Zero drop shadows (`box-shadow: none !important`), no green, no orange, no teal, and no bright buttons.
-- **Section Heading & Eyebrow:**
-  - Uppercase tracked eyebrow `COMPREHENSIVE SURFACE SOLUTIONS` (`#17365B`, 600 weight, `letter-spacing: 2px`) flanked by thin horizontal divider rules (`#BDCDDF`).
-  - Lightweight elegant title `Our 4 Core Business Divisions` (Roboto 300, 42px, `#142F50`).
-  - Subtitle: `Supplying world-class coatings, OEM color formulation, and commercial spray booth engineering across Qatar.` (`#5D6F86`, 15px).
-- **Connected Corporate Showcase Architecture:**
-  - **Extended Canvas Width:** Showcase container expanded to `width: 95% !important; max-width: 1580px !important;` creating a wider, more spacious horizontal aspect ratio for the cards compared to the visual height.
-  - **Continuous Surface:** One continuous horizontal container (`.divisions-showcase-container`) with `#FFFFFF` background and fine `#BDCDDF` border (no floating cards, no card gaps, no outer rounded cards).
-  - **Four Equal Columns:** Four equal-width columns (`.division-col`, `flex: 0 0 25%; max-width: 25%`) separated by thin `1px solid #BDCDDF` vertical divider lines.
-  - **8px Image Inset & 17px Divider Gap:** Applied `margin: 8px 8px 0 8px;` on `.division-img-box` and `border-radius: 6px 6px 0 0;` on `.division-img-box img`, creating a 16–17px visual gap across each 1px `#BDCDDF` column separator matching the design reference.
-  - **Sub-Pixel Diagonal Badge Positioning:** Badge center mathematically pinned at `left: 17.30%; top: 84.20%` (`transform: translate(-50%, -50%)`) directly over the diagonal bottom cut of each division visual header (`width: 64px; height: 64px; background-color: #17365B; border: 3.5px solid #FFFFFF; border-radius: 50%`).
-  - **High-Definition Vector SVG Badges:** Crisp, scalable inline SVGs with pure white stroke (`#FFFFFF`, 1.8–2.0px stroke-width) replacing raster icons:
-    - **Division 01 — Automotive Refinish:** Vector modern car silhouette (`images/division_card_1.png` + Car SVG + `01 ——————` divider line -> `services.html#color-mixing`).
-    - **Division 02 — Commercial Paint Booth:** Vector industrial spray gun with atomized nozzle spray (`images/division_card_2.png` + Spray Gun SVG + `02 ——————` divider line -> `services.html#booths`).
-    - **Division 03 — Marine & Yacht:** Vector luxury motor yacht with hull, cabin, mast, and water wake line (`images/division_card_3.png` + Yacht SVG + `03 ——————` divider line -> `services.html#marine`).
-    - **Division 04 — Wood & Architectural:** Vector 3D isometric layered architectural surfaces (`images/division_card_4.png` + Architectural Layers SVG + `04 ——————` divider line -> `services.html#wood`).
-  - **Compact Rectangular Navy Buttons:** `.btn-explore-division` (`#17365B`, 3px border-radius) with smooth hover transition to `#142F50` and subtle right-arrow translation.
-- **Responsive Breakpoint Matrix:**
-  - **Desktop (≥992px):** 4 equal columns in 1 continuous row.
-  - **Tablet (768px–991px):** 2x2 grid with internal vertical and horizontal divider rules (`#BDCDDF`).
-  - **Mobile (<768px):** 1 column per row with fine horizontal dividers between divisions.
+### 3.2 Homepage Section Hierarchy (Sections 1–14)
 
-### 3.4 Top Utility Bar Email Standardization (`#templatemo_nav_top`)
+```mermaid
+flowchart TD
+    S1["1. Top Utility Bar (#templatemo_nav_top)
+(Location, Phone, WhatsApp, info@royalautopaints.com)"]
+    S2["2. Main Header & Navigation (#templatemo_main_nav)
+(Official Brand Logo, 7 Nav Links, Interactive Call Us Pill)"]
+    S3["3. Search Modal Overlay (#templatemo_search)
+(Keyword Quick-Jump Modal)"]
+    S4["4. Hero Presentation Carousel (#template-mo-zay-hero-carousel)
+(Stock Zay 594px Height, 800x800 Studio Renders, Chevron Controls)"]
+    S5["5. 4 Core Business Divisions (#divisions)
+(Ice Canvas #EEF5FA, 4 Corporate Cards, Vector Badge Icons, 01-04 Number Lines)"]
+    S6["6. Our Products Showcase (#products)
+(Pure White #FFFFFF, Orange Accent Bar, Connecting Divider, VIEW ALL Link, Editorial Product Cards)"]
+    S7["7. Qatar Refinishing Partner (#dealership)
+(Ice Canvas #EEF4F9, Product Composite Showcase, Solid Navy Check Badges, Twin Action Buttons)"]
+    S8["8. Trusted by Leading Brands (#brands)
+(Pure White #FFFFFF, Flanked Eyebrow, 5-Card Grid: Axalta, Imlar, GPC, Gemex, Moto Max)"]
+    S9["9. Facility & Operational Strengths (#about)
+(Ice Canvas #EEF4F9, 4 White Capability Boxes, Floating Inquiries Card, Solid Navy WhatsApp RFQ)"]
+    S10["10. Project & Product Gallery (#gallery)
+(Pure White #FFFFFF, Flanked Eyebrow, 4 Flush Landscape Cards, Outline View All Button)"]
+    S11["11. Careers at Royal Auto Paints (#career)
+(Ice Canvas #EEF4F9, 3 Solid Orange Circular Perks, Solid Navy Explore Open Positions Button)"]
+    S12["12. Customer Reviews & Reputation (#testimonials)
+(Pure White #FFFFFF, Flanked Eyebrow, 'What Clients Say', Solid Navy Reviewer Avatars)"]
+    S13["13. Location Guide & Contact Desk (#contact)
+(Ice Canvas #EEF4F9, Headquarters Card, Ice-Blue Icon Boxes, Google Map Card with Action Footer)"]
+    S14["14. Corporate Footer (#tempaltemo_footer)
+(Dark Charcoal #212934, 3-Column Topology, Legal Rights & NAP Badges)"]
+
+    S1 --> S2 --> S3 --> S4 --> S5 --> S6 --> S7 --> S8 --> S9 --> S10 --> S11 --> S12 --> S13 --> S14
+```
+
+---
+
+### 3.3 Detailed Homepage Section Specifications
+
+#### Section 5: 4 Core Business Divisions (`#divisions`)
+- **Canvas:** Ice Canvas `#EEF5FA`.
+- **Eyebrow:** Centered `COMPREHENSIVE SURFACE SOLUTIONS` (`#17365B`, `letter-spacing: 2px`, `font-weight: 700`) flanked by thin horizontal divider rules (`#BDCDDF`).
+- **Heading:** `Our 4 Core Business Divisions` (Roboto 300, 42px, `#142F50`).
+- **Grid Architecture:** 4 distinct white corporate cards (`.divisions-card`, `#FFFFFF`, `border: 1px solid #D8E2EC`, `border-radius: 8px`).
+- **Card Elements:**
+  - Inset landscape image header with diagonal slant geometry.
+  - Circular dark navy icon badge (`#17365B`, 64px, pure white vector SVG icon: Automotive Car, Spray Booth Gun, Marine Yacht, Architectural Layers).
+  - Number indicator line (`01 ——————` through `04 ——————`).
+  - Title (`#142F50`, 18px, font-weight 700) and description (`#5D6F86`, 13.5px).
+  - Compact rectangular navy button (`.btn-explore-division`, `#17365B`, hover: `#f68c50`).
+
+#### Section 6: Our Products Showcase (`#products`)
+- **Canvas:** Pure White `#FFFFFF`.
+- **Header:**
+  - Brand Orange horizontal accent bar (`32px × 2px`, `#f68c50`).
+  - Slate eyebrow `OUR PRODUCTS` (`#5D6F86`, `11.5px`, `letter-spacing: 2.2px`, `font-weight: 700`).
+  - Connecting horizontal divider line (`#E2E8F0`).
+  - Section title `Comprehensive Refinishing & Coating Solutions` (Roboto 300, 36px, `#142F50`).
+  - Right-aligned `VIEW ALL →` link (`#f68c50`, font-weight 700) leading to `products.html`.
+- **Product Cards:** Editorial high-resolution product photography on `#F8FAFC` base, genuine technical specs, category badges, and instant WhatsApp RFQ triggers.
+
+#### Section 7: Qatar's Leading Refinishing Partner (`#dealership`)
+- **Canvas:** Ice Canvas `#EEF4F9`.
+- **Left Showcase Visual:** Landscape composite product showcase (`images/dealership_showcase.png`, border-radius 8px, soft border `#E2E8F0`).
+- **Right Narrative:**
+  - Brand Orange accent line (`34px × 2px`, `#f68c50`).
+  - Eyebrow `AUTHORIZED DISTRIBUTOR & TECHNICAL CENTER`.
+  - Heading `Qatar's Leading Refinishing Partner` (Roboto 300, 38px, `#142F50`).
+  - Two solid dark navy circular checkmark badges: `100% Genuine Coatings` and `Complete Workshop Supply`.
+  - Twin action buttons: Solid Dark Navy `Request Wholesale Quote` (linking to WhatsApp RFQ) and Outline Navy `Explore Company Story →` (linking to `about.html`).
+
+#### Section 8: Trusted by Leading Brands (`#brands`)
+- **Canvas:** Pure White `#FFFFFF`.
+- **Eyebrow:** Centered `— TRUSTED BY LEADING BRANDS —` with flanked horizontal separator lines (`#CFD7DF`).
+- **Heading:** `Trusted by Leading Brands` (Roboto 300, 42px, `#142F50`).
+- **Grid Architecture:** 5 evenly spaced brand cards in a single row on desktop (`col-lg` / `grid-template-columns: repeat(5, 1fr)`):
+  1. Axalta Refinish (`images/brands/axalta.png`)
+  2. Imlar Automotive (`images/brands/imlar.png`)
+  3. GPC Automotive Coatings (`images/brands/gpc.png`)
+  4. Gemex Coatings (`images/brands/gemex.png`)
+  5. Moto Max Refinish (`images/brands/motomax.png`)
+- **Card Styling:** White card (`#FFFFFF`, `border: 1px solid #EAECEF`, height 96px, zero drop shadow).
+- **Hover Interaction:** Subtle `-3px` translation, Brand Orange border (`#f68c50`), grayscale-to-color transition (`grayscale(100%)` → `grayscale(0%)`), and smooth scale (`1.04`).
+
+#### Section 9: Facility & Operational Strengths (`#about`)
+- **Canvas:** Ice Canvas `#EEF4F9`.
+- **Left Column:**
+  - Brand Orange accent bar (`34px × 2px`, `#f68c50`).
+  - Eyebrow `ABOUT ROYAL AUTO PAINTS QATAR` in Slate Navy (`#5D6F86`, `letter-spacing: 2.2px`).
+  - Heading `Your Trusted Technical Coating Partner in Doha` (Roboto 300, 38px, `#142F50`).
+  - Body copy detailing Wakalat St facilities, laboratories, and local inventory.
+  - **4 Feature Capability Boxes (2x2 Grid):**
+    Each icon encased in an independent white card box (`44×44px`, `#FFFFFF`, border `#D8E2EC`, radius 8px, `#142F50` icon, Brand Orange hover):
+    1. `<i class="fas fa-microchip"></i>` — **Computerized Lab** (`Spectrophotometer OEM formula matching.`)
+    2. `<i class="fas fa-warehouse"></i>` — **Doha Inventory** (`Extensive stock ready for prompt workshop dispatch.`)
+    3. `<i class="fas fa-wind"></i>` — **Booth Engineering** (`Downdraft booths, filters & extraction fans.`)
+    4. `<i class="fab fa-whatsapp"></i>` — **Fast WhatsApp RFQ** (`Instant quotation desk and technical data sheets.`)
+  - Outline journey button: `Learn More About Our Journey & Facility →` with Brand Orange arrow (`#f68c50`).
+- **Right Column (Quick Technical Inquiries Card):**
+  - Distinct floating card (`#FFFFFF`, `border: 1px solid #EAECEF`, radius 8px, padding 34px 32px, ambient shadow `0 4px 20px rgba(13,34,56,0.05)`).
+  - Title `Quick Technical Inquiries & Quotations` and descriptive subtitle.
+  - **Button 1:** Full-width Solid Dark Navy button (`#142F50` → hover `#f68c50`) with WhatsApp icon: `WhatsApp RFQ: +974 5039 5741`.
+  - **Button 2:** Full-width Outline Navy button (`border: 1px solid #CBD5E1`, `#142F50` text) with phone icon: `Direct Desk: +974 4450 1669`.
+  - Thin separator line (`#EAECEF`) and Dark Navy pin and envelope icons for Headquarters & Email info.
+
+#### Section 10: Project & Product Gallery (`#gallery`)
+- **Canvas:** Pure White `#FFFFFF`.
+- **Eyebrow:** Centered `— PORTFOLIO & FINISHES —` with flanked horizontal separator lines (`#CFD7DF`).
+- **Heading:** `Project & Product Gallery` (Roboto 300, 42px, `#142F50`).
+- **Subtitle:** `A visual showcase of automotive refinish transformations, commercial spray booth systems, yacht coatings, and workshop operations across Qatar.`
+- **Grid Architecture:** 4 flush landscape cards (`col-12 col-md-6 col-lg-3`):
+  - Card 1: `AUTOMOTIVE` — `HS Clear Coats & Primers` (`images/hero_slide_01.png`, custom `object-position: center 20%`).
+  - Card 2: `SPRAY BOOTHS` — `Downdraft Booths & Media` (`images/hero_slide_02.png`, custom `object-position: center 75%`).
+  - Card 3: `MARINE` — `Sea-Line Yacht Finishes` (`images/hero_slide_03.png`, custom `object-position: center 85%`).
+  - Card 4: `ARCHITECTURAL` — `PU Wood Lacquers & Stains` (`images/hero_slide_04.png`, custom `object-position: center 30%`).
+- **Card Framing:** Flush edge-to-edge landscape cover (`height: 190px`, `border-radius: 6px 6px 0 0`, zoom `scale(1.04)` on hover). Card body with uppercase slate category label and bold Brand Navy title.
+- **Bottom Action Button:** Outline navy button with Brand Orange forward arrow (`#f68c50`): `View Full High-Resolution Gallery →`.
+
+#### Section 11: Careers at Royal Auto Paints (`#career`)
+- **Canvas:** Ice Canvas `#EEF4F9`.
+- **Left Column:**
+  - Brand Orange accent bar (`36px × 2px`, `#f68c50`).
+  - Eyebrow `JOIN OUR DOHA TEAM` in Slate Navy (`#5D6F86`, `letter-spacing: 2.2px`).
+  - Heading `Build Your Career with Royal Auto Paints` (Roboto 300, 40px, `#142F50`).
+  - Description copy detailing company culture and Doha career paths.
+  - **3 Key Benefits Row:** Inline items with **solid Brand Orange circular checkmarks** (`fas fa-check-circle`, `#f68c50`), Brand Navy titles (`#142F50`, `13.5px`, font-weight 600), and vertical divider lines (`#CBD5E1`):
+    1. `Competitive Tax-Free Salary`
+    2. `Qatar Visa Sponsorship`
+    3. `Factory Technical Training`
+- **Right Column:**
+  - Solid Dark Navy button (`#142F50` → hover `#f68c50`) with Brand Orange forward arrow: `Explore Open Positions →` (linking to `career.html`).
+
+#### Section 12: Customer Reviews & Reputation (`#testimonials`)
+- **Canvas:** Pure White `#FFFFFF`.
+- **Eyebrow:** Centered `— CUSTOMER REVIEWS & REPUTATION —` with flanked horizontal separator lines (`#CFD7DF`).
+- **Heading:** `What Clients Say` (no question mark, Roboto 300, 42px, `#142F50`).
+- **Subtitle:** `Trusted by workshop managers, collision repair specialists, and vehicle owners across Qatar.`
+- **Testimonial Cards:** White cards (`#FFFFFF`, `border: 1px solid #EAECEF`, radius 8px, hover Brand Orange border `#f68c50`, `-3px` lift, soft shadow).
+  - 5-Star rating in Brand Orange/Gold (`#f68c50`).
+  - Authentic testimonial narrative from legacy site (James, Nasar, Abaan, Qaazi Ali, Shameem Akthar).
+  - Reviewer avatar: **Solid Brand Navy circles** (`#142F50`, hover `#f68c50`) with white lettering.
+  - Author title and location in Brand Navy and slate.
+
+#### Section 13: Location Guide & Contact Desk (`#contact`)
+- **Canvas:** Ice Canvas `#EEF4F9`.
+- **Eyebrow:** Centered `— DOHA HEADQUARTERS & WAREHOUSE —` with flanked horizontal separator lines (`#CFD7DF`).
+- **Heading:** `Location & Inquiries Desk` (Roboto 300, 42px, `#142F50`).
+- **Subtitle:** `Visit our showroom and mixing laboratory in the Doha Industrial Area, or connect directly with our technical and sales advisors.`
+- **Left Column (Headquarters Details Card):**
+  - White card (`#FFFFFF`, `border: 1px solid #EAECEF`, radius 8px, padding 30px 26px, soft shadow).
+  - Title `Headquarters Details` with Brand Orange accent bar (`34px × 2px`, `#f68c50`).
+  - **4 Contact Items:** Each icon encased in an ice-blue rounded square box (`36×36px`, `#EEF4F9`, `#142F50` navy icon, hover `#f68c50` / white):
+    1. `Physical Address:` Street 23, Wakalat St, Industrial Area, Doha, Qatar
+    2. `Telephone Desk:` +974 4450 1669
+    3. `Direct WhatsApp RFQ:` +974 5039 5741
+    4. `Official Email:` info@royalautopaints.com / royalpaints.qa@gmail.com
+  - **Operating Hours Box:** Ice-blue container (`#EEF4F9`, radius 6px) with Brand Navy clock icon, Saturday–Thursday hours, and slate-gray `Closed` badge for Friday.
+- **Right Column (Interactive Google Map Card):**
+  - White card (`#FFFFFF`, `border: 1px solid #EAECEF`, radius 8px, padding 14px, soft shadow).
+  - Embedded Google Map iframe (`height: 310px`, radius 6px).
+  - Integrated footer action bar: Official 4-color Google Maps pin SVG, directions subtitle, and Solid Dark Navy button with Brand Orange forward arrow: `Open in Google Maps →`.
+
+---
+
+## 4. Top Utility Bar & Navigation Specification
+
+### 4.1 Top Utility Bar (`#templatemo_nav_top`)
 - Standardized across all 7 site pages (`index.html`, `about.html`, `services.html`, `products.html`, `gallery.html`, `career.html`, `contact.html`).
-- Left side: Physical location (`Street 23, Wakalat St, Industrial Area, Doha, Qatar`), direct telephone (`+974 4450 1669`), and WhatsApp RFQ (`+974 5039 5741`).
-- Right side: Exclusively displays the clickable email link `<a class="navbar-sm-brand text-light text-decoration-none small" href="mailto:info@royalautopaints.com"><i class="fa fa-envelope fa-sm fa-fw me-2 text-light"></i>info@royalautopaints.com</a>`. Removed redundant `"Direct Inquiries:"` label and duplicate call/WhatsApp icons.
+- Left side: Physical location (`Street 23, Wakalat St, Industrial Area, Doha, Qatar`), direct showroom phone `+974 4450 1669`, and WhatsApp RFQ `+974 5039 5741`.
+- Right side: Exclusively displays the clickable email link `<a class="navbar-sm-brand text-light text-decoration-none small" href="mailto:info@royalautopaints.com"><i class="fa fa-envelope fa-sm fa-fw me-2 text-light"></i>info@royalautopaints.com</a>`.
 
-### 3.5 SEO Architecture, E-E-A-T & Search Ranking Preservation Strategy
+### 4.2 Main Navigation Bar (`#templatemo_main_nav`)
+- Official 44px brand logo.
+- 7 navigation links (`Home`, `About`, `Services`, `Products`, `Gallery`, `Career`, `Contact`) in single-row desktop layout matching stock Zay proportions.
+- Sticky-top header (~82px total height), active state indicator (`--rap-primary`).
+- Interactive `.btn-call-pill` (`border-radius: 12px; font-weight: 600; background: #f1f5f9; fa-phone icon + 'Call Us'`) linking directly to `tel:+97444501669` in both desktop and mobile headers.
+
+---
+
+## 5. SEO Architecture, E-E-A-T & Search Ranking Preservation Strategy
+
 To guarantee **zero loss of organic search ranking equity** from the live domain (`royalautopaints.com`), the redesign implements a comprehensive Google Search and Local SEO preservation architecture:
 
 1. **Strict 1:1 Route & Backlink Integrity:**
@@ -210,15 +356,20 @@ To guarantee **zero loss of organic search ranking equity** from the live domain
 
 ---
 
-## 4. Responsive Engineering & Breakpoint Specifications
+## 6. Responsive Engineering & Breakpoint Specifications
 
-### 4.1 Typography Scaling Across Viewports (Stock Zay Fidelity)
+### 6.1 Typography Scaling Across Viewports
 ```css
-/* Large Desktop (>=992px) - Exact Stock Zay Fidelity */
+/* Large Desktop (>=992px) */
 .h1, h1 { font-size: 48px !important; font-weight: 200 !important; line-height: 1.2 !important; color: #212934; }
 .h2, h2 { font-size: 30px !important; font-weight: 300 !important; color: #212934; }
 .h3, h3 { font-size: 22px !important; font-weight: 300 !important; }
 #template-mo-zay-hero-carousel .carousel-item { min-height: 30rem !important; }
+
+/* Section Specific Display Headings (Desktop >=992px) */
+.brands-heading, .gallery-heading, .testimonials-heading, .contact-heading { font-size: 42px; font-weight: 300; color: #142F50; letter-spacing: -0.5px; }
+.facility-heading { font-size: 38px; font-weight: 300; color: #142F50; letter-spacing: -0.5px; }
+.career-heading { font-size: 40px; font-weight: 300; color: #142F50; letter-spacing: -0.5px; }
 
 /* Tablet (768px - 991px) */
 .h1, h1 { font-size: 38px !important; font-weight: 200 !important; }
@@ -229,44 +380,43 @@ To guarantee **zero loss of organic search ranking equity** from the live domain
 .h1, h1 { font-size: 28px !important; font-weight: 300 !important; line-height: 1.3 !important; }
 .h2, h2 { font-size: 22px !important; font-weight: 300 !important; }
 .h3, h3 { font-size: 18px !important; }
+.brands-heading, .gallery-heading, .testimonials-heading, .contact-heading { font-size: 30px; }
+.facility-heading, .career-heading { font-size: 28px; }
 body, p, ul, li, div { font-size: 15px !important; line-height: 1.5 !important; }
-.badge-subtle { font-size: 12px !important; }
 ```
 
-### 4.2 Hero Banner Proportions & Stock Zay Parity
+### 6.2 Hero Banner Proportions & Stock Zay Parity
 - **Rendered Height:** Exactly 594px on desktop (498px image height + 48px top/bottom `p-5` padding), 100% matching stock Zay template.
 - **Typography:** Ultra-light Roboto 200 for `.h1`, light Roboto 300 for `.h2` (dark charcoal `#212934`), and clean Roboto 300 for `p`.
 - **Image Assets:** 800x800 square studio renders with transparent backgrounds (`hero_slide_01.png` through `hero_slide_05.png`) for seamless blending onto `#efefef`.
-- **Clutter Elimination:** Removed artificial badges and dual buttons from hero slides to preserve stock Zay's spacious, elegant presentation.
 - **Navigation Controls:** Stock `w-auto ps-3` and `w-auto pe-3` chevron controls with `fas fa-chevron-left/right` (`color: #09465f`, hover: `#f68c50`, `font-size: 2.8em`).
 
-### 4.3 Gutter & Container Overflow Prevention
+### 6.3 Gutter & Container Overflow Prevention
 - Changed non-responsive row gutters `g-5` (which create negative margins exceeding mobile container padding) to responsive gutters `g-4 g-lg-5`.
 - Verified using Chrome DevTools Protocol (CDP) headless Edge testing across viewports:
-  - Mobile (375px): `scrollWidth: 375`, `innerWidth: 375`, `overflowing: []` (0px overflow).
-  - Tablet (768px): `scrollWidth: 768`, `innerWidth: 768`, `overflowing: []` (0px overflow).
-  - Desktop (1280px): `scrollWidth: 1265`, `innerWidth: 1280`, `overflowing: []` (0px overflow).
+  - Mobile (390px): `scrollWidth: 390`, `innerWidth: 390`, `overflow: false` (0px overflow).
+  - Tablet (768px): `scrollWidth: 753`, `innerWidth: 768`, `overflow: false` (0px overflow).
+  - Desktop (1366px): `scrollWidth: 1351`, `innerWidth: 1366`, `overflow: false` (0px overflow).
 
 ---
 
-## 5. Asset Organization & Multi-Page File Structure
+## 7. Asset Organization & Multi-Page File Structure
 
 To maintain a clean and production-grade codebase, product assets have been isolated into dedicated subdirectories, and each page has a dedicated HTML file:
 ```
-royalautopaints/ (D:\manu\projects\royalautopaints / E:\xev\royalautopaints)
+royalautopaints/ (D:\manu\projects\royal_paints_1 / D:\manu\projects\royalautopaints)
 ├── css/
 │   ├── bootstrap.min.css
 │   ├── templatemo.css
-│   └── custom.css             (Zero drop shadow, responsive typography, 4 divisions styling)
+│   └── custom.css             (Design system classes for all 13 sections, zero drop shadow overrides)
 ├── docs/
 │   └── blueprint.md           (Architecture & Technical Specification)
 ├── fonts/                     (FontAwesome assets)
 ├── images/
-│   ├── products/              (83 authentic product images)
-│   ├── division_card_1.png    (Division 1: Automotive Refinish visual with angled slant)
-│   ├── division_card_2.png    (Division 2: Commercial Paint Booth visual with angled slant)
-│   ├── division_card_3.png    (Division 3: Marine & Yacht visual with angled slant)
-│   ├── division_card_4.png    (Division 4: Wood & Architectural visual with angled slant)
+│   ├── brands/                (Partner brand logos: axalta, imlar, gpc, gemex, motomax)
+│   ├── products/              (83 authentic product images + editorial cards)
+│   ├── dealership_showcase.png (Landscape composite showcase for Section 7)
+│   ├── division_card_1_clean.png through 4_clean.png (Clean division showcase headers)
 │   ├── hero_slide_01.png      (Slide 1: Automotive Refinish 800x800)
 │   ├── hero_slide_02.png      (Slide 2: Spray Booth Engineering 800x800)
 │   ├── hero_slide_03.png      (Slide 3: Marine & Yacht Finishes 800x800)
@@ -281,7 +431,7 @@ royalautopaints/ (D:\manu\projects\royalautopaints / E:\xev\royalautopaints)
 │   ├── templatemo.js
 │   └── custom.js              (Interactive product filtering, mobile menu auto-close)
 ├── products/                  (Directory junction pointing to images/products/)
-├── index.html                 (Main responsive landing page - Home with Schema.org & Divisions)
+├── index.html                 (Main responsive landing page - Home with Schema.org & 13 Sections)
 ├── about.html                 (Dedicated About page - History, Pillars & Dealership)
 ├── services.html              (Dedicated Services page - Mixing, Aerosols, Booths)
 ├── products.html              (Dedicated Products page - Filter pills & Instant Search)
@@ -293,12 +443,18 @@ royalautopaints/ (D:\manu\projects\royalautopaints / E:\xev\royalautopaints)
 
 ---
 
-## 6. Verification & Quality Assurance Protocol
+## 8. Verification & Quality Assurance Protocol
 
 Automated headless Edge test scripts validate each build:
 - `scratch/capture_all_divisions.js`: Captures CDP screenshots of the 4 Core Business Divisions section across desktop (1440px / 1920px), tablet (768px), and mobile (390px). Confirms 1:1 fidelity with reference specification.
-- `scratch/test_all_pages.js`: Evaluates all 7 pages across mobile (375px), tablet (768px), and desktop (1280px). Confirms 0px horizontal overflow across all pages and viewports.
-- `scratch/capture_exact_slide.js`: Verifies exact visual parity and 594px desktop carousel height matching the stock Zay template.
-- `scratch/test_nav.js`: Verifies cross-linking and active navigation highlighting across all pages.
+- `scratch/capture_products_enhanced.js`: Validates Section 6 header accent bar, divider, and VIEW ALL trigger.
+- `scratch/capture_dealership_redesign.js`: Validates Section 7 composite showcase, circular checkmark badges, and twin action buttons.
+- `scratch/capture_brands_redesign.js`: Validates Section 8 5-card partner grid, flanked eyebrow lines, and grayscale-to-color hover.
+- `scratch/capture_facility_final.js`: Validates Section 9 facility capability icon boxes, journey button, and floating inquiries card with Solid Dark Navy WhatsApp RFQ.
+- `scratch/capture_gallery_redesign.js`: Validates Section 10 flanked eyebrow, 4 flush landscape cards with tuned image positions, and outline view all button.
+- `scratch/capture_career_redesign.js`: Validates Section 11 3 circular checkmark perks, vertical dividers, and Solid Dark Navy action button.
+- `scratch/capture_testimonials_redesign.js`: Validates Section 12 flanked eyebrow, light typography, and solid Brand Navy reviewer avatars.
+- `scratch/capture_contact_redesign.js`: Validates Section 13 headquarters details, ice-blue icon boxes, operating hours card, and interactive Google Map card with action footer.
+- `scratch/check_facility_overflow.js`: Evaluates horizontal overflow across mobile (390px), tablet (768px), and desktop (1366px).
 - **Schema & Structured Data Validation:** Validated against Google Rich Results Test specifications for `AutoPartsStore` and `LocalBusiness` entity graphs.
-- **Results:** 100% PASS on mobile (375px), tablet (768px), and desktop (1280px/1440px/1920px) across all 7 pages.
+- **Results:** 100% PASS on mobile (390px), tablet (768px), and desktop (1366px) across all 7 pages with `0px` horizontal overflow.
